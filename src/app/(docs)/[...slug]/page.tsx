@@ -1,16 +1,24 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import matter from "gray-matter";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { MDXRemote } from "next-mdx-remote/rsc";
 
 type RouteParams = { slug?: string[] };
 
-async function getDoc(slugParts: string[]) {
+type Doc = {
+  content: string;
+  frontmatter: {
+    title: string;
+    description: string;
+    updated?: string;
+  };
+};
+
+async function getDoc(slugParts: string[]): Promise<Doc | null> {
   const relPath = slugParts.join("/") + ".mdx";
   const fullPath = path.join(process.cwd(), "content", relPath);
-
-  console.log("MDX lookup:", { slugParts, relPath, fullPath });
 
   try {
     const raw = await fs.readFile(fullPath, "utf8");
@@ -21,7 +29,7 @@ async function getDoc(slugParts: string[]) {
       frontmatter: {
         title: (data.title as string) ?? "Untitled",
         description: (data.description as string) ?? "",
-        updated: (data.updated as string) ?? "",
+        updated: (data.updated as string) ?? undefined,
       },
     };
   } catch {
@@ -29,11 +37,38 @@ async function getDoc(slugParts: string[]) {
   }
 }
 
-export async function generateMetadata(
-  { params }: { params: Promise<RouteParams> }
-) {
+function formatUpdated(dateStr?: string) {
+  if (!dateStr) return null;
+  const d = new Date(dateStr);
+  if (Number.isNaN(d.getTime())) return dateStr;
+  return d.toISOString().slice(0, 10); // YYYY-MM-DD
+}
+
+function getRelated(slugParts: string[]) {
+  const slug = "/" + slugParts.join("/");
+
+  // starter mapping (keep it simple; we’ll automate later)
+  const relatedMap: Record<string, { href: string; label: string }[]> = {
+    "/mechanics/work-speed": [
+      { href: "/breeding/trait-inheritance", label: "Breeding trait inheritance" },
+    ],
+    "/breeding/trait-inheritance": [
+      { href: "/mechanics/work-speed", label: "Work Speed mechanics" },
+    ],
+  };
+
+  return relatedMap[slug] ?? [];
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<RouteParams>;
+}) {
   const { slug } = await params;
   const slugParts = slug ?? [];
+
+  if (slugParts[0] === ".well-known") return {};
 
   const doc = await getDoc(slugParts);
   if (!doc) return {};
@@ -44,19 +79,58 @@ export async function generateMetadata(
   };
 }
 
-export default async function DocPage(
-  { params }: { params: Promise<RouteParams> }
-) {
+export default async function DocPage({
+  params,
+}: {
+  params: Promise<RouteParams>;
+}) {
   const { slug } = await params;
   const slugParts = slug ?? [];
+
+  if (slugParts.length === 0) return notFound();
+  if (slugParts[0] === ".well-known") return notFound();
 
   const doc = await getDoc(slugParts);
   if (!doc) return notFound();
 
+  const updated = formatUpdated(doc.frontmatter.updated);
+  const related = getRelated(slugParts);
+
   return (
     <article className="prose max-w-3xl">
-      <h1>{doc.frontmatter.title}</h1>
+      {/* Page header */}
+      <header className="not-prose mb-6">
+        <h1 className="text-3xl font-bold tracking-tight">{doc.frontmatter.title}</h1>
+
+        {doc.frontmatter.description ? (
+          <p className="mt-2 text-base opacity-80">{doc.frontmatter.description}</p>
+        ) : null}
+
+        {updated ? (
+          <p className="mt-2 text-sm opacity-60">Last updated: {updated}</p>
+        ) : null}
+      </header>
+
+      {/* MDX body */}
       <MDXRemote source={doc.content} />
+
+      {/* Related links */}
+      {related.length > 0 ? (
+        <section className="not-prose mt-10 border-t pt-6">
+          <h2 className="text-sm font-semibold uppercase tracking-wide opacity-70">
+            Related pages
+          </h2>
+          <ul className="mt-3 flex flex-col gap-2">
+            {related.map((r) => (
+              <li key={r.href}>
+                <Link href={r.href} className="underline underline-offset-4">
+                  {r.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ) : null}
     </article>
   );
 }
