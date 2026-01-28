@@ -25,7 +25,7 @@ const sections = [
   },
   {
     title: "Tools",
-    links: [{ href: "/calculators/calculators", label: "Calculators (soon)" }],
+    links: [{ href: "/calculators", label: "Calculators (soon)" }],
   },
 ];
 
