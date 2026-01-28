@@ -27,22 +27,24 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-  <header className="border-b">
-    <nav className="max-w-6xl mx-auto p-4 flex gap-4 text-sm items-center">
-      <Link href="/" className="font-semibold">
-        Palworld Companion
-      </Link>
-      <Link href="/mechanics/work-speed">Mechanics</Link>
-      <Link href="/breeding/trait-inheritance">Breeding</Link>
-    </nav>
-  </header>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+        <header className="border-b">
+          <nav className="max-w-6xl mx-auto p-4 flex gap-4 text-sm items-center">
+            <Link href="/" className="font-semibold">
+              Palworld Companion
+            </Link>
+            <Link href="/mechanics/work-speed">Mechanics</Link>
+            <Link href="/breeding/trait-inheritance">Breeding</Link>
+          </nav>
+        </header>
 
-  <div className="max-w-6xl mx-auto flex">
-    <Sidebar />
-    <main className="flex-1 p-6">{children}</main>
-  </div>
-</body>
+        <div className="max-w-6xl mx-auto flex">
+          <Sidebar />
+          <main className="flex-1 p-6">{children}</main>
+        </div>
+      </body>
     </html>
   );
 }
