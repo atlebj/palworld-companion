@@ -6,8 +6,8 @@ export default function CalculatorsPage() {
       <h1 className="text-3xl font-bold mb-4">Calculators</h1>
 
       <p className="mb-6 opacity-80">
-        Practical tools to compare setups. These calculators estimate relative efficiency,
-        not exact hidden formulas.
+        Practical tools to compare setups. These calculators estimate relative
+        efficiency, not exact hidden formulas.
       </p>
 
       <ul className="space-y-3 list-disc list-inside">
@@ -19,7 +19,14 @@ export default function CalculatorsPage() {
             Work Speed / Base Throughput Estimator
           </Link>
         </li>
-        <li className="opacity-60">Capture Chance Helper (next)</li>
+        <li>
+          <Link
+            className="underline underline-offset-4"
+            href="/calculators/capture-chance"
+          >
+            Capture Chance Helper
+          </Link>
+        </li>
         <li className="opacity-60">Breeding Planner (later)</li>
       </ul>
     </div>
