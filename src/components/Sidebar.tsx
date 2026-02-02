@@ -1,6 +1,10 @@
 import Link from "next/link";
 
 const sections = [
+    {
+  title: "Start Here",
+  links: [{ href: "/getting-started", label: "Getting Started" }],
+},
   {
     title: "Mechanics",
     links: [
