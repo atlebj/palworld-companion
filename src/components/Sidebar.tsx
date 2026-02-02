@@ -5,27 +5,27 @@ const sections = [
     title: "Mechanics",
     links: [
       { href: "/mechanics/work-speed", label: "Work Speed" },
-      { href: "/mechanics/capture-chance", label: "Capture Chance (soon)" },
-      { href: "/mechanics/damage-formula", label: "Damage Formula (soon)" },
+      { href: "/mechanics/capture-chance", label: "Capture Chance" },
+      { href: "/mechanics/damage-formula", label: "Damage Formula" },
     ],
   },
   {
     title: "Breeding",
     links: [
       { href: "/breeding/trait-inheritance", label: "Trait Inheritance" },
-      { href: "/breeding/passive-skills", label: "Passive Skills (soon)" },
+      { href: "/breeding/passive-skills", label: "Passive Skills" },
     ],
   },
   {
     title: "Bases",
     links: [
-      { href: "/bases/worker-roles", label: "Worker Roles (soon)" },
-      { href: "/bases/pathing-ai", label: "Pathing & AI (soon)" },
+      { href: "/bases/worker-roles", label: "Worker Roles" },
+      { href: "/bases/pathing-ai", label: "Pathing & AI" },
     ],
   },
   {
     title: "Tools",
-    links: [{ href: "/calculators", label: "Calculators (soon)" }],
+    links: [{ href: "/calculators", label: "Calculators" }],
   },
 ];
 
