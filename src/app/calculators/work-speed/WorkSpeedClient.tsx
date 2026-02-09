@@ -13,17 +13,32 @@ function numFromParam(v: string | null, fallback: number) {
   return Number.isFinite(n) ? n : fallback;
 }
 
+function round1(n: number) {
+  return Math.round(n * 10) / 10;
+}
+
+function computePerWorker(
+  baselinePerHour: number,
+  workSpeedBonus: number,
+  uptime: number,
+  taskSwitchPenalty: number
+) {
+  const wsMultiplier = 1 + workSpeedBonus / 100; // +50 => 1.5
+  const uptimeMultiplier = uptime / 100; // 75 => 0.75
+  const penaltyMultiplier = 1 - taskSwitchPenalty / 100; // 10 => 0.9
+  return baselinePerHour * wsMultiplier * uptimeMultiplier * penaltyMultiplier;
+}
+
 export default function WorkSpeedClient() {
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
 
-  // Inputs (simple + practical, not “datamined exact”)
-  const [baselinePerHour, setBaselinePerHour] = useState<number>(60); // items/hour at +0% and 100% uptime
-  const [workSpeedBonus, setWorkSpeedBonus] = useState<number>(0); // e.g. 50 => 50% faster working
-  const [uptime, setUptime] = useState<number>(75); // % of time actually working
-  const [workers, setWorkers] = useState<number>(1); // number of workers doing this task
-  const [taskSwitchPenalty, setTaskSwitchPenalty] = useState<number>(0); // % penalty (0–30 typical)
+  const [baselinePerHour, setBaselinePerHour] = useState<number>(60);
+  const [workSpeedBonus, setWorkSpeedBonus] = useState<number>(0);
+  const [uptime, setUptime] = useState<number>(75);
+  const [workers, setWorkers] = useState<number>(1);
+  const [taskSwitchPenalty, setTaskSwitchPenalty] = useState<number>(0);
 
   // Load once from URL
   useEffect(() => {
@@ -47,21 +62,18 @@ export default function WorkSpeedClient() {
   }, [baselinePerHour, workSpeedBonus, uptime, workers, taskSwitchPenalty, router, pathname]);
 
   const results = useMemo(() => {
-    // Baseline concept:
-    // baselinePerHour assumes: 0% WS bonus, 100% uptime, no switching penalty, per worker.
+    const perWorkerRaw = computePerWorker(
+      baselinePerHour,
+      workSpeedBonus,
+      uptime,
+      taskSwitchPenalty
+    );
 
-    const wsMultiplier = 1 + workSpeedBonus / 100; // 50 => 1.5x working speed
-    const uptimeMultiplier = uptime / 100; // 75% => 0.75
-    const penaltyMultiplier = 1 - taskSwitchPenalty / 100; // 10% => 0.9
+    const perWorker = round1(perWorkerRaw);
+    const total = round1(perWorkerRaw * workers);
 
-    const perWorker = baselinePerHour * wsMultiplier * uptimeMultiplier * penaltyMultiplier;
-    const total = perWorker * workers;
+    const relativePct = Math.round((perWorkerRaw / baselinePerHour) * 100);
 
-    // Compare to “perfect baseline” (same baselinePerHour, 100% uptime, no penalties, 0% bonus)
-    const baselinePerWorkerPerfect = baselinePerHour;
-    const relative = baselinePerWorkerPerfect > 0 ? perWorker / baselinePerWorkerPerfect : 0;
-
-    // Help text
     const mainLimiter =
       uptime < 60
         ? "Uptime is low — role clarity/pathing will beat more Work Speed."
@@ -71,11 +83,78 @@ export default function WorkSpeedClient() {
             ? "Work Speed bonus is modest — passives/food/condensing could help."
             : "Looks solid — next gains usually come from layout + storage placement.";
 
+    // --- Impact analysis: “What should I change first?”
+    const base = perWorkerRaw;
+
+    // Small, realistic “next step” deltas
+    const wsDelta = 20;          // +20% work speed
+    const uptimeDelta = 10;      // +10% uptime
+    const penaltyDelta = 10;     // -10% task switching penalty
+    const workersDelta = 1;      // +1 worker
+
+    const wsImproved = computePerWorker(
+      baselinePerHour,
+      clamp(workSpeedBonus + wsDelta, 0, 400),
+      uptime,
+      taskSwitchPenalty
+    );
+
+    const uptimeImproved = computePerWorker(
+      baselinePerHour,
+      workSpeedBonus,
+      clamp(uptime + uptimeDelta, 0, 100),
+      taskSwitchPenalty
+    );
+
+    const penaltyImproved = computePerWorker(
+      baselinePerHour,
+      workSpeedBonus,
+      uptime,
+      clamp(taskSwitchPenalty - penaltyDelta, 0, 80)
+    );
+
+    const workerAddedTotal = base * (workers + workersDelta);
+
+    const impacts = [
+      {
+        key: "uptime",
+        label: `Increase uptime by +${uptimeDelta}%`,
+        gainPct: pctGain(base, uptimeImproved),
+        note:
+          "Usually improved by roles, shorter paths, closer storage, fewer overlaps.",
+      },
+      {
+        key: "penalty",
+        label: `Reduce task switching penalty by -${penaltyDelta}%`,
+        gainPct: pctGain(base, penaltyImproved),
+        note:
+          "Usually improved by dedicated workers and having transporters handle hauling.",
+      },
+      {
+        key: "workspeed",
+        label: `Increase Work Speed by +${wsDelta}%`,
+        gainPct: pctGain(base, wsImproved),
+        note:
+          "Usually improved by passives, food, condensing, and picking higher suitability.",
+      },
+      {
+        key: "workers",
+        label: `Add +${workersDelta} worker`,
+        gainPct: pctGain(base * workers, workerAddedTotal),
+        note:
+          "Only helps if stations, paths, and storage can support more traffic.",
+      },
+    ].sort((a, b) => b.gainPct - a.gainPct);
+
+    const top = impacts[0];
+
     return {
-      perWorker: round1(perWorker),
-      total: round1(total),
-      relativePct: Math.round(relative * 100),
+      perWorker,
+      total,
+      relativePct,
       mainLimiter,
+      impacts,
+      topRecommendation: top,
     };
   }, [baselinePerHour, workSpeedBonus, uptime, workers, taskSwitchPenalty]);
 
@@ -95,7 +174,7 @@ export default function WorkSpeedClient() {
       <div className="border rounded-2xl p-5 grid gap-5 mb-8">
         <NumberField
           label="Baseline items/hour (per worker)"
-          hint="Your station output at 0% work speed bonus, with 100% uptime. If unsure, keep default."
+          hint="Your station output at 0% Work Speed bonus, with 100% uptime. If unsure, keep default."
           value={baselinePerHour}
           min={1}
           onChange={(n) => setBaselinePerHour(clamp(n, 1, 100000))}
@@ -123,7 +202,7 @@ export default function WorkSpeedClient() {
         <div className="grid md:grid-cols-2 gap-4">
           <NumberField
             label="Workers"
-            hint="How many Pals are doing this same job type in parallel."
+            hint="How many Pals are doing this job type in parallel."
             value={workers}
             min={1}
             max={999}
@@ -150,7 +229,31 @@ export default function WorkSpeedClient() {
           <ResultCard title="Relative to baseline" value={`${results.relativePct}%`} sub="of baseline output" />
         </div>
 
-        <p className="text-sm opacity-80 mb-4">{results.mainLimiter}</p>
+        <p className="text-sm opacity-80 mb-6">{results.mainLimiter}</p>
+
+        {/* ✅ What should I change first */}
+        <div className="border rounded-2xl p-4 mb-5">
+          <div className="font-semibold mb-2">What should I change first?</div>
+          <div className="text-lg">
+            <strong>{results.topRecommendation.label}</strong>{" "}
+            <span className="opacity-80">
+              (≈ +{results.topRecommendation.gainPct}% throughput)
+            </span>
+          </div>
+          <p className="text-sm opacity-80 mt-2">{results.topRecommendation.note}</p>
+
+          <div className="mt-4">
+            <div className="text-sm font-semibold mb-2 opacity-80">Next best improvements</div>
+            <ul className="text-sm space-y-2 list-disc list-inside">
+              {results.impacts.slice(1, 4).map((i) => (
+                <li key={i.key}>
+                  {i.label}{" "}
+                  <span className="opacity-70">(≈ +{i.gainPct}% throughput)</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
 
         <button
           className="border rounded-lg px-3 py-2 text-sm"
@@ -177,8 +280,9 @@ export default function WorkSpeedClient() {
   );
 }
 
-function round1(n: number) {
-  return Math.round(n * 10) / 10;
+function pctGain(base: number, improved: number) {
+  if (base <= 0) return 0;
+  return Math.max(0, Math.round(((improved - base) / base) * 100));
 }
 
 function NumberField({
