@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Script from "next/script";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Sidebar from "../components/Sidebar";
@@ -20,6 +21,8 @@ export const metadata: Metadata = {
     "Clear explanations of Palworld mechanics, breeding systems, base optimization, and hidden formulas.",
 };
 
+const GA_MEASUREMENT_ID = "G-7B77H0BSG3";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -27,9 +30,22 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <head>
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="ga-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_MEASUREMENT_ID}');
+          `}
+        </Script>
+      </head>
+
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <header className="border-b">
           <nav className="max-w-6xl mx-auto p-4 flex gap-4 text-sm items-center">
             <Link href="/" className="font-semibold">
