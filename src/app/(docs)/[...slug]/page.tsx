@@ -97,7 +97,7 @@ export default async function DocPage({
   const related = getRelated(slugParts);
 
   return (
-    <article className="prose max-w-3xl">
+    <article className="prose prose-neutral dark:prose-invert max-w-3xl">
       {/* Page header */}
       <header className="not-prose mb-6">
         <h1 className="text-3xl font-bold tracking-tight">{doc.frontmatter.title}</h1>

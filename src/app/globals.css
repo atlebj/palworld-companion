@@ -1,61 +1,116 @@
 @import "tailwindcss";
 
+/* Light/dark base */
 :root {
   --background: #ffffff;
   --foreground: #171717;
-}
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* subtle surfaces */
+  --muted: #f6f6f6;
+  --border: #e6e6e6;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+
+    --muted: #121212;
+    --border: #232323;
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Prose tweaks for wiki readability */
+/* Keep anchors from hiding behind the fixed header area when using TOC links */
+.prose h2,
+.prose h3,
+.prose h4 {
+  scroll-margin-top: 6.5rem;
+}
+
+/* Better link styling inside prose */
+.prose a {
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+/* --- Wiki-ish typography defaults --- */
 .prose {
-  max-width: 75ch;
+  line-height: 1.7;
 }
 
+/* Headings feel more “documentation” */
 .prose h1 {
   letter-spacing: -0.02em;
 }
-
 .prose h2 {
-  scroll-margin-top: 6rem;
-  margin-top: 2.2em;
-  padding-top: 0.2em;
-  border-top: 1px solid color-mix(in oklab, var(--foreground) 15%, transparent);
+  margin-top: 2.2rem;
+  padding-top: 0.2rem;
+  border-top: 1px solid var(--border);
+}
+.prose h3 {
+  margin-top: 1.6rem;
 }
 
-.prose a {
-  text-decoration-thickness: 2px;
+/* Lists tighter and cleaner */
+.prose ul > li,
+.prose ol > li {
+  margin-top: 0.35rem;
+  margin-bottom: 0.35rem;
 }
 
-.prose ul {
-  padding-left: 1.25em;
-}
-
-.prose li {
-  margin-top: 0.25em;
-}
-
+/* Blockquotes as callouts by default (your > Tip blocks will look nice) */
 .prose blockquote {
-  border-left-width: 4px;
-  border-left-color: color-mix(in oklab, var(--foreground) 25%, transparent);
-  background: color-mix(in oklab, var(--foreground) 6%, transparent);
-  padding: 0.75rem 1rem;
+  border-left: 4px solid var(--border);
+  background: var(--muted);
+  padding: 0.9rem 1rem;
   border-radius: 0.75rem;
+}
+
+/* Inline code + code blocks */
+.prose code {
+  border: 1px solid var(--border);
+  background: var(--muted);
+  padding: 0.12rem 0.35rem;
+  border-radius: 0.4rem;
+  font-size: 0.95em;
+}
+.prose pre {
+  border: 1px solid var(--border);
+  background: var(--muted);
+  border-radius: 0.9rem;
+  padding: 1rem;
+  overflow-x: auto;
+}
+.prose pre code {
+  border: none;
+  background: transparent;
+  padding: 0;
+}
+
+/* --- Optional: explicit callout blocks in MDX --- */
+.callout {
+  border: 1px solid var(--border);
+  background: var(--muted);
+  border-radius: 0.9rem;
+  padding: 0.9rem 1rem;
+  margin: 1rem 0;
+}
+.callout strong {
+  display: inline-block;
+  margin-bottom: 0.25rem;
+}
+.callout.tip {
+  border-left: 4px solid #22c55e;
+}
+.callout.note {
+  border-left: 4px solid #3b82f6;
+}
+.callout.warn {
+  border-left: 4px solid #f59e0b;
 }
