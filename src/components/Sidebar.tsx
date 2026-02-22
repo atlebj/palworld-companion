@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const sections = [
   {
@@ -34,28 +37,35 @@ const sections = [
 ];
 
 export default function Sidebar() {
-  return (
-    <aside className="hidden md:block w-64 shrink-0 border-r">
-      <div className="p-4 sticky top-0">
-        <div className="text-sm font-semibold mb-3 opacity-80">Browse</div>
+  const pathname = usePathname();
 
-        <nav className="space-y-6">
+  return (
+    <aside className="hidden md:block w-64 shrink-0 border-r h-screen sticky top-0 bg-neutral-50 dark:bg-neutral-900/20">
+      <div className="p-6 h-full overflow-y-auto">
+        <nav className="space-y-8">
           {sections.map((sec) => (
             <div key={sec.title}>
-              <div className="text-xs font-semibold uppercase tracking-wide opacity-60 mb-2">
+              <h3 className="text-xs font-semibold uppercase tracking-wider text-neutral-500 mb-3 px-2">
                 {sec.title}
-              </div>
+              </h3>
               <ul className="space-y-1">
-                {sec.links.map((l) => (
-                  <li key={l.href}>
-                    <Link
-                      href={l.href}
-                      className="text-sm hover:underline underline-offset-4"
-                    >
-                      {l.label}
-                    </Link>
-                  </li>
-                ))}
+                {sec.links.map((l) => {
+                  const isActive = pathname === l.href;
+                  return (
+                    <li key={l.href}>
+                      <Link
+                        href={l.href}
+                        className={`block px-3 py-2 text-sm rounded-md transition-all duration-200 ${
+                          isActive
+                            ? "bg-neutral-900 text-white dark:bg-white dark:text-black font-medium"
+                            : "text-neutral-600 dark:text-neutral-400 hover:bg-neutral-100 dark:hover:bg-neutral-800 hover:text-neutral-900 dark:hover:text-neutral-200"
+                        }`}
+                      >
+                        {l.label}
+                      </Link>
+                    </li>
+                  );
+                })}
               </ul>
             </div>
           ))}
