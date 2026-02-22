@@ -3,6 +3,8 @@
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { NumberField } from "../../../components/ui/NumberField";
+import { SelectField } from "../../../components/ui/SelectField";
 
 // ✅ Literal unions via const tuples (prevents "string not assignable" errors)
 const STATUS_VALUES = ["none", "minor", "strong"] as const;
@@ -18,6 +20,7 @@ function clamp(n: number, min: number, max: number) {
 }
 
 function numFromParam(v: string | null, fallback: number) {
+  if (v === null || v === "") return fallback;
   const n = Number(v);
   return Number.isFinite(n) ? n : fallback;
 }
@@ -36,19 +39,13 @@ export default function CaptureChanceClient() {
   const pathname = usePathname();
   const searchParams = useSearchParams();
 
-  const [hp, setHp] = useState<number>(30);
-  const [status, setStatus] = useState<Status>("none");
-  const [sphere, setSphere] = useState<Sphere>("better");
-  const [difficulty, setDifficulty] = useState<Difficulty>("medium");
+  // Initialize state from URL params
+  const [hp, setHp] = useState<number>(() => clamp(numFromParam(searchParams.get("hp"), 30), 0, 100));
+  const [status, setStatus] = useState<Status>(() => oneOf(searchParams.get("st"), STATUS_VALUES, "none"));
+  const [sphere, setSphere] = useState<Sphere>(() => oneOf(searchParams.get("sp"), SPHERE_VALUES, "better"));
+  const [difficulty, setDifficulty] = useState<Difficulty>(() => oneOf(searchParams.get("d"), DIFFICULTY_VALUES, "medium"));
 
-  // Load once from URL
-  useEffect(() => {
-    setHp(clamp(numFromParam(searchParams.get("hp"), 30), 0, 100));
-    setStatus(oneOf(searchParams.get("st"), STATUS_VALUES, "none"));
-    setSphere(oneOf(searchParams.get("sp"), SPHERE_VALUES, "better"));
-    setDifficulty(oneOf(searchParams.get("d"), DIFFICULTY_VALUES, "medium"));
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  const [copied, setCopied] = useState(false);
 
   // Sync URL (shareable link)
   useEffect(() => {
@@ -167,12 +164,14 @@ export default function CaptureChanceClient() {
         <div className="text-lg">{result.verdict}</div>
 
         <button
-          className="border rounded-lg px-3 py-2 text-sm w-fit"
+          className="border rounded-lg px-3 py-2 text-sm w-fit transition-all duration-200"
           onClick={async () => {
             await navigator.clipboard.writeText(window.location.href);
+            setCopied(true);
+            setTimeout(() => setCopied(false), 2000);
           }}
         >
-          Copy shareable link
+          {copied ? "Copied!" : "Copy shareable link"}
         </button>
 
         <p className="text-sm opacity-80">
@@ -183,62 +182,5 @@ export default function CaptureChanceClient() {
         </p>
       </div>
     </div>
-  );
-}
-
-function NumberField({
-  label,
-  value,
-  min,
-  max,
-  onChange,
-}: {
-  label: string;
-  value: number;
-  min?: number;
-  max?: number;
-  onChange: (n: number) => void;
-}) {
-  return (
-    <label className="grid gap-1">
-      <span className="font-semibold text-sm">{label}</span>
-      <input
-        type="number"
-        className="border rounded-lg p-2"
-        value={value}
-        min={min}
-        max={max}
-        onChange={(e) => onChange(Number(e.target.value))}
-      />
-    </label>
-  );
-}
-
-function SelectField<T extends string>({
-  label,
-  value,
-  onChange,
-  options,
-}: {
-  label: string;
-  value: T;
-  onChange: (v: T) => void;
-  options: Array<[T, string]>;
-}) {
-  return (
-    <label className="grid gap-1">
-      <span className="font-semibold text-sm">{label}</span>
-      <select
-        className="border rounded-lg p-2"
-        value={value}
-        onChange={(e) => onChange(e.target.value as T)}
-      >
-        {options.map(([v, l]) => (
-          <option key={v} value={v}>
-            {l}
-          </option>
-        ))}
-      </select>
-    </label>
   );
 }
