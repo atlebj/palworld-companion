@@ -4,6 +4,7 @@ import matter from "gray-matter";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { MDXRemote } from "next-mdx-remote/rsc";
+import remarkGfm from "remark-gfm";
 
 type RouteParams = { slug?: string[] };
 
@@ -96,6 +97,8 @@ export default async function DocPage({
   const updated = formatUpdated(doc.frontmatter.updated);
   const related = getRelated(slugParts);
 
+  console.log("remarkGfm plugin:", remarkGfm);
+
   return (
     <article className="prose prose-neutral dark:prose-invert max-w-3xl">
       {/* Page header */}
@@ -112,7 +115,15 @@ export default async function DocPage({
       </header>
 
       {/* MDX body */}
-      <MDXRemote source={doc.content} />
+      <MDXRemote
+        source={doc.content}
+        options={{
+          mdxOptions: {
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            remarkPlugins: [remarkGfm as any],
+          },
+        }}
+      />
 
       {/* Related links */}
       {related.length > 0 ? (

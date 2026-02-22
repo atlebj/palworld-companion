@@ -14,6 +14,8 @@ const sections = [
       { href: "/mechanics/work-speed", label: "Work Speed" },
       { href: "/mechanics/capture-chance", label: "Capture Chance" },
       { href: "/mechanics/damage-formula", label: "Damage Formula" },
+      { href: "/mechanics/pvp-arena", label: "PvP Arena Meta" },
+      { href: "/mechanics/oil-rig-stronghold", label: "Oil Rig Stronghold" },
     ],
   },
   {
