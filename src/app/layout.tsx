@@ -30,7 +30,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
           strategy="afterInteractive"
@@ -43,9 +43,6 @@ export default function RootLayout({
             gtag('config', '${GA_MEASUREMENT_ID}');
           `}
         </Script>
-      </head>
-
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <header className="border-b">
           <nav className="max-w-6xl mx-auto p-4 flex gap-4 text-sm items-center">
             <Link href="/" className="font-semibold">

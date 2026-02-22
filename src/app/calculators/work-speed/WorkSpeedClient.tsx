@@ -3,12 +3,15 @@
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { NumberField } from "../../../components/ui/NumberField";
+import { ResultCard } from "../../../components/ui/ResultCard";
 
 function clamp(n: number, min: number, max: number) {
   return Math.min(max, Math.max(min, n));
 }
 
 function numFromParam(v: string | null, fallback: number) {
+  if (v === null || v === "") return fallback;
   const n = Number(v);
   return Number.isFinite(n) ? n : fallback;
 }
@@ -29,26 +32,23 @@ function computePerWorker(
   return baselinePerHour * wsMultiplier * uptimeMultiplier * penaltyMultiplier;
 }
 
+function pctGain(base: number, improved: number) {
+  if (base <= 0) return 0;
+  return Math.max(0, Math.round(((improved - base) / base) * 100));
+}
+
 export default function WorkSpeedClient() {
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
 
-  const [baselinePerHour, setBaselinePerHour] = useState<number>(60);
-  const [workSpeedBonus, setWorkSpeedBonus] = useState<number>(0);
-  const [uptime, setUptime] = useState<number>(75);
-  const [workers, setWorkers] = useState<number>(1);
-  const [taskSwitchPenalty, setTaskSwitchPenalty] = useState<number>(0);
+  const [baselinePerHour, setBaselinePerHour] = useState<number>(() => clamp(numFromParam(searchParams.get("b"), 60), 1, 100000));
+  const [workSpeedBonus, setWorkSpeedBonus] = useState<number>(() => clamp(numFromParam(searchParams.get("ws"), 0), 0, 400));
+  const [uptime, setUptime] = useState<number>(() => clamp(numFromParam(searchParams.get("u"), 75), 0, 100));
+  const [workers, setWorkers] = useState<number>(() => clamp(numFromParam(searchParams.get("w"), 1), 1, 999));
+  const [taskSwitchPenalty, setTaskSwitchPenalty] = useState<number>(() => clamp(numFromParam(searchParams.get("p"), 0), 0, 80));
 
-  // Load once from URL
-  useEffect(() => {
-    setBaselinePerHour(clamp(numFromParam(searchParams.get("b"), 60), 1, 100000));
-    setWorkSpeedBonus(clamp(numFromParam(searchParams.get("ws"), 0), 0, 400));
-    setUptime(clamp(numFromParam(searchParams.get("u"), 75), 0, 100));
-    setWorkers(clamp(numFromParam(searchParams.get("w"), 1), 1, 999));
-    setTaskSwitchPenalty(clamp(numFromParam(searchParams.get("p"), 0), 0, 80));
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  const [copied, setCopied] = useState(false);
 
   // Sync URL for sharing
   useEffect(() => {
@@ -256,12 +256,14 @@ export default function WorkSpeedClient() {
         </div>
 
         <button
-          className="border rounded-lg px-3 py-2 text-sm"
+          className="border rounded-lg px-3 py-2 text-sm transition-all duration-200"
           onClick={async () => {
             await navigator.clipboard.writeText(window.location.href);
+            setCopied(true);
+            setTimeout(() => setCopied(false), 2000);
           }}
         >
-          Copy shareable link
+          {copied ? "Copied!" : "Copy shareable link"}
         </button>
 
         <p className="text-sm opacity-80 mt-4">
@@ -276,52 +278,6 @@ export default function WorkSpeedClient() {
           .
         </p>
       </div>
-    </div>
-  );
-}
-
-function pctGain(base: number, improved: number) {
-  if (base <= 0) return 0;
-  return Math.max(0, Math.round(((improved - base) / base) * 100));
-}
-
-function NumberField({
-  label,
-  hint,
-  value,
-  min,
-  max,
-  onChange,
-}: {
-  label: string;
-  hint?: string;
-  value: number;
-  min?: number;
-  max?: number;
-  onChange: (n: number) => void;
-}) {
-  return (
-    <label className="grid gap-1">
-      <span className="font-semibold text-sm">{label}</span>
-      {hint ? <span className="text-xs opacity-70">{hint}</span> : null}
-      <input
-        type="number"
-        className="border rounded-lg p-2"
-        value={value}
-        min={min}
-        max={max}
-        onChange={(e) => onChange(Number(e.target.value))}
-      />
-    </label>
-  );
-}
-
-function ResultCard({ title, value, sub }: { title: string; value: string; sub: string }) {
-  return (
-    <div className="border rounded-2xl p-4">
-      <div className="text-sm opacity-70 mb-1">{title}</div>
-      <div className="text-3xl font-bold leading-tight">{value}</div>
-      <div className="text-sm opacity-70">{sub}</div>
     </div>
   );
 }
