@@ -90,7 +90,7 @@ export default function IVCalculator() {
             max={50}
           />
 
-          <div className="grid grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <NumberField label="Current HP" value={hp} onChange={setHp} />
             <NumberField label="Current Attack" value={attack} onChange={setAttack} />
             <NumberField label="Current Defense" value={defense} onChange={setDefense} />
@@ -98,19 +98,15 @@ export default function IVCalculator() {
 
           <div>
             <label className="block text-sm font-semibold mb-2">Passives (Affect Stats)</label>
-            <div className="grid grid-cols-2 gap-2">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {[0, 1, 2, 3].map((i) => (
-                <div key={i}>
-                  <select
-                    className="w-full px-2 py-1 bg-slate-900 border border-slate-700 rounded text-sm"
-                    value={selectedPassiveKeys[i]}
-                    onChange={(e) => handlePassiveChange(i, e.target.value)}
-                  >
-                    {passiveOptions.map(([val, label]) => (
-                      <option key={val} value={val}>{label}</option>
-                    ))}
-                  </select>
-                </div>
+                <SelectField
+                  key={i}
+                  label={`Passive Slot ${i + 1}`}
+                  value={selectedPassiveKeys[i]}
+                  onChange={(val) => handlePassiveChange(i, val)}
+                  options={passiveOptions}
+                />
               ))}
             </div>
           </div>
