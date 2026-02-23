@@ -48,7 +48,7 @@ export default function ResourceMap() {
       <div className="flex flex-col md:flex-row justify-between items-center mb-6 gap-4">
         <div>
           <h1 className="text-3xl font-bold">Interactive Resource Map</h1>
-          <p className="text-slate-400">Find key resources across Palpagos Islands.</p>
+          <p className="text-slate-600">Find key resources across Palpagos Islands.</p>
         </div>
 
         <div className="flex gap-2">
@@ -60,7 +60,7 @@ export default function ResourceMap() {
                 px-3 py-1.5 rounded-full text-sm font-medium border transition-all
                 ${filters[type]
                   ? `${typeConfig[type].color} text-white border-transparent shadow-lg ${typeConfig[type].shadow}`
-                  : 'bg-slate-800 border-slate-700 text-slate-400 hover:border-slate-500'}
+                  : 'bg-slate-800 border-slate-700 text-slate-300 hover:border-slate-500'}
               `}
             >
               {typeConfig[type].icon} {typeConfig[type].label}
@@ -78,7 +78,7 @@ export default function ResourceMap() {
             ))}
         </div>
 
-        <div className="absolute top-4 left-4 text-slate-600 text-xs font-mono">
+        <div className="absolute top-4 left-4 text-slate-500 text-xs font-mono">
             PALPAGOS_NAV_SYS_V2.0 // NO_SIGNAL
         </div>
 

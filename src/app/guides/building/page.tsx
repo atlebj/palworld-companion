@@ -4,7 +4,7 @@ export default function BuildingGuides() {
   return (
     <div className="max-w-4xl mx-auto py-12 px-4">
       <h1 className="text-3xl font-bold mb-8">Build Guides & Architecture</h1>
-      <p className="text-slate-400 mb-8">Master base building with optimized layouts and aesthetic designs.</p>
+      <p className="text-slate-600 mb-8">Master base building with optimized layouts and aesthetic designs.</p>
 
       <div className="grid md:grid-cols-2 gap-6">
         <Link href="/guides/building/ore-farm" className="block group">
@@ -25,7 +25,7 @@ export default function BuildingGuides() {
         </Link>
 
         {/* Placeholder for more guides */}
-        <div className="bg-slate-900/50 border border-slate-800 rounded-xl p-6 flex items-center justify-center text-slate-600 border-dashed">
+        <div className="bg-slate-900/50 border border-slate-800 rounded-xl p-6 flex items-center justify-center text-slate-400 border-dashed">
            <p>More guides coming soon...</p>
         </div>
       </div>

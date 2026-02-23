@@ -4,7 +4,7 @@ export default function PatchNotes() {
   return (
     <div className="max-w-4xl mx-auto py-12 px-4">
       <h1 className="text-3xl font-bold mb-8">Patch Notes & Meta Analysis</h1>
-      <p className="text-slate-400 mb-8">Not just changes—understand how updates impact the gameplay meta.</p>
+      <p className="text-slate-600 mb-8">Not just changes—understand how updates impact the gameplay meta.</p>
 
       <div className="space-y-6">
         <Link href="/patch-notes/v0.1.5-meta" className="block group">
@@ -22,7 +22,7 @@ export default function PatchNotes() {
         </Link>
 
         {/* Placeholder for previous patches */}
-        <div className="bg-slate-900/50 p-6 rounded-xl border border-slate-800 text-slate-500 italic text-center">
+        <div className="bg-slate-900/50 p-6 rounded-xl border border-slate-800 text-slate-400 italic text-center">
             Older patch analyses archived.
         </div>
       </div>
