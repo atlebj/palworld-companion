@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Link from 'next/link';
 import { useUserPals } from '../../../hooks/useUserPals';
 import { pals } from '../../../data/pals';
 import { findBreedingPath, PathStep } from '../../../utils/breedingPathfinder';
@@ -65,8 +66,11 @@ export default function BreedingPathfinder() {
               <span className="text-xs bg-slate-700 text-slate-300 px-2 py-0.5 rounded-full">{availableKeys.length}</span>
             </h2>
 
-            <div className="text-sm text-slate-400 mb-4">
-              Includes {savedPals.length} from your box.
+            <div className="text-sm text-slate-400 mb-4 flex items-center justify-between">
+              <span>Includes {savedPals.length} from your box.</span>
+              <Link href="/my-pals" className="text-sky-400 hover:text-sky-300 underline font-semibold text-xs">
+                Manage Box →
+              </Link>
             </div>
 
             <div className="space-y-2">

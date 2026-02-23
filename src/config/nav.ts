@@ -13,7 +13,8 @@ import {
   Map as MapIcon,
   CheckSquare,
   Search,
-  LayoutTemplate
+  LayoutTemplate,
+  Package
 } from "lucide-react";
 import React from "react";
 
@@ -177,6 +178,12 @@ export const sections: NavSection[] = [
         label: "Base Efficiency",
         icon: LayoutTemplate,
         description: "Analyze your base's production efficiency."
+      },
+      {
+        href: "/my-pals",
+        label: "My Pal Box",
+        icon: Package,
+        description: "Manage your saved Pals for breeding."
       },
       {
         href: "/calculators/breeding",
