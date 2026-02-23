@@ -4,6 +4,7 @@ import Script from "next/script";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Sidebar from "../components/Sidebar";
+import Search from "../components/Search";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -50,6 +51,9 @@ export default function RootLayout({
             </Link>
             <Link href="/mechanics/work-speed">Mechanics</Link>
             <Link href="/breeding/trait-inheritance">Breeding</Link>
+            <div className="ml-auto">
+              <Search />
+            </div>
           </nav>
         </header>
 
