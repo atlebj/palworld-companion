@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Image from 'next/image';
 
 type LocationType = 'ore' | 'skill_fruit' | 'chest';
 
@@ -13,13 +14,21 @@ interface MapLocation {
   desc?: string;
 }
 
+// Updated locations to match the biome map layout
 const locations: MapLocation[] = [
-  { id: '1', type: 'ore', x: 20, y: 30, label: 'Ore Cluster (x8)', desc: 'Near Desolate Church' },
-  { id: '2', type: 'ore', x: 45, y: 50, label: 'Coal & Ore', desc: 'Mount Obsidian Base Location' },
-  { id: '3', type: 'skill_fruit', x: 60, y: 20, label: 'Skill Fruit Tree', desc: 'Snowy Mountain Peak' },
-  { id: '4', type: 'chest', x: 80, y: 80, label: 'Gold Chest', desc: 'Sanctuary Island' },
-  { id: '5', type: 'ore', x: 15, y: 70, label: 'Sulfur Deposits', desc: 'Volcano Entrance' },
-  { id: '6', type: 'chest', x: 50, y: 50, label: 'Purple Chest', desc: 'Central Lake' },
+  // Forest / Starter (Windswept Hills)
+  { id: '1', type: 'ore', x: 50, y: 58, label: 'Ore Cluster (x8)', desc: 'Desolate Church' },
+  { id: '6', type: 'chest', x: 45, y: 50, label: 'Purple Chest', desc: 'Central Lake' },
+
+  // Volcano (Mount Obsidian) - SW
+  { id: '2', type: 'ore', x: 15, y: 85, label: 'Coal & Ore', desc: 'Mount Obsidian Base Location' },
+  { id: '5', type: 'ore', x: 12, y: 75, label: 'Sulfur Deposits', desc: 'Volcano Entrance' },
+
+  // Snow (Astral Mountains) - NW
+  { id: '3', type: 'skill_fruit', x: 25, y: 16, label: 'Skill Fruit Tree', desc: 'Snowy Mountain Peak' },
+
+  // Sanctuary / Eastern Wild - East
+  { id: '4', type: 'chest', x: 75, y: 58, label: 'Gold Chest', desc: 'Sanctuary Island' },
 ];
 
 const typeConfig = {
@@ -48,7 +57,9 @@ export default function ResourceMap() {
       <div className="flex flex-col md:flex-row justify-between items-center mb-6 gap-4">
         <div>
           <h1 className="text-3xl font-bold">Interactive Resource Map</h1>
-          <p className="text-slate-600">Find key resources across Palpagos Islands.</p>
+          <p className="text-slate-600 dark:text-slate-400">
+            Find key resources across Palpagos Islands.
+          </p>
         </div>
 
         <div className="flex gap-2">
@@ -70,16 +81,18 @@ export default function ResourceMap() {
       </div>
 
       <div className="flex-1 relative bg-slate-900 rounded-xl border border-slate-700 overflow-hidden shadow-2xl">
-        {/* Placeholder Map Background */}
-        <div className="absolute inset-0 opacity-10 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-slate-700 via-slate-900 to-black pointer-events-none"></div>
-        <div className="absolute inset-0 grid grid-cols-12 grid-rows-[12] pointer-events-none opacity-5">
-            {Array.from({ length: 144 }).map((_, i) => (
-                <div key={i} className="border border-slate-500"></div>
-            ))}
+        {/* Map Background */}
+        <div className="absolute inset-0 bg-[#0f172a]">
+          <Image
+            src="/images/map-placeholder.svg"
+            alt="Palpagos Islands Map"
+            fill
+            className="object-cover opacity-80"
+          />
         </div>
 
-        <div className="absolute top-4 left-4 text-slate-500 text-xs font-mono">
-            PALPAGOS_NAV_SYS_V2.0 // NO_SIGNAL
+        <div className="absolute top-4 left-4 text-slate-500 text-xs font-mono bg-slate-900/50 px-2 py-1 rounded border border-slate-700/50 backdrop-blur-sm">
+            PALPAGOS_NAV // ONLINE
         </div>
 
         {/* Pins */}
