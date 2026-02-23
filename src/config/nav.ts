@@ -1,7 +1,17 @@
 export const sections = [
   {
     title: "Start Here",
-    links: [{ href: "/getting-started", label: "Getting Started" }],
+    links: [
+      { href: "/getting-started", label: "Getting Started" },
+      { href: "/patch-notes", label: "Patch Notes & Meta" },
+    ],
+  },
+  {
+    title: "Game Guides",
+    links: [
+      { href: "/guides/building", label: "Build Guides & Architecture" },
+      { href: "/guides/raids", label: "Raid Strategy" },
+    ],
   },
   {
     title: "Mechanics",
@@ -30,6 +40,8 @@ export const sections = [
   {
     title: "Tools",
     links: [
+      { href: "/checklist", label: "Daily/Weekly Checklist" },
+      { href: "/map", label: "Interactive Resource Map" },
       { href: "/calculators/damage", label: "Damage Calculator" },
       { href: "/calculators/capture-chance", label: "Capture Chance" },
       { href: "/calculators/work-speed", label: "Work Speed" },

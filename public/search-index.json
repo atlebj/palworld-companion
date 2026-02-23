@@ -30,6 +30,16 @@
     "description": "A practical starting guide to Palworld systems: mechanics, breeding, base setup, and how to use this wiki effectively."
   },
   {
+    "slug": "/guides/building/ore-farm",
+    "title": "Automated Ore Farm Blueprint",
+    "description": "Maximize your ore production with this efficient base layout."
+  },
+  {
+    "slug": "/guides/raids/libero",
+    "title": "Bellanoir Libero Raid Guide",
+    "description": "Master the ultra-difficult raid with this comprehensive strategy."
+  },
+  {
     "slug": "/mechanics/capture-chance",
     "title": "Capture Chance Explained",
     "description": "How capture chance works in Palworld: the factors that matter (HP, status effects, sphere tier) and a practical strategy to catch harder Pals."
@@ -53,5 +63,10 @@
     "slug": "/mechanics/work-speed",
     "title": "Work Speed Explained",
     "description": "How Work Speed actually works in Palworld—what it affects, what it doesn’t, and how to optimize base productivity."
+  },
+  {
+    "slug": "/patch-notes/v0.1.5-meta",
+    "title": "Patch v0.1.5 Meta Analysis",
+    "description": "Why the Fire Pal nerf changes everything, and how to adapt."
   }
 ]
