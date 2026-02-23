@@ -5,6 +5,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import remarkGfm from "remark-gfm";
+import rehypeSlug from "rehype-slug";
+import rehypeAutolinkHeadings from "rehype-autolink-headings";
 
 type RouteParams = { slug?: string[] };
 
@@ -121,6 +123,8 @@ export default async function DocPage({
           mdxOptions: {
             // eslint-disable-next-line @typescript-eslint/no-explicit-any
             remarkPlugins: [remarkGfm as any],
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            rehypePlugins: [rehypeSlug as any, rehypeAutolinkHeadings as any],
           },
         }}
       />
