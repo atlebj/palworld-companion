@@ -17,7 +17,7 @@ export const sections = [
     title: "Breeding",
     links: [
       { href: "/breeding/trait-inheritance", label: "Trait Inheritance" },
-      { href: "/breeding/passive-skills", label: "Passive Skills" },
+      { href: "/breeding/passive-skills", label: "Passive Skills Info" },
     ],
   },
   {
@@ -33,6 +33,10 @@ export const sections = [
       { href: "/calculators/damage", label: "Damage Calculator" },
       { href: "/calculators/capture-chance", label: "Capture Chance" },
       { href: "/calculators/work-speed", label: "Work Speed" },
+      { href: "/calculators/iv", label: "IV Calculator" },
+      { href: "/calculators/base-efficiency", label: "Base Efficiency" },
+      { href: "/calculators/breeding", label: "Breeding Pathfinder" },
+      { href: "/pals/passives", label: "Passives Search" },
     ],
   },
 ];
