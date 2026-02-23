@@ -99,10 +99,24 @@ export default async function DocPage({
   const updated = formatUpdated(doc.frontmatter.updated);
   const related = getRelated(slugParts);
 
-  console.log("remarkGfm plugin:", remarkGfm);
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: doc.frontmatter.title,
+    description: doc.frontmatter.description,
+    dateModified: updated ? new Date(updated).toISOString() : undefined,
+    author: {
+      "@type": "Person",
+      name: "Palworld Companion Team",
+    },
+  };
 
   return (
     <article className="prose prose-neutral dark:prose-invert max-w-3xl">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       {/* Page header */}
       <header className="not-prose mb-6">
         <h1 className="text-3xl font-bold tracking-tight">{doc.frontmatter.title}</h1>
