@@ -4,7 +4,7 @@ export default function RaidGuides() {
   return (
     <div className="max-w-4xl mx-auto py-12 px-4">
       <h1 className="text-3xl font-bold mb-8">Raid Strategy Guides</h1>
-      <p className="text-slate-400 mb-8">Detailed walkthroughs for high-level raid bosses and dungeons.</p>
+      <p className="text-slate-600 mb-8">Detailed walkthroughs for high-level raid bosses and dungeons.</p>
 
       <div className="space-y-4">
         <Link href="/guides/raids/libero" className="block p-6 rounded-xl bg-slate-800 border border-slate-700 hover:border-red-500 hover:shadow-red-500/10 transition-all group">
@@ -18,7 +18,7 @@ export default function RaidGuides() {
             </div>
         </Link>
 
-        <div className="p-6 rounded-xl bg-slate-900/50 border border-slate-800 border-dashed text-slate-500">
+        <div className="p-6 rounded-xl bg-slate-900/50 border border-slate-800 border-dashed text-slate-400">
            More raids (Blazamut Ryu) coming soon...
         </div>
       </div>

@@ -69,13 +69,13 @@ export default function ChecklistPage() {
       <div className="flex justify-between items-end mb-8">
         <div>
           <h1 className="text-3xl font-bold mb-2">Daily/Weekly Checklist</h1>
-          <p className="text-slate-400">
+          <p className="text-slate-600">
             Keep track of limited-time activities and resets.
           </p>
         </div>
         <button
           onClick={resetAll}
-          className="text-sm text-sky-400 hover:text-sky-300 font-medium"
+          className="text-sm text-sky-500 hover:text-sky-600 font-medium"
         >
           Reset All
         </button>
@@ -107,10 +107,10 @@ export default function ChecklistPage() {
             </div>
 
             <div className="flex-1">
-              <h3 className={`font-semibold ${item.checked ? 'text-slate-500 line-through' : 'text-slate-100'}`}>
+              <h3 className={`font-semibold ${item.checked ? 'text-slate-400 line-through' : 'text-slate-100'}`}>
                 {item.label}
               </h3>
-              <p className="text-xs text-slate-500 uppercase tracking-wider font-bold mt-0.5">
+              <p className="text-xs text-slate-400 uppercase tracking-wider font-bold mt-0.5">
                 Resets: {item.resetTime}
               </p>
             </div>
