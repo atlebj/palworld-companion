@@ -59,14 +59,14 @@ export default function BreedingPathfinder() {
 
       <div className="grid gap-8 lg:grid-cols-3">
         {/* Left Column: Input */}
-        <div className="lg:col-span-1 space-y-6 bg-slate-800/50 p-6 rounded-lg border border-slate-700 h-fit">
+        <div className="lg:col-span-1 space-y-6 bg-slate-800 p-6 rounded-lg border border-slate-700 h-fit">
           <div>
             <h2 className="text-xl font-bold text-sky-400 mb-4 flex items-center gap-2">
               <span>Your Roster</span>
-              <span className="text-xs bg-slate-700 text-slate-300 px-2 py-0.5 rounded-full">{availableKeys.length}</span>
+              <span className="text-xs bg-slate-700 text-slate-200 px-2 py-0.5 rounded-full">{availableKeys.length}</span>
             </h2>
 
-            <div className="text-sm text-slate-400 mb-4 flex items-center justify-between">
+            <div className="text-sm text-slate-300 mb-4 flex items-center justify-between">
               <span>Includes {savedPals.length} from your box.</span>
               <Link href="/my-pals" className="text-sky-400 hover:text-sky-300 underline font-semibold text-xs">
                 Manage Box →
@@ -74,7 +74,7 @@ export default function BreedingPathfinder() {
             </div>
 
             <div className="space-y-2">
-              <label className="text-xs font-bold text-slate-400 uppercase tracking-wider">Add Temporary Pal</label>
+              <label className="text-xs font-bold text-slate-300 uppercase tracking-wider">Add Temporary Pal</label>
               <select
                 className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded-lg text-sm text-slate-100 focus:ring-2 focus:ring-sky-500"
                 onChange={(e) => {
@@ -126,7 +126,7 @@ export default function BreedingPathfinder() {
             disabled={searching || availableKeys.length === 0}
             className={`
               w-full py-3 px-4 font-bold rounded-lg shadow-lg transition-all transform active:scale-95
-              ${availableKeys.length === 0 ? 'bg-slate-700 text-slate-500 cursor-not-allowed' :
+              ${availableKeys.length === 0 ? 'bg-slate-700 text-slate-400 cursor-not-allowed' :
                 searching ? 'bg-sky-700 text-sky-300 cursor-wait' :
                 'bg-sky-600 hover:bg-sky-500 text-white shadow-sky-900/20'}
             `}
@@ -137,7 +137,7 @@ export default function BreedingPathfinder() {
 
         {/* Right Column: Result */}
         <div className="lg:col-span-2">
-          <div className="bg-slate-800/50 p-6 rounded-lg border border-slate-700 min-h-[500px]">
+          <div className="bg-slate-800 p-6 rounded-lg border border-slate-700 min-h-[500px]">
             <h2 className="text-xl font-bold text-sky-400 mb-6 border-b border-slate-700 pb-4">
               Breeding Chain
             </h2>
@@ -153,7 +153,7 @@ export default function BreedingPathfinder() {
             )}
 
             {!path && !searching && !error && (
-              <div className="flex flex-col items-center justify-center h-[300px] text-slate-400">
+              <div className="flex flex-col items-center justify-center h-[300px] text-slate-300">
                 <div className="text-4xl mb-4 opacity-30">🧬</div>
                 <p>Select your available Pals and a target to start.</p>
               </div>
