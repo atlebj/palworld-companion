@@ -79,7 +79,7 @@ export default function PassiveSearch() {
             <div className="space-y-1 pt-3 border-t border-slate-200 dark:border-white/5">
               {Object.entries(passive.stats).map(([stat, val]) => (
                 <div key={stat} className="flex justify-between text-xs">
-                  <span className="capitalize text-slate-500 dark:text-slate-500">{stat.replace(/([A-Z])/g, ' $1').trim()}</span>
+                  <span className="capitalize text-slate-500 dark:text-slate-400">{stat.replace(/([A-Z])/g, ' $1').trim()}</span>
                   <span className={`font-mono font-bold ${val! > 0 ? 'text-green-600 dark:text-green-400' : 'text-red-600 dark:text-red-400'}`}>
                     {val! > 0 ? '+' : ''}{val! * 100}%
                   </span>
@@ -91,7 +91,7 @@ export default function PassiveSearch() {
       </div>
 
       {filteredPassives.length === 0 && (
-        <div className="text-center py-12 text-slate-500">
+        <div className="text-center py-12 text-slate-500 dark:text-slate-400">
           No passives found matching &quot;{search}&quot;
         </div>
       )}
