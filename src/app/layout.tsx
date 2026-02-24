@@ -5,6 +5,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Sidebar from "../components/Sidebar";
 import Search from "../components/Search";
+import MobileNav from "../components/MobileNav";
+import Breadcrumbs from "../components/Breadcrumbs";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -57,10 +59,14 @@ export default function RootLayout({
           </nav>
         </header>
 
-        <div className="max-w-6xl mx-auto flex">
+        <div className="max-w-6xl mx-auto flex pb-16 md:pb-0">
           <Sidebar />
-          <main className="flex-1 p-6">{children}</main>
+          <main className="flex-1 p-6">
+            <Breadcrumbs />
+            {children}
+          </main>
         </div>
+        <MobileNav />
       </body>
     </html>
   );
