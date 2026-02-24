@@ -46,6 +46,12 @@ export const sections: NavSection[] = [
         icon: FileText,
         description: "Stay up to date with the latest game updates and meta shifts."
       },
+      {
+        href: "/faq",
+        label: "FAQ / Help",
+        icon: CheckSquare,
+        description: "Common questions and tool guides."
+      },
     ],
   },
   {
