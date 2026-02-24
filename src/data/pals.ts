@@ -28,6 +28,7 @@ export interface PalData {
   suitability: WorkSuitability;
   breedingPower: number;
   description: string;
+  image: string;
 }
 
 export const pals: PalData[] = [
@@ -40,6 +41,7 @@ export const pals: PalData[] = [
     suitability: { handiwork: 1, transporting: 1, farming: 1 },
     breedingPower: 1470,
     description: "A ball of wool. It rolls down slopes when threatened.",
+    image: '/images/pals/lamball.png',
   },
   {
     id: 2,
@@ -50,6 +52,7 @@ export const pals: PalData[] = [
     suitability: { handiwork: 1, gathering: 1, mining: 1, transporting: 1 },
     breedingPower: 1460,
     description: "A cowardly cat. It pretends to be tough but runs away easily.",
+    image: '/images/pals/cattiva.png',
   },
   {
     id: 3,
@@ -60,6 +63,7 @@ export const pals: PalData[] = [
     suitability: { gathering: 1, farming: 1 },
     breedingPower: 1500,
     description: "A chicken. It lays eggs regularly.",
+    image: '/images/pals/chikipi.png',
   },
   {
     id: 100,
@@ -70,6 +74,7 @@ export const pals: PalData[] = [
     suitability: { handiwork: 4, mining: 3, transporting: 2 },
     breedingPower: 570,
     description: "Guardian of the desert. Known for its exceptional crafting speed.",
+    image: '/images/pals/anubis.png',
   },
   {
     id: 101,
@@ -80,6 +85,7 @@ export const pals: PalData[] = [
     suitability: { watering: 4 },
     breedingPower: 310,
     description: "Emperor of the sea. Its watering capabilities are unmatched.",
+    image: '/images/pals/jormuntide.png',
   },
   {
     id: 110,
@@ -90,6 +96,7 @@ export const pals: PalData[] = [
     suitability: { gathering: 4 },
     breedingPower: 120, // Very rare
     description: "A legendary steed of darkness.",
+    image: '/images/pals/frostallion_noct.png',
   },
   {
     id: 111,
@@ -100,5 +107,6 @@ export const pals: PalData[] = [
     suitability: { gathering: 3 },
     breedingPower: 10, // Rarest
     description: "A legendary dragon capable of high-speed flight.",
+    image: '/images/pals/jetragon.png',
   }
 ];
