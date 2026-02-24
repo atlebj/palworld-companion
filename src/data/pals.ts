@@ -19,6 +19,11 @@ export interface WorkSuitability {
   farming?: number;
 }
 
+export interface PartnerSkill {
+  name: string;
+  description: string;
+}
+
 export interface PalData {
   id: number;
   key: string;
@@ -29,6 +34,9 @@ export interface PalData {
   breedingPower: number;
   description: string;
   image: string;
+  drops: string[];
+  partnerSkill: PartnerSkill;
+  food: number;
 }
 
 export const pals: PalData[] = [
@@ -42,6 +50,12 @@ export const pals: PalData[] = [
     breedingPower: 1470,
     description: "A ball of wool. It rolls down slopes when threatened.",
     image: '/images/pals/lamball.svg',
+    drops: ['Wool', 'Lamball Mutton'],
+    partnerSkill: {
+      name: 'Fluffy Shield',
+      description: 'When activated, equips to the player and becomes a shield. Sometimes drops Wool when assigned to a Ranch.',
+    },
+    food: 2,
   },
   {
     id: 2,
@@ -53,6 +67,12 @@ export const pals: PalData[] = [
     breedingPower: 1460,
     description: "A cowardly cat. It pretends to be tough but runs away easily.",
     image: '/images/pals/cattiva.svg',
+    drops: ['Red Berries'],
+    partnerSkill: {
+      name: 'Cat Helper',
+      description: 'While in team, helps carry supplies, increasing the player\'s max carrying capacity.',
+    },
+    food: 2,
   },
   {
     id: 3,
@@ -64,6 +84,12 @@ export const pals: PalData[] = [
     breedingPower: 1500,
     description: "A chicken. It lays eggs regularly.",
     image: '/images/pals/chikipi.svg',
+    drops: ['Egg', 'Poultry'],
+    partnerSkill: {
+      name: 'Egg Layer',
+      description: 'Sometimes lays an Egg when assigned to a Ranch.',
+    },
+    food: 1,
   },
   {
     id: 100,
@@ -75,6 +101,12 @@ export const pals: PalData[] = [
     breedingPower: 570,
     description: "Guardian of the desert. Known for its exceptional crafting speed.",
     image: '/images/pals/anubis.svg',
+    drops: ['Bone', 'Large Pal Soul', 'Innovative Technical Manual'],
+    partnerSkill: {
+      name: 'Guardian of the Desert',
+      description: 'While fighting together, applies Ground damage to the player\'s attacks. Occasionally dodges attacks with a high-speed sidestep.',
+    },
+    food: 6,
   },
   {
     id: 101,
@@ -86,6 +118,12 @@ export const pals: PalData[] = [
     breedingPower: 310,
     description: "Emperor of the sea. Its watering capabilities are unmatched.",
     image: '/images/pals/jormuntide.svg',
+    drops: ['Pal Fluids'],
+    partnerSkill: {
+      name: 'Stormbringer of the Sea',
+      description: 'Can be ridden to travel on water. While mounted, stamina does not deplete while moving over water.',
+    },
+    food: 7,
   },
   {
     id: 110,
@@ -97,6 +135,12 @@ export const pals: PalData[] = [
     breedingPower: 120, // Very rare
     description: "A legendary steed of darkness.",
     image: '/images/pals/frostallion_noct.svg',
+    drops: ['Pure Quartz', 'Large Pal Soul'],
+    partnerSkill: {
+      name: 'Black Steed',
+      description: 'Can be ridden as a flying mount. Changes the player\'s attack type to Dark and enhances Dark attacks while mounted.',
+    },
+    food: 8,
   },
   {
     id: 111,
@@ -108,5 +152,11 @@ export const pals: PalData[] = [
     breedingPower: 10, // Rarest
     description: "A legendary dragon capable of high-speed flight.",
     image: '/images/pals/jetragon.svg',
+    drops: ['Pure Quartz', 'Polymer', 'Carbon Fiber', 'Diamond'],
+    partnerSkill: {
+      name: 'Aerial Missile',
+      description: 'Can be ridden as a flying mount. Can rapidly fire missiles while mounted.',
+    },
+    food: 9,
   }
 ];

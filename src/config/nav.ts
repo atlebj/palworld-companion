@@ -14,7 +14,8 @@ import {
   CheckSquare,
   Search,
   LayoutTemplate,
-  Package
+  Package,
+  BookOpen
 } from "lucide-react";
 import React from "react";
 
@@ -196,6 +197,12 @@ export const sections: NavSection[] = [
         label: "Breeding Pathfinder",
         icon: Dna,
         description: "Find the shortest breeding path to your desired Pal."
+      },
+      {
+        href: "/pals",
+        label: "Paldeck",
+        icon: BookOpen,
+        description: "Complete list of Pals with stats and drops."
       },
       {
         href: "/pals/passives",
