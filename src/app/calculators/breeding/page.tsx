@@ -74,7 +74,7 @@ export default function BreedingPathfinder() {
             </div>
 
             <div className="space-y-2">
-              <label className="text-xs font-bold text-slate-500 uppercase tracking-wider">Add Temporary Pal</label>
+              <label className="text-xs font-bold text-slate-400 uppercase tracking-wider">Add Temporary Pal</label>
               <select
                 className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded-lg text-sm text-slate-100 focus:ring-2 focus:ring-sky-500"
                 onChange={(e) => {
@@ -153,7 +153,7 @@ export default function BreedingPathfinder() {
             )}
 
             {!path && !searching && !error && (
-              <div className="flex flex-col items-center justify-center h-[300px] text-slate-500">
+              <div className="flex flex-col items-center justify-center h-[300px] text-slate-400">
                 <div className="text-4xl mb-4 opacity-30">🧬</div>
                 <p>Select your available Pals and a target to start.</p>
               </div>
@@ -183,7 +183,7 @@ export default function BreedingPathfinder() {
                             <span className="w-2 h-2 rounded-full bg-slate-500"></span>
                             <span className="font-semibold text-slate-200">{step.parent1?.name}</span>
                           </div>
-                          <span className="text-slate-500 font-bold text-lg">+</span>
+                          <span className="text-slate-400 font-bold text-lg">+</span>
                           <div className="flex items-center gap-2 bg-slate-800/50 px-3 py-1.5 rounded-lg border border-slate-700/50">
                             <span className="w-2 h-2 rounded-full bg-slate-500"></span>
                             <span className="font-semibold text-slate-200">{step.parent2?.name}</span>

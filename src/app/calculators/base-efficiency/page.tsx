@@ -105,7 +105,7 @@ export default function BaseEfficiency() {
 
           <button
             onClick={addRow}
-            className="w-full py-3 border-2 border-dashed border-slate-700 text-slate-400 rounded-lg hover:border-sky-500 hover:text-sky-500 transition-colors"
+            className="w-full py-3 border-2 border-dashed border-slate-700 text-sky-400 rounded-lg hover:border-sky-500 hover:bg-slate-800/50 transition-colors font-medium"
           >
             + Add Pal Group
           </button>
