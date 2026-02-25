@@ -10,3 +10,5 @@
 ✓ Ready in 3.4s
 ○ Compiling /patch-notes ...
  GET /patch-notes 200 in 4.9s (compile: 4.1s, render: 845ms)
+✓ Compiled in 1574ms
+ GET /patch-notes 200 in 1599ms (compile: 586ms, render: 1013ms)
