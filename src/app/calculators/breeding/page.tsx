@@ -16,7 +16,7 @@ export default function BreedingPathfinder() {
   const [path, setPath] = useState<PathStep[] | null>(null);
   const [searching, setSearching] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const [viewMode, setViewMode] = useState<'list' | 'tree'>('list');
+  const [viewMode, setViewMode] = useState<'list' | 'tree'>('tree');
 
   const availableKeys = Array.from(new Set([
     ...savedPals.map(p => p.palKey),
@@ -162,18 +162,21 @@ export default function BreedingPathfinder() {
                     <div className="flex items-center gap-2">
                         <div className="flex bg-slate-900 rounded-lg p-1 border border-slate-700">
                             <button
-                                onClick={() => setViewMode('list')}
-                                className={`p-1.5 rounded-md transition-colors ${viewMode === 'list' ? 'bg-slate-700 text-sky-400' : 'text-slate-500 hover:text-slate-300'}`}
-                                title="List View"
-                            >
-                                <List size={18} />
-                            </button>
-                            <button
                                 onClick={() => setViewMode('tree')}
-                                className={`p-1.5 rounded-md transition-colors ${viewMode === 'tree' ? 'bg-slate-700 text-sky-400' : 'text-slate-500 hover:text-slate-300'}`}
-                                title="Tree View"
+                                className={`flex items-center gap-2 px-3 py-1.5 rounded-md transition-colors ${viewMode === 'tree' ? 'bg-slate-700 text-sky-400 font-bold' : 'text-slate-500 hover:text-slate-300'}`}
+                                title="Visual Tree Map"
                             >
-                                <Network size={18} />
+                                <Network size={16} />
+                                <span className="text-xs">Tree Map</span>
+                            </button>
+                            <div className="w-px bg-slate-800 my-1"></div>
+                            <button
+                                onClick={() => setViewMode('list')}
+                                className={`flex items-center gap-2 px-3 py-1.5 rounded-md transition-colors ${viewMode === 'list' ? 'bg-slate-700 text-sky-400 font-bold' : 'text-slate-500 hover:text-slate-300'}`}
+                                title="List Steps"
+                            >
+                                <List size={16} />
+                                <span className="text-xs">List</span>
                             </button>
                         </div>
                         <button

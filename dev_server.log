@@ -7,8 +7,9 @@
 - Network:       http://192.168.0.2:3000
 
 ✓ Starting...
-✓ Ready in 3.4s
-○ Compiling /patch-notes ...
- GET /patch-notes 200 in 4.9s (compile: 4.1s, render: 845ms)
-✓ Compiled in 1574ms
- GET /patch-notes 200 in 1599ms (compile: 586ms, render: 1013ms)
+✓ Ready in 3.1s
+○ Compiling /calculators/breeding ...
+ GET /calculators/breeding 200 in 4.8s (compile: 4.0s, render: 752ms)
+ GET /calculators/breeding 200 in 353ms (compile: 121ms, render: 232ms)
+ GET /images/pals/cremis.svg 200 in 1546ms
+ GET /images/pals/vixy.svg 200 in 1558ms
