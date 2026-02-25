@@ -16,3 +16,4 @@
  GET /pals 200 in 149ms (compile: 13ms, render: 137ms)
  GET /pals/anubis 200 in 225ms (compile: 99ms, generate-params: 31ms, render: 126ms)
 ✓ Compiled in 148ms
+[?25h
