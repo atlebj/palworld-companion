@@ -53,3 +53,29 @@ export function calculateBreedingResult(parent1: PalData, parent2: PalData, allP
 
   return closestPal;
 }
+
+/**
+ * Finds all parent combinations that produce the specified child.
+ */
+export function findPossibleParents(childKey: string, allPals: PalData[]): [PalData, PalData][] {
+  const results: [PalData, PalData][] = [];
+  const seen = new Set<string>();
+
+  for (let i = 0; i < allPals.length; i++) {
+    for (let j = i; j < allPals.length; j++) {
+      const p1 = allPals[i];
+      const p2 = allPals[j];
+      const result = calculateBreedingResult(p1, p2, allPals);
+
+      if (result && result.key === childKey) {
+        // Create a sorted key to ensure uniqueness regardless of order
+        const pairKey = [p1.key, p2.key].sort().join('|');
+        if (!seen.has(pairKey)) {
+          results.push([p1, p2]);
+          seen.add(pairKey);
+        }
+      }
+    }
+  }
+  return results;
+}
