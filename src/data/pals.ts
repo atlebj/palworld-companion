@@ -28,7 +28,7 @@ export interface PalData {
   suitability: WorkSuitability;
   breedingPower: number;
   description: string;
-  image: string;
+  image?: string;
 }
 
 export const pals: PalData[] = [
@@ -62,8 +62,41 @@ export const pals: PalData[] = [
     stats: { hp: 60, attack: 60, defense: 60 },
     suitability: { gathering: 1, farming: 1 },
     breedingPower: 1500,
-    description: "A chicken. It lays eggs regularly.",
+    description: "Extremely weak. Useful for egg farming.",
     image: '/images/pals/chikipi.svg',
+  },
+  {
+    id: 14,
+    key: 'vixy',
+    name: 'Vixy',
+    types: ['Neutral'],
+    stats: { hp: 70, attack: 70, defense: 70 },
+    suitability: { gathering: 1, farming: 1 },
+    breedingPower: 1465,
+    description: "Produces Pal Spheres when assigned to a Ranch.",
+    image: '/images/pals/vixy.svg',
+  },
+  {
+    id: 18,
+    key: 'cremis',
+    name: 'Cremis',
+    types: ['Neutral'],
+    stats: { hp: 70, attack: 70, defense: 70 },
+    suitability: { gathering: 1, farming: 1 },
+    breedingPower: 1455,
+    description: "Produces Wool. Looks like a fluffy cloud.",
+    image: '/images/pals/cremis.svg',
+  },
+  {
+    id: 24,
+    key: 'mau',
+    name: 'Mau',
+    types: ['Dark'],
+    stats: { hp: 70, attack: 70, defense: 70 },
+    suitability: { farming: 1 },
+    breedingPower: 1480,
+    description: "Produces Gold Coins.",
+    image: '/images/pals/mau.svg',
   },
   {
     id: 100,
@@ -81,32 +114,32 @@ export const pals: PalData[] = [
     key: 'jormuntide',
     name: 'Jormuntide',
     types: ['Dragon', 'Water'],
-    stats: { hp: 130, attack: 150, defense: 120 },
+    stats: { hp: 130, attack: 120, defense: 100 },
     suitability: { watering: 4 },
-    breedingPower: 310,
-    description: "Emperor of the sea. Its watering capabilities are unmatched.",
+    breedingPower: 300,
+    description: "Legendary dragon of the sea.",
     image: '/images/pals/jormuntide.svg',
   },
   {
-    id: 110,
+    id: 102,
     key: 'frostallion_noct',
     name: 'Frostallion Noct',
     types: ['Dark'],
-    stats: { hp: 140, attack: 140, defense: 135 },
+    stats: { hp: 140, attack: 140, defense: 120 },
     suitability: { gathering: 4 },
-    breedingPower: 120, // Very rare
-    description: "A legendary steed of darkness.",
+    breedingPower: 100,
+    description: "Dark variant of the legendary steed.",
     image: '/images/pals/frostallion_noct.svg',
   },
   {
-    id: 111,
+    id: 103,
     key: 'jetragon',
     name: 'Jetragon',
     types: ['Dragon'],
-    stats: { hp: 110, attack: 170, defense: 110 },
+    stats: { hp: 150, attack: 150, defense: 150 },
     suitability: { gathering: 3 },
-    breedingPower: 10, // Rarest
-    description: "A legendary dragon capable of high-speed flight.",
+    breedingPower: 50,
+    description: "Legendary celestial dragon.",
     image: '/images/pals/jetragon.svg',
   }
 ];

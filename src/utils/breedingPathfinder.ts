@@ -8,6 +8,15 @@ export interface PathStep {
   generation: number;
 }
 
+// Optimization: Fast lookup map
+const palMap = new Map<string, PalData>();
+const allPalsList = pals; // Use imported list directly
+pals.forEach(p => palMap.set(p.key, p));
+
+function getPal(key: string): PalData | undefined {
+  return palMap.get(key);
+}
+
 export function findBreedingPath(
   startingPalKeys: string[],
   targetKey: string
@@ -15,48 +24,58 @@ export function findBreedingPath(
   const visited = new Set<string>(startingPalKeys);
   const pathMap = new Map<string, { p1: string; p2: string; gen: number }>();
 
-  // Initialize queue with starting pals (Generation 0)
+  // Current pool of available pals (keys)
   let currentPool = startingPalKeys.slice();
+
+  // Pals newly added in the last generation (for optimization)
+  let newPals = startingPalKeys.slice();
+
   let generation = 1;
-  const maxGenerations = 5; // Search depth limit
+  const maxGenerations = 6; // Search depth limit (increased for deeper searches)
 
   // Pre-populate pathMap for starting pals (Gen 0)
   startingPalKeys.forEach(k => pathMap.set(k, { p1: '', p2: '', gen: 0 }));
 
   if (visited.has(targetKey)) {
-    // Target already owned
     return [{ result: getPal(targetKey)!, parent1: null, parent2: null, generation: 0 }];
   }
 
   while (generation <= maxGenerations) {
     const nextGen: string[] = [];
-    const poolSize = currentPool.length;
 
-    // Breed every pair in currentPool
-    for (let i = 0; i < poolSize; i++) {
-      for (let j = i; j < poolSize; j++) {
-        const p1Key = currentPool[i];
-        const p2Key = currentPool[j];
+    // Convert pools to PalData objects once to avoid repetitive lookups
+    const newPalObjs = newPals.map(k => getPal(k)).filter(Boolean) as PalData[];
+    // Get old pals (those in pool but NOT in newPals)
+    const newPalKeySet = new Set(newPals);
+    const oldPalObjs = currentPool
+        .filter(k => !newPalKeySet.has(k))
+        .map(k => getPal(k))
+        .filter(Boolean) as PalData[];
 
-        const p1 = getPal(p1Key);
-        const p2 = getPal(p2Key);
-        if (!p1 || !p2) continue;
-
-        const child = calculateBreedingResult(p1, p2, pals);
-        if (child && !visited.has(child.key)) {
-          visited.add(child.key);
-          pathMap.set(child.key, { p1: p1Key, p2: p2Key, gen: generation });
-          nextGen.push(child.key);
-
-          if (child.key === targetKey) {
-            return reconstructPath(targetKey, pathMap);
-          }
+    // 1. Combine newPal with itself and other newPals (j >= i to avoid duplicates/order)
+    for (let i = 0; i < newPalObjs.length; i++) {
+      const p1 = newPalObjs[i];
+      for (let j = i; j < newPalObjs.length; j++) {
+        const p2 = newPalObjs[j];
+        if (checkPair(p1, p2, generation, visited, pathMap, nextGen, targetKey)) {
+             return reconstructPath(targetKey, pathMap);
         }
       }
     }
 
+    // 2. Combine newPal with all OLD pals
+    for (const p1 of newPalObjs) {
+        for (const p2 of oldPalObjs) {
+            if (checkPair(p1, p2, generation, visited, pathMap, nextGen, targetKey)) {
+                return reconstructPath(targetKey, pathMap);
+            }
+        }
+    }
+
     if (nextGen.length === 0) break;
-    // Add new generation to the pool for the next round of breeding
+
+    // Prepare for next generation
+    newPals = nextGen;
     currentPool = [...currentPool, ...nextGen];
     generation++;
   }
@@ -64,8 +83,24 @@ export function findBreedingPath(
   return null;
 }
 
-function getPal(key: string) {
-  return pals.find(p => p.key === key);
+function checkPair(
+    p1: PalData,
+    p2: PalData,
+    generation: number,
+    visited: Set<string>,
+    pathMap: Map<string, { p1: string; p2: string; gen: number }>,
+    nextGen: string[],
+    targetKey: string
+): boolean {
+    const child = calculateBreedingResult(p1, p2, allPalsList);
+    if (child && !visited.has(child.key)) {
+        visited.add(child.key);
+        pathMap.set(child.key, { p1: p1.key, p2: p2.key, gen: generation });
+        nextGen.push(child.key);
+
+        if (child.key === targetKey) return true;
+    }
+    return false;
 }
 
 function reconstructPath(
