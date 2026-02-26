@@ -4,12 +4,14 @@ export function NumberField({
   onChange,
   min = 0,
   max = 1000,
+  hint,
 }: {
   label: string;
   value: number;
   onChange: (v: number) => void;
   min?: number;
   max?: number;
+  hint?: string;
 }) {
   return (
     <label className="grid gap-1">
@@ -22,6 +24,7 @@ export function NumberField({
         min={min}
         max={max}
       />
+      {hint && <span className="text-xs text-[var(--color-brand-text-muted)]">{hint}</span>}
     </label>
   );
 }
