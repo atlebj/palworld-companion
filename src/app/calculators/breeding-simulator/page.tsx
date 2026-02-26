@@ -4,6 +4,7 @@ import React, { useState, useMemo } from 'react';
 import { pals } from '../../../data/pals';
 import { calculateBreedingResult, findPossibleParents } from '../../../data/breeding';
 import { SelectField } from '../../../components/ui/SelectField';
+import { TypeBadge } from '../../../components/ui/TypeBadge';
 import { Calculator, Dna, Search } from 'lucide-react';
 import Link from 'next/link';
 
@@ -103,9 +104,7 @@ export default function BreedingSimulatorPage() {
                    <h3 className="text-3xl font-extrabold text-white">{directResult.name}</h3>
                    <div className="flex gap-2">
                      {directResult.types.map(t => (
-                       <span key={t} className="px-3 py-1 rounded-full bg-slate-700 text-xs font-bold text-slate-300 border border-slate-600">
-                         {t}
-                       </span>
+                       <TypeBadge key={t} type={t} />
                      ))}
                    </div>
                    <Link

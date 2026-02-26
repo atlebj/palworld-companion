@@ -15,7 +15,8 @@ import {
   Search,
   LayoutTemplate,
   Package,
-  Shield
+  Shield,
+  ListOrdered
 } from "lucide-react";
 import React from "react";
 
@@ -58,6 +59,12 @@ export const sections: NavSection[] = [
   {
     title: "Game Guides",
     links: [
+      {
+        href: "/guides/tier-list",
+        label: "Tier List",
+        icon: ListOrdered,
+        description: "Top Pals for bases, combat, and travel."
+      },
       {
         href: "/guides/building",
         label: "Build Guides & Architecture",
@@ -161,6 +168,12 @@ export const sections: NavSection[] = [
         label: "Resource Map",
         icon: MapIcon,
         description: "Find ore, sulfur, and other valuable resources."
+      },
+      {
+        href: "/items",
+        label: "Item Database",
+        icon: Package,
+        description: "Search items and materials."
       },
       {
         href: "/calculators/damage",

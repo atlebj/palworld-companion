@@ -2,10 +2,11 @@ import React from 'react';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { pals } from '../../../data/pals';
+import { TypeBadge } from '../../../components/ui/TypeBadge';
 import {
   Flame, Droplet, Sprout, Zap, Hammer, Package,
   Axe, Pickaxe, Stethoscope, Snowflake, Truck, Wheat,
-  ArrowLeft, Share2, Dna
+  ArrowLeft, Dna
 } from 'lucide-react';
 
 export async function generateStaticParams() {
@@ -41,25 +42,6 @@ const StatBar = ({ label, value, max = 200, color }: { label: string, value: num
     <span className="w-8 text-right font-mono text-slate-200 font-bold">{value}</span>
   </div>
 );
-
-const TypeBadge = ({ type }: { type: string }) => {
-    const colors: Record<string, string> = {
-        Neutral: 'bg-neutral-600',
-        Fire: 'bg-red-600',
-        Water: 'bg-blue-600',
-        Grass: 'bg-green-600',
-        Electric: 'bg-yellow-600',
-        Ice: 'bg-cyan-600',
-        Ground: 'bg-amber-700',
-        Dark: 'bg-purple-900',
-        Dragon: 'bg-indigo-600',
-    };
-    return (
-        <span className={`${colors[type] || 'bg-slate-600'} text-white text-xs uppercase font-bold px-3 py-1 rounded-full shadow-sm`}>
-            {type}
-        </span>
-    );
-};
 
 export default async function PalDetailPage({ params }: { params: Promise<{ key: string }> }) {
   const { key } = await params;
