@@ -174,6 +174,7 @@ export default function WorkSpeedClient() {
       <div className="border rounded-2xl p-5 grid gap-5 mb-8">
         <NumberField
           label="Baseline items/hour (per worker)"
+          hint="Your station output at 0% Work Speed bonus, with 100% uptime. If unsure, keep default."
           value={baselinePerHour}
           min={1}
           onChange={(n) => setBaselinePerHour(clamp(n, 1, 100000))}
@@ -182,6 +183,7 @@ export default function WorkSpeedClient() {
         <div className="grid md:grid-cols-2 gap-4">
           <NumberField
             label="Work speed bonus (%)"
+            hint="Example: +50 means 50% faster working."
             value={workSpeedBonus}
             min={0}
             max={400}
@@ -189,6 +191,7 @@ export default function WorkSpeedClient() {
           />
           <NumberField
             label="Uptime (%)"
+            hint="Time spent actually working (not walking, stuck, eating, idling). Most bases are 50–85%."
             value={uptime}
             min={0}
             max={100}
@@ -199,6 +202,7 @@ export default function WorkSpeedClient() {
         <div className="grid md:grid-cols-2 gap-4">
           <NumberField
             label="Workers"
+            hint="How many Pals are doing this job type in parallel."
             value={workers}
             min={1}
             max={999}
@@ -206,6 +210,7 @@ export default function WorkSpeedClient() {
           />
           <NumberField
             label="Task switching penalty (%)"
+            hint="If workers constantly swap jobs, apply a penalty (0–30 is common in messy bases)."
             value={taskSwitchPenalty}
             min={0}
             max={80}
