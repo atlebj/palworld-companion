@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className="max-w-5xl mx-auto py-16 px-4 sm:px-6">
       <section className="text-center mb-20">
-        <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 bg-gradient-to-r from-[var(--color-brand-primary)] to-[var(--color-brand-primary-hover)] bg-clip-text text-transparent pb-2">
+        <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 text-gradient pb-2">
           Palworld Companion
         </h1>
         <p className="text-xl text-[var(--color-brand-text-secondary)] max-w-2xl mx-auto mb-10 leading-relaxed">
@@ -39,7 +39,7 @@ export default function Home() {
                   <li key={link.href}>
                     <Link
                       href={link.href}
-                      className="block text-sm text-[var(--color-brand-text-secondary)] hover:text-[var(--color-brand-primary)] transition-colors flex items-center gap-2"
+                      className="block text-sm text-[var(--color-brand-text-secondary)] hover:text-[var(--color-brand-primary)] transition-colors flex items-center gap-2 group/link"
                     >
                       <span className="w-1.5 h-1.5 rounded-full bg-[var(--color-brand-border)] group-hover/link:bg-[var(--color-brand-primary)] transition-colors"></span>
                       {link.label}

@@ -27,7 +27,7 @@ body {
 /* Base Utility Classes for Consistency */
 @layer components {
   .card {
-    @apply bg-[var(--color-brand-bg-card)] border border-[var(--color-brand-border)] rounded-xl shadow-lg shadow-black/30;
+    @apply bg-[var(--color-brand-bg-card)] border border-[var(--color-brand-border)] rounded-xl shadow-[0_4px_6px_-1px_rgba(0,0,0,0.3)];
   }
 
   .btn-primary {
@@ -44,7 +44,7 @@ body {
 }
 
 /* Markdown Content Styling */
-.prose h1, .prose h2, .prose h3 {
+.prose h1, .prose h2, .prose h3, .prose h4 {
   @apply text-[var(--color-brand-text-primary)] font-bold mb-4 mt-8;
 }
 
@@ -56,7 +56,7 @@ body {
   @apply text-[var(--color-brand-primary)] hover:text-[var(--color-brand-primary-hover)] underline underline-offset-4 decoration-2 decoration-transparent hover:decoration-current transition-all;
 }
 
-.prose ul {
+.prose ul, .prose ol {
   @apply list-disc list-outside ml-6 mb-4 text-[var(--color-brand-text-secondary)];
 }
 
