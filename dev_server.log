@@ -7,9 +7,9 @@
 - Network:       http://192.168.0.2:3000
 
 ✓ Starting...
-✓ Ready in 3.1s
-○ Compiling /calculators/breeding ...
- GET /calculators/breeding 200 in 4.8s (compile: 4.0s, render: 752ms)
- GET /calculators/breeding 200 in 353ms (compile: 121ms, render: 232ms)
- GET /images/pals/cremis.svg 200 in 1546ms
- GET /images/pals/vixy.svg 200 in 1558ms
+✓ Ready in 1085ms
+○ Compiling /calculators/breeding-simulator ...
+ GET /calculators/breeding-simulator 200 in 4.3s (compile: 3.7s, render: 584ms)
+ GET /guides/type-chart 200 in 765ms (compile: 590ms, render: 175ms)
+ GET /map 200 in 733ms (compile: 564ms, render: 169ms)
+ GET /calculators/breeding-simulator 200 in 120ms (compile: 5ms, render: 115ms)

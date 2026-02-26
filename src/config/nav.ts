@@ -14,7 +14,8 @@ import {
   CheckSquare,
   Search,
   LayoutTemplate,
-  Package
+  Package,
+  Shield
 } from "lucide-react";
 import React from "react";
 
@@ -68,6 +69,12 @@ export const sections: NavSection[] = [
         label: "Raid Strategy",
         icon: Swords,
         description: "Tactics to defend your base against powerful raids."
+      },
+      {
+        href: "/guides/type-chart",
+        label: "Type Chart",
+        icon: Shield,
+        description: "Strengths and weaknesses for every element."
       },
     ],
   },
@@ -196,6 +203,12 @@ export const sections: NavSection[] = [
         label: "Breeding Pathfinder",
         icon: Dna,
         description: "Find the shortest breeding path to your desired Pal."
+      },
+      {
+        href: "/calculators/breeding-simulator",
+        label: "Breeding Simulator",
+        icon: Calculator,
+        description: "Calculate outcomes and find parents."
       },
       {
         href: "/pals/passives",
