@@ -41,7 +41,7 @@ export const pals: PalData[] = [
     suitability: { handiwork: 1, transporting: 1, farming: 1 },
     breedingPower: 1470,
     description: "A ball of wool. It rolls down slopes when threatened.",
-    image: '/images/pals/lamball.svg',
+    image: '/images/pals/Lamball_icon.png',
   },
   {
     id: 2,
@@ -52,7 +52,7 @@ export const pals: PalData[] = [
     suitability: { handiwork: 1, gathering: 1, mining: 1, transporting: 1 },
     breedingPower: 1460,
     description: "A cowardly cat. It pretends to be tough but runs away easily.",
-    image: '/images/pals/cattiva.svg',
+    image: '/images/pals/Cattiva_icon.webp',
   },
   {
     id: 3,
@@ -63,7 +63,7 @@ export const pals: PalData[] = [
     suitability: { gathering: 1, farming: 1 },
     breedingPower: 1500,
     description: "Extremely weak. Useful for egg farming.",
-    image: '/images/pals/chikipi.svg',
+    image: '/images/pals/Chikipi_icon.webp',
   },
   {
     id: 14,
@@ -74,7 +74,7 @@ export const pals: PalData[] = [
     suitability: { gathering: 1, farming: 1 },
     breedingPower: 1465,
     description: "Produces Pal Spheres when assigned to a Ranch.",
-    image: '/images/pals/vixy.svg',
+    image: '/images/pals/Vixy_icon.webp',
   },
   {
     id: 18,
@@ -107,7 +107,7 @@ export const pals: PalData[] = [
     suitability: { handiwork: 4, mining: 3, transporting: 2 },
     breedingPower: 570,
     description: "Guardian of the desert. Known for its exceptional crafting speed.",
-    image: '/images/pals/anubis.svg',
+    image: '/images/pals/Anubis_icon.webp',
   },
   {
     id: 101,
@@ -140,6 +140,6 @@ export const pals: PalData[] = [
     suitability: { gathering: 3 },
     breedingPower: 50,
     description: "Legendary celestial dragon.",
-    image: '/images/pals/jetragon.svg',
+    image: '/images/pals/Jetragon_icon.webp',
   }
 ];

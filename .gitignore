@@ -41,3 +41,10 @@ yarn-error.log*
 next-env.d.ts
 server.log
 dev_server.log
+test-results/
+verification/
+playwright-report/
+.next/
+node_modules/
+package-lock.json
+public/images/suitability/*.png
