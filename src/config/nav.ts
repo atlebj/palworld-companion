@@ -144,6 +144,12 @@ export const sections: NavSection[] = [
     title: "Tools",
     links: [
       {
+        href: "/pals",
+        label: "Paldeck",
+        icon: Package,
+        description: "Complete list of all Pals, their stats, and work suitabilities."
+      },
+      {
         href: "/checklist",
         label: "Checklist",
         icon: CheckSquare,

@@ -66,6 +66,11 @@ const TypeBadge = ({ type }: { type: string }) => {
 
 export default async function PalDetailPage({ params }: { params: Promise<{ key: string }> }) {
   const { key } = await params;
+
+  // Debug log to confirm this code is running
+  console.log('Rendering PalDetailPage for key:', key);
+  console.log('Suitability keys configured:', Object.keys(suitabilityConfig));
+
   const pal = pals.find((p) => p.key === key);
 
   if (!pal) {
