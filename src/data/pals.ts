@@ -129,7 +129,7 @@ export const pals: PalData[] = [
     suitability: { gathering: 4 },
     breedingPower: 100,
     description: "Dark variant of the legendary steed.",
-    image: '/images/pals/frostallion_noct.svg',
+    image: '/images/pals/Frostallion_icon.webp',
   },
   {
     id: 103,
