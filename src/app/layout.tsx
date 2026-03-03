@@ -33,7 +33,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[var(--color-brand-bg-main)] text-[var(--color-brand-text-primary)]`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
           strategy="afterInteractive"
@@ -46,24 +46,22 @@ export default function RootLayout({
             gtag('config', '${GA_MEASUREMENT_ID}');
           `}
         </Script>
-        <header className="sticky top-0 z-40 w-full border-b border-[var(--color-brand-border)] bg-[var(--color-brand-bg-sidebar)]/80 backdrop-blur supports-[backdrop-filter]:bg-[var(--color-brand-bg-sidebar)]/60">
-          <nav className="max-w-6xl mx-auto p-4 flex gap-6 text-sm items-center">
-            <Link href="/" className="font-bold text-lg text-[var(--color-brand-text-primary)] hover:text-[var(--color-brand-primary)] transition-colors">
+        <header className="border-b">
+          <nav className="max-w-6xl mx-auto p-4 flex gap-4 text-sm items-center">
+            <Link href="/" className="font-semibold">
               Palworld Companion
             </Link>
-            <div className="hidden md:flex gap-6">
-                <Link href="/mechanics/work-speed" className="text-[var(--color-brand-text-secondary)] hover:text-[var(--color-brand-primary)] transition-colors">Mechanics</Link>
-                <Link href="/breeding/trait-inheritance" className="text-[var(--color-brand-text-secondary)] hover:text-[var(--color-brand-primary)] transition-colors">Breeding</Link>
-            </div>
+            <Link href="/mechanics/work-speed">Mechanics</Link>
+            <Link href="/breeding/trait-inheritance">Breeding</Link>
             <div className="ml-auto">
               <Search />
             </div>
           </nav>
         </header>
 
-        <div className="max-w-6xl mx-auto flex pb-16 md:pb-0 min-h-screen">
+        <div className="max-w-6xl mx-auto flex pb-16 md:pb-0">
           <Sidebar />
-          <main className="flex-1 p-6 md:p-8">
+          <main className="flex-1 p-6">
             <Breadcrumbs />
             {children}
           </main>

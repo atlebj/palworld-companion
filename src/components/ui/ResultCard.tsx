@@ -8,10 +8,10 @@ export function ResultCard({
   sub: string;
 }) {
   return (
-    <div className="card p-4">
-      <div className="text-sm text-[var(--color-brand-text-secondary)] mb-1 uppercase tracking-wide font-semibold opacity-70">{title}</div>
-      <div className="text-3xl font-bold leading-tight text-[var(--color-brand-text-primary)]">{value}</div>
-      <div className="text-sm text-[var(--color-brand-text-secondary)] mt-1">{sub}</div>
+    <div className="border rounded-2xl p-4">
+      <div className="text-sm opacity-70 mb-1">{title}</div>
+      <div className="text-3xl font-bold leading-tight">{value}</div>
+      <div className="text-sm opacity-70">{sub}</div>
     </div>
   );
 }

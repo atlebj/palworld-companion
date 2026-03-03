@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { pals } from '../../data/pals';
 import { LayoutGrid, List as ListIcon, Search } from 'lucide-react';
+import { TypeBadge } from '../../components/ui/TypeBadge';
 
 const StatBar = ({ label, value, max = 200, color }: { label: string, value: number, max?: number, color: string }) => (
   <div className="flex items-center gap-2 text-xs">
@@ -17,25 +18,6 @@ const StatBar = ({ label, value, max = 200, color }: { label: string, value: num
     <span className="w-6 text-right font-mono text-slate-300">{value}</span>
   </div>
 );
-
-const TypeBadge = ({ type }: { type: string }) => {
-    const colors: Record<string, string> = {
-        Neutral: 'bg-neutral-600',
-        Fire: 'bg-red-600',
-        Water: 'bg-blue-600',
-        Grass: 'bg-green-600',
-        Electric: 'bg-yellow-600',
-        Ice: 'bg-cyan-600',
-        Ground: 'bg-amber-700',
-        Dark: 'bg-purple-900',
-        Dragon: 'bg-indigo-600',
-    };
-    return (
-        <span className={`${colors[type] || 'bg-slate-600'} text-white text-[10px] uppercase font-bold px-2 py-0.5 rounded-full shadow-sm`}>
-            {type}
-        </span>
-    );
-};
 
 export default function PaldeckPage() {
   const [viewMode, setViewMode] = useState<'grid' | 'compact'>('grid');
@@ -110,7 +92,7 @@ export default function PaldeckPage() {
 
                     <div className="space-y-1.5">
                         <StatBar label="HP" value={pal.stats.hp} color="bg-green-500" />
-                        <StatBar label="ATK" value={pal.stats.attack} color="bg-red-500" />
+                        <StatBar label="ATK" value={pal.stats.attack.melee} color="bg-red-500" />
                         <StatBar label="DEF" value={pal.stats.defense} color="bg-blue-500" />
                     </div>
                 </div>
@@ -149,7 +131,7 @@ export default function PaldeckPage() {
                                     </div>
                                 </td>
                                 <td className="px-6 py-4 text-right font-mono text-slate-300">{pal.stats.hp}</td>
-                                <td className="px-6 py-4 text-right font-mono text-slate-300">{pal.stats.attack}</td>
+                                <td className="px-6 py-4 text-right font-mono text-slate-300">{pal.stats.attack.melee}</td>
                                 <td className="px-6 py-4 text-right font-mono text-slate-300">{pal.stats.defense}</td>
                             </tr>
                         ))}

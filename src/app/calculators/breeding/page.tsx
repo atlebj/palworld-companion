@@ -66,32 +66,32 @@ export default function BreedingPathfinder() {
   return (
     <div className="max-w-6xl mx-auto space-y-8">
       <div>
-        <h1 className="text-3xl font-bold mb-2 text-[var(--color-brand-text-primary)]">Breeding Pathfinder</h1>
-        <p className="text-[var(--color-brand-text-secondary)]">
+        <h1 className="text-3xl font-bold mb-2">Breeding Pathfinder</h1>
+        <p className="text-slate-400">
           Find the shortest breeding chain to get your dream Pal using Pals you already own.
         </p>
       </div>
 
       <div className="grid gap-8 lg:grid-cols-3">
         {/* Left Column: Input */}
-        <div className="lg:col-span-1 space-y-6 card p-6 h-fit">
+        <div className="lg:col-span-1 space-y-6 bg-slate-800 p-6 rounded-lg border border-slate-700 h-fit">
           <div>
-            <h2 className="text-xl font-bold text-[var(--color-brand-primary)] mb-4 flex items-center gap-2">
+            <h2 className="text-xl font-bold text-sky-400 mb-4 flex items-center gap-2">
               <span>Your Roster</span>
-              <span className="text-xs bg-[var(--color-brand-bg-sidebar)] text-[var(--color-brand-text-primary)] px-2 py-0.5 rounded-full border border-[var(--color-brand-border)]">{availableKeys.length}</span>
+              <span className="text-xs bg-slate-700 text-slate-200 px-2 py-0.5 rounded-full">{availableKeys.length}</span>
             </h2>
 
-            <div className="text-sm text-[var(--color-brand-text-secondary)] mb-4 flex items-center justify-between">
+            <div className="text-sm text-slate-300 mb-4 flex items-center justify-between">
               <span>Includes {savedPals.length} from your box.</span>
-              <Link href="/my-pals" className="text-[var(--color-brand-primary)] hover:text-[var(--color-brand-primary-hover)] underline font-semibold text-xs">
+              <Link href="/my-pals" className="text-sky-400 hover:text-sky-300 underline font-semibold text-xs">
                 Manage Box →
               </Link>
             </div>
 
             <div className="space-y-2">
-              <label className="text-xs font-bold text-[var(--color-brand-text-muted)] uppercase tracking-wider">Add Temporary Pal</label>
+              <label className="text-xs font-bold text-slate-300 uppercase tracking-wider">Add Temporary Pal</label>
               <select
-                className="w-full px-3 py-2 bg-[var(--color-brand-bg-main)] border border-[var(--color-brand-border)] rounded-lg text-sm text-[var(--color-brand-text-primary)] focus:ring-2 focus:ring-[var(--color-brand-primary)]"
+                className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded-lg text-sm text-slate-100 focus:ring-2 focus:ring-sky-500"
                 onChange={(e) => {
                   const val = e.target.value;
                   if (val && !tempPals.includes(val)) {
@@ -107,11 +107,11 @@ export default function BreedingPathfinder() {
               </select>
 
               {tempPals.length > 0 && (
-                <div className="flex flex-wrap gap-2 mt-3 p-3 bg-[var(--color-brand-bg-main)]/50 rounded-lg border border-[var(--color-brand-border)]">
+                <div className="flex flex-wrap gap-2 mt-3 p-3 bg-slate-900/50 rounded-lg border border-slate-800">
                   {tempPals.map(k => {
                     const p = pals.find(x => x.key === k);
                     return (
-                      <span key={k} className="inline-flex items-center gap-1.5 bg-[var(--color-brand-bg-card)] text-[var(--color-brand-text-secondary)] text-xs px-2 py-1 rounded border border-[var(--color-brand-border)]">
+                      <span key={k} className="inline-flex items-center gap-1.5 bg-slate-800 text-xs px-2 py-1 rounded border border-slate-700">
                         {p?.name}
                         <button
                           onClick={() => setTempPals(tempPals.filter(x => x !== k))}
@@ -127,7 +127,7 @@ export default function BreedingPathfinder() {
             </div>
           </div>
 
-          <div className="pt-6 border-t border-[var(--color-brand-border)]">
+          <div className="pt-6 border-t border-slate-700">
             <SelectField
               label="Target Pal"
               value={targetKey}
@@ -140,9 +140,10 @@ export default function BreedingPathfinder() {
             onClick={handleSearch}
             disabled={searching || availableKeys.length === 0}
             className={`
-              w-full btn-primary
-              ${availableKeys.length === 0 ? 'opacity-50 cursor-not-allowed' : ''}
-              ${searching ? 'cursor-wait' : ''}
+              w-full py-3 px-4 font-bold rounded-lg shadow-lg transition-all transform active:scale-95
+              ${availableKeys.length === 0 ? 'bg-slate-700 text-slate-400 cursor-not-allowed' :
+                searching ? 'bg-sky-700 text-sky-300 cursor-wait' :
+                'bg-sky-600 hover:bg-sky-500 text-white shadow-sky-900/20'}
             `}
           >
             {searching ? 'Calculating...' : 'Find Breeding Path'}
@@ -151,27 +152,27 @@ export default function BreedingPathfinder() {
 
         {/* Right Column: Result */}
         <div className="lg:col-span-2">
-          <div className="card p-6 min-h-[500px]">
-            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6 border-b border-[var(--color-brand-border)] pb-4">
-                <h2 className="text-xl font-bold text-[var(--color-brand-primary)]">
+          <div className="bg-slate-800 p-6 rounded-lg border border-slate-700 min-h-[500px]">
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6 border-b border-slate-700 pb-4">
+                <h2 className="text-xl font-bold text-sky-400">
                 Breeding Chain
                 </h2>
 
                 {path && (
                     <div className="flex items-center gap-2">
-                        <div className="flex bg-[var(--color-brand-bg-main)] rounded-lg p-1 border border-[var(--color-brand-border)]">
+                        <div className="flex bg-slate-900 rounded-lg p-1 border border-slate-700">
                             <button
                                 onClick={() => setViewMode('tree')}
-                                className={`flex items-center gap-2 px-3 py-1.5 rounded-md transition-colors ${viewMode === 'tree' ? 'bg-[var(--color-brand-bg-card)] text-[var(--color-brand-primary)] font-bold shadow-sm' : 'text-[var(--color-brand-text-muted)] hover:text-[var(--color-brand-text-primary)]'}`}
+                                className={`flex items-center gap-2 px-3 py-1.5 rounded-md transition-colors ${viewMode === 'tree' ? 'bg-slate-700 text-sky-400 font-bold' : 'text-slate-500 hover:text-slate-300'}`}
                                 title="Visual Tree Map"
                             >
                                 <Network size={16} />
                                 <span className="text-xs">Tree Map</span>
                             </button>
-                            <div className="w-px bg-[var(--color-brand-border)] my-1"></div>
+                            <div className="w-px bg-slate-800 my-1"></div>
                             <button
                                 onClick={() => setViewMode('list')}
-                                className={`flex items-center gap-2 px-3 py-1.5 rounded-md transition-colors ${viewMode === 'list' ? 'bg-[var(--color-brand-bg-card)] text-[var(--color-brand-primary)] font-bold shadow-sm' : 'text-[var(--color-brand-text-muted)] hover:text-[var(--color-brand-text-primary)]'}`}
+                                className={`flex items-center gap-2 px-3 py-1.5 rounded-md transition-colors ${viewMode === 'list' ? 'bg-slate-700 text-sky-400 font-bold' : 'text-slate-500 hover:text-slate-300'}`}
                                 title="List Steps"
                             >
                                 <List size={16} />
@@ -180,7 +181,7 @@ export default function BreedingPathfinder() {
                         </div>
                         <button
                             onClick={handleExport}
-                            className="btn-secondary text-xs py-1.5 px-3 flex items-center gap-1.5"
+                            className="flex items-center gap-1.5 px-3 py-1.5 bg-slate-700 hover:bg-slate-600 text-slate-200 text-xs font-bold rounded-lg border border-slate-600 transition-colors"
                         >
                             <Copy size={14} /> Export
                         </button>
@@ -189,7 +190,7 @@ export default function BreedingPathfinder() {
             </div>
 
             {error && (
-              <div className="p-4 bg-red-900/20 border border-red-900/50 rounded-lg text-red-200 flex items-start gap-3">
+              <div className="p-4 bg-red-900/20 border border-red-700/50 rounded-lg text-red-200 flex items-start gap-3">
                 <span className="text-2xl">⚠️</span>
                 <div>
                   <div className="font-bold">Path Not Found</div>
@@ -199,14 +200,14 @@ export default function BreedingPathfinder() {
             )}
 
             {!path && !searching && !error && (
-              <div className="flex flex-col items-center justify-center h-[300px] text-[var(--color-brand-text-muted)]">
+              <div className="flex flex-col items-center justify-center h-[300px] text-slate-300">
                 <div className="text-4xl mb-4 opacity-30">🧬</div>
                 <p>Select your available Pals and a target to start.</p>
               </div>
             )}
 
             {searching && (
-              <div className="flex flex-col items-center justify-center h-[300px] text-[var(--color-brand-primary)] animate-pulse">
+              <div className="flex flex-col items-center justify-center h-[300px] text-sky-400 animate-pulse">
                 <div className="text-4xl mb-4">🔍</div>
                 <p>Searching for optimal breeding path...</p>
               </div>
@@ -222,39 +223,39 @@ export default function BreedingPathfinder() {
                         </div>
                     ) : (
                         viewMode === 'list' ? (
-                            <div className="space-y-6 relative ml-4 pl-8 border-l-2 border-[var(--color-brand-border)] py-2">
+                            <div className="space-y-6 relative ml-4 pl-8 border-l-2 border-slate-700 py-2">
                                 {path.map((step, idx) => (
                                 <div key={idx} className="relative group">
-                                    <div className="absolute -left-[43px] top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-[var(--color-brand-bg-card)] border-2 border-[var(--color-brand-border)] flex items-center justify-center font-bold text-[var(--color-brand-text-secondary)] group-hover:border-[var(--color-brand-primary)] group-hover:text-[var(--color-brand-primary)] transition-colors z-10">
+                                    <div className="absolute -left-[43px] top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-slate-800 border-2 border-slate-600 flex items-center justify-center font-bold text-slate-400 group-hover:border-sky-500 group-hover:text-sky-400 transition-colors z-10">
                                     {idx + 1}
                                     </div>
 
-                                    <div className="bg-[var(--color-brand-bg-main)]/50 p-4 rounded-xl border border-[var(--color-brand-border)] shadow-sm hover:border-[var(--color-brand-primary)]/30 transition-colors">
+                                    <div className="bg-slate-900/80 p-4 rounded-xl border border-slate-700 shadow-sm hover:border-sky-500/30 transition-colors">
                                     <div className="flex flex-col md:flex-row items-center justify-between gap-4">
 
                                         {/* Parents */}
                                         <div className="flex items-center gap-3 flex-1 justify-end md:justify-start w-full md:w-auto">
-                                        <div className="flex items-center gap-2 bg-[var(--color-brand-bg-card)] px-3 py-1.5 rounded-lg border border-[var(--color-brand-border)]">
+                                        <div className="flex items-center gap-2 bg-slate-800/50 px-3 py-1.5 rounded-lg border border-slate-700/50">
                                             <span className="w-2 h-2 rounded-full bg-slate-500"></span>
-                                            <span className="font-semibold text-[var(--color-brand-text-primary)]">{step.parent1?.name}</span>
+                                            <span className="font-semibold text-slate-200">{step.parent1?.name}</span>
                                         </div>
-                                        <span className="text-[var(--color-brand-text-muted)] font-bold text-lg">+</span>
-                                        <div className="flex items-center gap-2 bg-[var(--color-brand-bg-card)] px-3 py-1.5 rounded-lg border border-[var(--color-brand-border)]">
+                                        <span className="text-slate-400 font-bold text-lg">+</span>
+                                        <div className="flex items-center gap-2 bg-slate-800/50 px-3 py-1.5 rounded-lg border border-slate-700/50">
                                             <span className="w-2 h-2 rounded-full bg-slate-500"></span>
-                                            <span className="font-semibold text-[var(--color-brand-text-primary)]">{step.parent2?.name}</span>
+                                            <span className="font-semibold text-slate-200">{step.parent2?.name}</span>
                                         </div>
                                         </div>
 
                                         {/* Arrow */}
-                                        <div className="rotate-90 md:rotate-0 text-[var(--color-brand-text-muted)]">
+                                        <div className="rotate-90 md:rotate-0 text-slate-600">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
                                         </div>
 
                                         {/* Result */}
                                         <div className="flex items-center gap-3 flex-1 justify-start w-full md:w-auto">
-                                        <div className="flex items-center gap-2 bg-[var(--color-brand-primary)]/10 px-4 py-2 rounded-lg border border-[var(--color-brand-primary)]/30 w-full md:w-auto justify-center md:justify-start">
+                                        <div className="flex items-center gap-2 bg-sky-900/20 px-4 py-2 rounded-lg border border-sky-500/30 w-full md:w-auto justify-center md:justify-start">
                                             <span className="text-xl">🥚</span>
-                                            <span className="font-bold text-[var(--color-brand-primary)]">{step.result.name}</span>
+                                            <span className="font-bold text-sky-300">{step.result.name}</span>
                                         </div>
                                         </div>
 
@@ -274,7 +275,7 @@ export default function BreedingPathfinder() {
                                 </div>
                             </div>
                         ) : (
-                            <div className="bg-[var(--color-brand-bg-main)] rounded-xl p-4 border border-[var(--color-brand-border)] overflow-hidden">
+                            <div className="bg-slate-900/30 rounded-xl p-4 border border-slate-700 overflow-hidden">
                                 <BreedingTree steps={path} targetKey={targetKey} />
                             </div>
                         )

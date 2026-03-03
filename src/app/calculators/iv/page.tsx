@@ -49,7 +49,7 @@ export default function IVCalculator() {
   };
 
   const hpIV = calculateIV(hp, palData?.stats.hp || 100, 0); // HP usually doesn't have % passives in this simplified model
-  const attackIV = calculateIV(attack, palData?.stats.attack || 100, getPassiveBonus('attack'));
+  const attackIV = calculateIV(attack, palData?.stats.attack.melee || 100, getPassiveBonus('attack'));
   const defenseIV = calculateIV(defense, palData?.stats.defense || 100, getPassiveBonus('defense'));
 
   // Prepare options for SelectField
