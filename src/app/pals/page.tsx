@@ -92,7 +92,7 @@ export default function PaldeckPage() {
 
                     <div className="space-y-1.5">
                         <StatBar label="HP" value={pal.stats.hp} color="bg-green-500" />
-                        <StatBar label="ATK" value={pal.stats.attack} color="bg-red-500" />
+                        <StatBar label="ATK" value={pal.stats.attack.melee} color="bg-red-500" />
                         <StatBar label="DEF" value={pal.stats.defense} color="bg-blue-500" />
                     </div>
                 </div>
@@ -131,7 +131,7 @@ export default function PaldeckPage() {
                                     </div>
                                 </td>
                                 <td className="px-6 py-4 text-right font-mono text-slate-300">{pal.stats.hp}</td>
-                                <td className="px-6 py-4 text-right font-mono text-slate-300">{pal.stats.attack}</td>
+                                <td className="px-6 py-4 text-right font-mono text-slate-300">{pal.stats.attack.melee}</td>
                                 <td className="px-6 py-4 text-right font-mono text-slate-300">{pal.stats.defense}</td>
                             </tr>
                         ))}

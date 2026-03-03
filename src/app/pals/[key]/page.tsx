@@ -96,7 +96,7 @@ export default async function PalDetailPage({ params }: { params: Promise<{ key:
                 <div className="space-y-4 bg-slate-900/50 p-6 rounded-2xl border border-slate-800">
                     <h3 className="text-sm font-bold text-slate-400 uppercase tracking-wider mb-2">Base Stats</h3>
                     <StatBar label="HP" value={pal.stats.hp} color="bg-green-500" />
-                    <StatBar label="ATK" value={pal.stats.attack} color="bg-red-500" />
+                    <StatBar label="ATK" value={pal.stats.attack.melee} color="bg-red-500" />
                     <StatBar label="DEF" value={pal.stats.defense} color="bg-blue-500" />
 
                     <div className="pt-4 mt-4 border-t border-slate-800 flex justify-between items-center">
