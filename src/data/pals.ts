@@ -58,7 +58,7 @@ export interface PalData {
 export const pals: PalData[] = [
   {
     "id": "1",
-    "key": "lamball",
+    "key": "Lamball",
     "name": "Lamball",
     "types": [
       "Neutral"
@@ -86,7 +86,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1470,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_SheepBall_icon_normal.webp",
+    "image": "/images/pals/Lamball.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -151,7 +151,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "2",
-    "key": "cattiva",
+    "key": "Cattiva",
     "name": "Cattiva",
     "types": [
       "Neutral"
@@ -180,7 +180,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1460,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_PinkCat_icon_normal.webp",
+    "image": "/images/pals/Cattiva.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -245,7 +245,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "3",
-    "key": "chikipi",
+    "key": "Chikipi",
     "name": "Chikipi",
     "types": [
       "Neutral"
@@ -272,7 +272,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1500,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_ChickenPal_icon_normal.webp",
+    "image": "/images/pals/Chikipi.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -337,7 +337,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "4",
-    "key": "lifmunk",
+    "key": "Lifmunk",
     "name": "Lifmunk",
     "types": [
       "Grass"
@@ -367,7 +367,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1430,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Carbunclo_icon_normal.webp",
+    "image": "/images/pals/Lifmunk.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -432,7 +432,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "5",
-    "key": "foxparks",
+    "key": "Foxparks",
     "name": "Foxparks",
     "types": [
       "Fire"
@@ -458,7 +458,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1400,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Kitsunebi_icon_normal.webp",
+    "image": "/images/pals/Foxparks.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -523,7 +523,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "5B",
-    "key": "foxparks_cryst",
+    "key": "Foxparks_Cryst",
     "name": "Foxparks Cryst",
     "types": [
       "Ice"
@@ -549,7 +549,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1305,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Kitsunebi_Ice_icon_normal.webp",
+    "image": "/images/pals/Foxparks_Cryst.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -614,7 +614,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "6",
-    "key": "fuack",
+    "key": "Fuack",
     "name": "Fuack",
     "types": [
       "Water"
@@ -642,7 +642,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1330,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_BluePlatypus_icon_normal.webp",
+    "image": "/images/pals/Fuack.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -707,7 +707,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "6B",
-    "key": "fuack_ignis",
+    "key": "Fuack_Ignis",
     "name": "Fuack Ignis",
     "types": [
       "Water",
@@ -737,7 +737,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1290,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_BluePlatypus_Fire_icon_normal.webp",
+    "image": "/images/pals/Fuack_Ignis.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -802,7 +802,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "7",
-    "key": "sparkit",
+    "key": "Sparkit",
     "name": "Sparkit",
     "types": [
       "Electric"
@@ -830,7 +830,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1410,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_ElecCat_icon_normal.webp",
+    "image": "/images/pals/Sparkit.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -895,7 +895,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "8",
-    "key": "tanzee",
+    "key": "Tanzee",
     "name": "Tanzee",
     "types": [
       "Grass"
@@ -925,7 +925,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1250,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Monkey_icon_normal.webp",
+    "image": "/images/pals/Tanzee.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -990,7 +990,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "9",
-    "key": "rooby",
+    "key": "Rooby",
     "name": "Rooby",
     "types": [
       "Fire"
@@ -1016,7 +1016,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1155,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_FlameBambi_icon_normal.webp",
+    "image": "/images/pals/Rooby.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -1081,7 +1081,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "10",
-    "key": "pengullet",
+    "key": "Pengullet",
     "name": "Pengullet",
     "types": [
       "Water",
@@ -1111,7 +1111,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1350,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Penguin_icon_normal.webp",
+    "image": "/images/pals/Pengullet.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -1176,7 +1176,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "10B",
-    "key": "pengullet_lux",
+    "key": "Pengullet_Lux",
     "name": "Pengullet Lux",
     "types": [
       "Water",
@@ -1206,7 +1206,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1310,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Penguin_Electric_icon_normal.webp",
+    "image": "/images/pals/Pengullet_Lux.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -1271,7 +1271,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "11",
-    "key": "penking",
+    "key": "Penking",
     "name": "Penking",
     "types": [
       "Water",
@@ -1302,7 +1302,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 520,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_CaptainPenguin_icon_normal.webp",
+    "image": "/images/pals/Penking.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -1367,7 +1367,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "11B",
-    "key": "penking_lux",
+    "key": "Penking_Lux",
     "name": "Penking Lux",
     "types": [
       "Water",
@@ -1398,7 +1398,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 490,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_CaptainPenguin_Black_icon_normal.webp",
+    "image": "/images/pals/Penking_Lux.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -1463,7 +1463,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "12",
-    "key": "jolthog",
+    "key": "Jolthog",
     "name": "Jolthog",
     "types": [
       "Electric"
@@ -1489,7 +1489,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1370,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Hedgehog_icon_normal.webp",
+    "image": "/images/pals/Jolthog.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -1554,7 +1554,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "12B",
-    "key": "jolthog_cryst",
+    "key": "Jolthog_Cryst",
     "name": "Jolthog Cryst",
     "types": [
       "Ice"
@@ -1580,7 +1580,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1360,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Hedgehog_Ice_icon_normal.webp",
+    "image": "/images/pals/Jolthog_Cryst.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -1645,7 +1645,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "13",
-    "key": "gumoss",
+    "key": "Gumoss",
     "name": "Gumoss",
     "types": [
       "Grass",
@@ -1672,7 +1672,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1240,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_PlantSlime_icon_normal.webp",
+    "image": "/images/pals/Gumoss.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -1737,7 +1737,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "14",
-    "key": "vixy",
+    "key": "Vixy",
     "name": "Vixy",
     "types": [
       "Neutral"
@@ -1764,7 +1764,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1450,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_CuteFox_icon_normal.webp",
+    "image": "/images/pals/Vixy.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -1829,7 +1829,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "15",
-    "key": "hoocrates",
+    "key": "Hoocrates",
     "name": "Hoocrates",
     "types": [
       "Dark"
@@ -1855,7 +1855,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1390,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_WizardOwl_icon_normal.webp",
+    "image": "/images/pals/Hoocrates.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -1920,7 +1920,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "16",
-    "key": "teafant",
+    "key": "Teafant",
     "name": "Teafant",
     "types": [
       "Water"
@@ -1946,7 +1946,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1490,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Ganesha_icon_normal.webp",
+    "image": "/images/pals/Teafant.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -2011,7 +2011,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "17",
-    "key": "depresso",
+    "key": "Depresso",
     "name": "Depresso",
     "types": [
       "Dark"
@@ -2039,7 +2039,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1380,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_NegativeKoala_icon_normal.webp",
+    "image": "/images/pals/Depresso.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -2104,7 +2104,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "18",
-    "key": "cremis",
+    "key": "Cremis",
     "name": "Cremis",
     "types": [
       "Neutral"
@@ -2131,7 +2131,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1455,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_WoolFox_icon_normal.webp",
+    "image": "/images/pals/Cremis.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -2196,7 +2196,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "19",
-    "key": "daedream",
+    "key": "Daedream",
     "name": "Daedream",
     "types": [
       "Dark"
@@ -2224,7 +2224,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1230,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_DreamDemon_icon_normal.webp",
+    "image": "/images/pals/Daedream.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -2289,7 +2289,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "20",
-    "key": "rushoar",
+    "key": "Rushoar",
     "name": "Rushoar",
     "types": [
       "Ground"
@@ -2315,7 +2315,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1130,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Boar_icon_normal.webp",
+    "image": "/images/pals/Rushoar.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -2380,7 +2380,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "21",
-    "key": "nox",
+    "key": "Nox",
     "name": "Nox",
     "types": [
       "Dark"
@@ -2406,7 +2406,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1180,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_NightFox_icon_normal.webp",
+    "image": "/images/pals/Nox.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -2471,7 +2471,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "22",
-    "key": "fuddler",
+    "key": "Fuddler",
     "name": "Fuddler",
     "types": [
       "Ground"
@@ -2499,7 +2499,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1220,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_CuteMole_icon_normal.webp",
+    "image": "/images/pals/Fuddler.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -2564,7 +2564,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "23",
-    "key": "killamari",
+    "key": "Killamari",
     "name": "Killamari",
     "types": [
       "Dark",
@@ -2593,7 +2593,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1290,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_NegativeOctopus_icon_normal.webp",
+    "image": "/images/pals/Killamari.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -2658,7 +2658,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "23B",
-    "key": "killamari_primo",
+    "key": "Killamari_Primo",
     "name": "Killamari Primo",
     "types": [
       "Neutral",
@@ -2687,7 +2687,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1250,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_NegativeOctopus_Neutral_icon_normal.webp",
+    "image": "/images/pals/Killamari_Primo.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -2748,11 +2748,11 @@ export const pals: PalData[] = [
         "description": "Shoots pressurized water at extreme velocities, sweeping over a wide area in front of it."
       }
     ],
-    "isVariant": true
+    "isVariant": false
   },
   {
     "id": "24",
-    "key": "mau",
+    "key": "Mau",
     "name": "Mau",
     "types": [
       "Dark"
@@ -2778,7 +2778,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1480,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Bastet_icon_normal.webp",
+    "image": "/images/pals/Mau.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -2843,7 +2843,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "24B",
-    "key": "mau_cryst",
+    "key": "Mau_Cryst",
     "name": "Mau Cryst",
     "types": [
       "Ice"
@@ -2870,7 +2870,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1440,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Bastet_Ice_icon_normal.webp",
+    "image": "/images/pals/Mau_Cryst.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -2935,7 +2935,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "25",
-    "key": "celaray",
+    "key": "Celaray",
     "name": "Celaray",
     "types": [
       "Water"
@@ -2962,7 +2962,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 870,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_FlyingManta_icon_normal.webp",
+    "image": "/images/pals/Celaray.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -3027,7 +3027,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "25B",
-    "key": "celaray_lux",
+    "key": "Celaray_Lux",
     "name": "Celaray Lux",
     "types": [
       "Water",
@@ -3056,7 +3056,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 830,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_FlyingManta_Thunder_icon_normal.webp",
+    "image": "/images/pals/Celaray_Lux.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -3121,7 +3121,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "26",
-    "key": "direhowl",
+    "key": "Direhowl",
     "name": "Direhowl",
     "types": [
       "Neutral"
@@ -3147,7 +3147,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1060,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Garm_icon_normal.webp",
+    "image": "/images/pals/Direhowl.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -3212,7 +3212,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "27",
-    "key": "tocotoco",
+    "key": "Tocotoco",
     "name": "Tocotoco",
     "types": [
       "Neutral"
@@ -3238,7 +3238,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1340,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_ColorfulBird_icon_normal.webp",
+    "image": "/images/pals/Tocotoco.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -3303,7 +3303,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "28",
-    "key": "flopie",
+    "key": "Flopie",
     "name": "Flopie",
     "types": [
       "Grass"
@@ -3333,7 +3333,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1280,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_FlowerRabbit_icon_normal.webp",
+    "image": "/images/pals/Flopie.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -3398,7 +3398,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "29",
-    "key": "mozzarina",
+    "key": "Mozzarina",
     "name": "Mozzarina",
     "types": [
       "Neutral"
@@ -3424,7 +3424,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 910,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_CowPal_icon_normal.webp",
+    "image": "/images/pals/Mozzarina.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -3489,7 +3489,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "30",
-    "key": "bristla",
+    "key": "Bristla",
     "name": "Bristla",
     "types": [
       "Grass"
@@ -3519,7 +3519,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1320,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_LittleBriarRose_icon_normal.webp",
+    "image": "/images/pals/Bristla.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -3584,7 +3584,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "31",
-    "key": "gobfin",
+    "key": "Gobfin",
     "name": "Gobfin",
     "types": [
       "Water"
@@ -3612,7 +3612,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1090,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_SharkKid_icon_normal.webp",
+    "image": "/images/pals/Gobfin.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -3677,7 +3677,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "31B",
-    "key": "gobfin_ignis",
+    "key": "Gobfin_Ignis",
     "name": "Gobfin Ignis",
     "types": [
       "Fire"
@@ -3705,7 +3705,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1100,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_SharkKid_Fire_icon_normal.webp",
+    "image": "/images/pals/Gobfin_Ignis.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -3770,7 +3770,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "32",
-    "key": "hangyu",
+    "key": "Hangyu",
     "name": "Hangyu",
     "types": [
       "Ground"
@@ -3798,7 +3798,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1420,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_WindChimes_icon_normal.webp",
+    "image": "/images/pals/Hangyu.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -3863,7 +3863,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "32B",
-    "key": "hangyu_cryst",
+    "key": "Hangyu_Cryst",
     "name": "Hangyu Cryst",
     "types": [
       "Ice"
@@ -3892,7 +3892,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1422,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_WindChimes_Ice_icon_normal.webp",
+    "image": "/images/pals/Hangyu_Cryst.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -3957,7 +3957,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "33",
-    "key": "mossanda",
+    "key": "Mossanda",
     "name": "Mossanda",
     "types": [
       "Grass"
@@ -3986,7 +3986,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 430,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_GrassPanda_icon_normal.webp",
+    "image": "/images/pals/Mossanda.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -4051,7 +4051,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "33B",
-    "key": "mossanda_lux",
+    "key": "Mossanda_Lux",
     "name": "Mossanda Lux",
     "types": [
       "Electric"
@@ -4080,7 +4080,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 390,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_GrassPanda_Electric_icon_normal.webp",
+    "image": "/images/pals/Mossanda_Lux.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -4145,7 +4145,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "34",
-    "key": "woolipop",
+    "key": "Woolipop",
     "name": "Woolipop",
     "types": [
       "Neutral"
@@ -4171,7 +4171,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1190,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_SweetsSheep_icon_normal.webp",
+    "image": "/images/pals/Woolipop.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -4236,7 +4236,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "35",
-    "key": "caprity",
+    "key": "Caprity",
     "name": "Caprity",
     "types": [
       "Grass"
@@ -4263,7 +4263,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 930,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_BerryGoat_icon_normal.webp",
+    "image": "/images/pals/Caprity.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -4328,7 +4328,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "35B",
-    "key": "caprity_noct",
+    "key": "Caprity_Noct",
     "name": "Caprity Noct",
     "types": [
       "Dark"
@@ -4355,7 +4355,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 855,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_BerryGoat_Dark_icon_normal.webp",
+    "image": "/images/pals/Caprity_Noct.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -4420,7 +4420,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "36",
-    "key": "melpaca",
+    "key": "Melpaca",
     "name": "Melpaca",
     "types": [
       "Neutral"
@@ -4446,7 +4446,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 890,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Alpaca_icon_normal.webp",
+    "image": "/images/pals/Melpaca.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -4511,7 +4511,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "37",
-    "key": "eikthyrdeer",
+    "key": "Eikthyrdeer",
     "name": "Eikthyrdeer",
     "types": [
       "Neutral"
@@ -4537,7 +4537,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 920,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Deer_icon_normal.webp",
+    "image": "/images/pals/Eikthyrdeer.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -4602,7 +4602,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "37B",
-    "key": "eikthyrdeer_terra",
+    "key": "Eikthyrdeer_Terra",
     "name": "Eikthyrdeer Terra",
     "types": [
       "Ground"
@@ -4628,7 +4628,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 900,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Deer_Ground_icon_normal.webp",
+    "image": "/images/pals/Eikthyrdeer_Terra.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -4693,7 +4693,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "38",
-    "key": "nitewing",
+    "key": "Nitewing",
     "name": "Nitewing",
     "types": [
       "Neutral"
@@ -4719,7 +4719,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 420,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_HawkBird_icon_normal.webp",
+    "image": "/images/pals/Nitewing.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -4784,7 +4784,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "39",
-    "key": "ribbuny",
+    "key": "Ribbuny",
     "name": "Ribbuny",
     "types": [
       "Neutral"
@@ -4812,7 +4812,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1310,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_PinkRabbit_icon_normal.webp",
+    "image": "/images/pals/Ribbuny.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -4877,7 +4877,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "39B",
-    "key": "ribbuny_botan",
+    "key": "Ribbuny_Botan",
     "name": "Ribbuny Botan",
     "types": [
       "Grass"
@@ -4906,7 +4906,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1205,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_PinkRabbit_Grass_icon_normal.webp",
+    "image": "/images/pals/Ribbuny_Botan.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -4967,11 +4967,11 @@ export const pals: PalData[] = [
         "description": "Charges solar energy before blasting enemies with a powerful beam."
       }
     ],
-    "isVariant": true
+    "isVariant": false
   },
   {
     "id": "40",
-    "key": "incineram",
+    "key": "Incineram",
     "name": "Incineram",
     "types": [
       "Fire",
@@ -5001,7 +5001,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 590,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Baphomet_icon_normal.webp",
+    "image": "/images/pals/Incineram.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -5066,7 +5066,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "40B",
-    "key": "incineram_noct",
+    "key": "Incineram_Noct",
     "name": "Incineram Noct",
     "types": [
       "Dark"
@@ -5094,7 +5094,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 580,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Baphomet_Dark_icon_normal.webp",
+    "image": "/images/pals/Incineram_Noct.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -5159,7 +5159,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "41",
-    "key": "cinnamoth",
+    "key": "Cinnamoth",
     "name": "Cinnamoth",
     "types": [
       "Grass"
@@ -5186,7 +5186,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 490,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_CuteButterfly_icon_normal.webp",
+    "image": "/images/pals/Cinnamoth.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -5251,7 +5251,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "42",
-    "key": "arsox",
+    "key": "Arsox",
     "name": "Arsox",
     "types": [
       "Fire"
@@ -5278,7 +5278,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 790,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_FlameBuffalo_icon_normal.webp",
+    "image": "/images/pals/Arsox.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -5343,7 +5343,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "43",
-    "key": "dumud",
+    "key": "Dumud",
     "name": "Dumud",
     "types": [
       "Ground",
@@ -5373,7 +5373,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 895,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_LazyCatfish_icon_normal.webp",
+    "image": "/images/pals/Dumud.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -5438,7 +5438,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "43B",
-    "key": "dumud_gild",
+    "key": "Dumud_Gild",
     "name": "Dumud Gild",
     "types": [
       "Ground",
@@ -5468,7 +5468,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 855,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_LazyCatfish_Gold_icon_normal.webp",
+    "image": "/images/pals/Dumud_Gild.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -5529,11 +5529,11 @@ export const pals: PalData[] = [
         "description": "Creates multiple sand tornadoes. The tornadoes continuously spin in circles."
       }
     ],
-    "isVariant": true
+    "isVariant": false
   },
   {
     "id": "44",
-    "key": "cawgnito",
+    "key": "Cawgnito",
     "name": "Cawgnito",
     "types": [
       "Dark"
@@ -5559,7 +5559,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1080,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_DarkCrow_icon_normal.webp",
+    "image": "/images/pals/Cawgnito.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -5624,7 +5624,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "45",
-    "key": "leezpunk",
+    "key": "Leezpunk",
     "name": "Leezpunk",
     "types": [
       "Dark"
@@ -5652,7 +5652,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1120,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_LizardMan_icon_normal.webp",
+    "image": "/images/pals/Leezpunk.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -5717,7 +5717,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "45B",
-    "key": "leezpunk_ignis",
+    "key": "Leezpunk_Ignis",
     "name": "Leezpunk Ignis",
     "types": [
       "Fire"
@@ -5746,7 +5746,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1140,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_LizardMan_Fire_icon_normal.webp",
+    "image": "/images/pals/Leezpunk_Ignis.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -5811,7 +5811,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "46",
-    "key": "loupmoon",
+    "key": "Loupmoon",
     "name": "Loupmoon",
     "types": [
       "Dark"
@@ -5837,7 +5837,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 950,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Werewolf_icon_normal.webp",
+    "image": "/images/pals/Loupmoon.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -5902,7 +5902,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "46B",
-    "key": "loupmoon_cryst",
+    "key": "Loupmoon_Cryst",
     "name": "Loupmoon Cryst",
     "types": [
       "Ice"
@@ -5929,7 +5929,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 805,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Werewolf_Ice_icon_normal.webp",
+    "image": "/images/pals/Loupmoon_Cryst.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -5994,7 +5994,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "47",
-    "key": "galeclaw",
+    "key": "Galeclaw",
     "name": "Galeclaw",
     "types": [
       "Neutral"
@@ -6020,7 +6020,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1030,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Eagle_icon_normal.webp",
+    "image": "/images/pals/Galeclaw.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -6085,7 +6085,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "48",
-    "key": "robinquill",
+    "key": "Robinquill",
     "name": "Robinquill",
     "types": [
       "Grass"
@@ -6116,7 +6116,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1020,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_RobinHood_icon_normal.webp",
+    "image": "/images/pals/Robinquill.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -6181,7 +6181,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "48B",
-    "key": "robinquill_terra",
+    "key": "Robinquill_Terra",
     "name": "Robinquill Terra",
     "types": [
       "Grass",
@@ -6212,7 +6212,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1000,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_RobinHood_Ground_icon_normal.webp",
+    "image": "/images/pals/Robinquill_Terra.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -6277,7 +6277,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "49",
-    "key": "gorirat",
+    "key": "Gorirat",
     "name": "Gorirat",
     "types": [
       "Neutral"
@@ -6305,7 +6305,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1040,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Gorilla_icon_normal.webp",
+    "image": "/images/pals/Gorirat.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -6370,7 +6370,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "49B",
-    "key": "gorirat_terra",
+    "key": "Gorirat_Terra",
     "name": "Gorirat Terra",
     "types": [
       "Ground"
@@ -6398,7 +6398,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1030,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Gorilla_Ground_icon_normal.webp",
+    "image": "/images/pals/Gorirat_Terra.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -6463,7 +6463,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "50",
-    "key": "beegarde",
+    "key": "Beegarde",
     "name": "Beegarde",
     "types": [
       "Grass"
@@ -6495,7 +6495,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1070,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_SoldierBee_icon_normal.webp",
+    "image": "/images/pals/Beegarde.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -6568,7 +6568,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "51",
-    "key": "elizabee",
+    "key": "Elizabee",
     "name": "Elizabee",
     "types": [
       "Grass"
@@ -6598,7 +6598,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 330,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_QueenBee_icon_normal.webp",
+    "image": "/images/pals/Elizabee.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -6663,7 +6663,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "52",
-    "key": "grintale",
+    "key": "Grintale",
     "name": "Grintale",
     "types": [
       "Neutral"
@@ -6689,7 +6689,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 510,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_NaughtyCat_icon_normal.webp",
+    "image": "/images/pals/Grintale.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -6754,7 +6754,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "53",
-    "key": "swee",
+    "key": "Swee",
     "name": "Swee",
     "types": [
       "Ice"
@@ -6781,7 +6781,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1300,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_MopBaby_icon_normal.webp",
+    "image": "/images/pals/Swee.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -6846,7 +6846,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "54",
-    "key": "sweepa",
+    "key": "Sweepa",
     "name": "Sweepa",
     "types": [
       "Ice"
@@ -6873,7 +6873,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 410,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_MopKing_icon_normal.webp",
+    "image": "/images/pals/Sweepa.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -6938,7 +6938,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "55",
-    "key": "chillet",
+    "key": "Chillet",
     "name": "Chillet",
     "types": [
       "Ice",
@@ -6966,7 +6966,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 800,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_WeaselDragon_icon_normal.webp",
+    "image": "/images/pals/Chillet.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -7039,7 +7039,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "55B",
-    "key": "chillet_ignis",
+    "key": "Chillet_Ignis",
     "name": "Chillet Ignis",
     "types": [
       "Fire",
@@ -7067,7 +7067,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 790,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_WeaselDragon_Fire_icon_normal.webp",
+    "image": "/images/pals/Chillet_Ignis.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -7132,7 +7132,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "56",
-    "key": "univolt",
+    "key": "Univolt",
     "name": "Univolt",
     "types": [
       "Electric"
@@ -7159,7 +7159,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 680,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Kirin_icon_normal.webp",
+    "image": "/images/pals/Univolt.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -7232,7 +7232,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "57",
-    "key": "foxcicle",
+    "key": "Foxcicle",
     "name": "Foxcicle",
     "types": [
       "Ice"
@@ -7258,7 +7258,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 760,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_IceFox_icon_normal.webp",
+    "image": "/images/pals/Foxcicle.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -7323,7 +7323,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "58",
-    "key": "pyrin",
+    "key": "Pyrin",
     "name": "Pyrin",
     "types": [
       "Fire"
@@ -7350,7 +7350,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 360,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_FireKirin_icon_normal.webp",
+    "image": "/images/pals/Pyrin.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -7415,7 +7415,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "58B",
-    "key": "pyrin_noct",
+    "key": "Pyrin_Noct",
     "name": "Pyrin Noct",
     "types": [
       "Fire",
@@ -7443,7 +7443,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 240,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_FireKirin_Dark_icon_normal.webp",
+    "image": "/images/pals/Pyrin_Noct.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -7508,7 +7508,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "59",
-    "key": "reindrix",
+    "key": "Reindrix",
     "name": "Reindrix",
     "types": [
       "Ice"
@@ -7535,7 +7535,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 880,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_IceDeer_icon_normal.webp",
+    "image": "/images/pals/Reindrix.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -7600,7 +7600,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "60",
-    "key": "rayhound",
+    "key": "Rayhound",
     "name": "Rayhound",
     "types": [
       "Electric"
@@ -7626,7 +7626,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 740,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_ThunderDog_icon_normal.webp",
+    "image": "/images/pals/Rayhound.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -7699,7 +7699,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "61",
-    "key": "kitsun",
+    "key": "Kitsun",
     "name": "Kitsun",
     "types": [
       "Fire"
@@ -7725,7 +7725,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 830,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_AmaterasuWolf_icon_normal.webp",
+    "image": "/images/pals/Kitsun.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -7790,7 +7790,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "61B",
-    "key": "kitsun_noct",
+    "key": "Kitsun_Noct",
     "name": "Kitsun Noct",
     "types": [
       "Dark"
@@ -7816,7 +7816,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 735,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_AmaterasuWolf_Dark_icon_normal.webp",
+    "image": "/images/pals/Kitsun_Noct.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -7881,7 +7881,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "62",
-    "key": "dazzi",
+    "key": "Dazzi",
     "name": "Dazzi",
     "types": [
       "Electric"
@@ -7909,7 +7909,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1210,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_RaijinDaughter_icon_normal.webp",
+    "image": "/images/pals/Dazzi.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -7974,7 +7974,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "62B",
-    "key": "dazzi_noct",
+    "key": "Dazzi_Noct",
     "name": "Dazzi Noct",
     "types": [
       "Dark",
@@ -8004,7 +8004,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1115,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_RaijinDaughter_Water_icon_normal.webp",
+    "image": "/images/pals/Dazzi_Noct.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -8069,7 +8069,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "63",
-    "key": "lunaris",
+    "key": "Lunaris",
     "name": "Lunaris",
     "types": [
       "Neutral"
@@ -8097,7 +8097,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1110,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Mutant_icon_normal.webp",
+    "image": "/images/pals/Lunaris.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -8162,7 +8162,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "64",
-    "key": "dinossom",
+    "key": "Dinossom",
     "name": "Dinossom",
     "types": [
       "Grass",
@@ -8190,7 +8190,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 820,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_FlowerDinosaur_icon_normal.webp",
+    "image": "/images/pals/Dinossom.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -8255,7 +8255,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "64B",
-    "key": "dinossom_lux",
+    "key": "Dinossom_Lux",
     "name": "Dinossom Lux",
     "types": [
       "Electric",
@@ -8283,7 +8283,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 810,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_FlowerDinosaur_Electric_icon_normal.webp",
+    "image": "/images/pals/Dinossom_Lux.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -8348,7 +8348,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "65",
-    "key": "surfent",
+    "key": "Surfent",
     "name": "Surfent",
     "types": [
       "Water"
@@ -8374,7 +8374,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 560,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Serpent_icon_normal.webp",
+    "image": "/images/pals/Surfent.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -8439,7 +8439,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "65B",
-    "key": "surfent_terra",
+    "key": "Surfent_Terra",
     "name": "Surfent Terra",
     "types": [
       "Ground"
@@ -8465,7 +8465,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 550,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Serpent_Ground_icon_normal.webp",
+    "image": "/images/pals/Surfent_Terra.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -8530,7 +8530,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "66",
-    "key": "maraith",
+    "key": "Maraith",
     "name": "Maraith",
     "types": [
       "Dark"
@@ -8557,7 +8557,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1150,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_GhostBeast_icon_normal.webp",
+    "image": "/images/pals/Maraith.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -8630,7 +8630,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "67",
-    "key": "digtoise",
+    "key": "Digtoise",
     "name": "Digtoise",
     "types": [
       "Ground"
@@ -8656,7 +8656,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 850,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_DrillGame_icon_normal.webp",
+    "image": "/images/pals/Digtoise.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -8721,7 +8721,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "68",
-    "key": "tombat",
+    "key": "Tombat",
     "name": "Tombat",
     "types": [
       "Dark"
@@ -8749,7 +8749,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 750,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_CatBat_icon_normal.webp",
+    "image": "/images/pals/Tombat.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -8814,7 +8814,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "69",
-    "key": "lovander",
+    "key": "Lovander",
     "name": "Lovander",
     "types": [
       "Neutral"
@@ -8843,7 +8843,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 940,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_PinkLizard_icon_normal.webp",
+    "image": "/images/pals/Lovander.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -8908,7 +8908,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "70",
-    "key": "flambelle",
+    "key": "Flambelle",
     "name": "Flambelle",
     "types": [
       "Fire"
@@ -8937,7 +8937,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1405,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_LavaGirl_icon_normal.webp",
+    "image": "/images/pals/Flambelle.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -9002,7 +9002,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "71",
-    "key": "vanwyrm",
+    "key": "Vanwyrm",
     "name": "Vanwyrm",
     "types": [
       "Fire",
@@ -9030,7 +9030,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 660,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_BirdDragon_icon_normal.webp",
+    "image": "/images/pals/Vanwyrm.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -9103,7 +9103,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "71B",
-    "key": "vanwyrm_cryst",
+    "key": "Vanwyrm_Cryst",
     "name": "Vanwyrm Cryst",
     "types": [
       "Ice",
@@ -9131,7 +9131,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 620,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_BirdDragon_Ice_icon_normal.webp",
+    "image": "/images/pals/Vanwyrm_Cryst.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -9204,7 +9204,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "72",
-    "key": "bushi",
+    "key": "Bushi",
     "name": "Bushi",
     "types": [
       "Fire"
@@ -9234,7 +9234,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 640,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Ronin_icon_normal.webp",
+    "image": "/images/pals/Bushi.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -9299,7 +9299,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "72B",
-    "key": "bushi_noct",
+    "key": "Bushi_Noct",
     "name": "Bushi Noct",
     "types": [
       "Fire",
@@ -9330,7 +9330,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 650,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Ronin_Dark_icon_normal.webp",
+    "image": "/images/pals/Bushi_Noct.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -9403,7 +9403,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "73",
-    "key": "beakon",
+    "key": "Beakon",
     "name": "Beakon",
     "types": [
       "Electric"
@@ -9431,7 +9431,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 220,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_ThunderBird_icon_normal.webp",
+    "image": "/images/pals/Beakon.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -9504,7 +9504,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "74",
-    "key": "ragnahawk",
+    "key": "Ragnahawk",
     "name": "Ragnahawk",
     "types": [
       "Fire"
@@ -9531,7 +9531,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 380,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_RedArmorBird_icon_normal.webp",
+    "image": "/images/pals/Ragnahawk.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -9604,7 +9604,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "75",
-    "key": "katress",
+    "key": "Katress",
     "name": "Katress",
     "types": [
       "Dark"
@@ -9632,7 +9632,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 700,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_CatMage_icon_normal.webp",
+    "image": "/images/pals/Katress.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -9697,7 +9697,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "75B",
-    "key": "katress_ignis",
+    "key": "Katress_Ignis",
     "name": "Katress Ignis",
     "types": [
       "Dark",
@@ -9727,7 +9727,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 690,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_CatMage_Fire_icon_normal.webp",
+    "image": "/images/pals/Katress_Ignis.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -9792,7 +9792,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "76",
-    "key": "wixen",
+    "key": "Wixen",
     "name": "Wixen",
     "types": [
       "Fire"
@@ -9820,7 +9820,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1160,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_FoxMage_icon_normal.webp",
+    "image": "/images/pals/Wixen.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -9885,7 +9885,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "76B",
-    "key": "wixen_noct",
+    "key": "Wixen_Noct",
     "name": "Wixen Noct",
     "types": [
       "Fire",
@@ -9914,7 +9914,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1150,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_FoxMage_Dark_icon_normal.webp",
+    "image": "/images/pals/Wixen_Noct.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -9979,7 +9979,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "77",
-    "key": "verdash",
+    "key": "Verdash",
     "name": "Verdash",
     "types": [
       "Grass"
@@ -10009,7 +10009,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 990,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_GrassRabbitMan_icon_normal.webp",
+    "image": "/images/pals/Verdash.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -10082,7 +10082,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "78",
-    "key": "vaelet",
+    "key": "Vaelet",
     "name": "Vaelet",
     "types": [
       "Grass"
@@ -10112,7 +10112,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1050,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_VioletFairy_icon_normal.webp",
+    "image": "/images/pals/Vaelet.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -10177,7 +10177,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "79",
-    "key": "sibelyx",
+    "key": "Sibelyx",
     "name": "Sibelyx",
     "types": [
       "Ice"
@@ -10205,7 +10205,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 450,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_WhiteMoth_icon_normal.webp",
+    "image": "/images/pals/Sibelyx.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -10270,7 +10270,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "80",
-    "key": "elphidran",
+    "key": "Elphidran",
     "name": "Elphidran",
     "types": [
       "Dragon"
@@ -10296,7 +10296,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 540,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_FairyDragon_icon_normal.webp",
+    "image": "/images/pals/Elphidran.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -10361,7 +10361,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "80B",
-    "key": "elphidran_aqua",
+    "key": "Elphidran_Aqua",
     "name": "Elphidran Aqua",
     "types": [
       "Dragon",
@@ -10389,7 +10389,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 530,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_FairyDragon_Water_icon_normal.webp",
+    "image": "/images/pals/Elphidran_Aqua.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -10454,7 +10454,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "81",
-    "key": "kelpsea",
+    "key": "Kelpsea",
     "name": "Kelpsea",
     "types": [
       "Water"
@@ -10481,7 +10481,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1260,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Kelpie_icon_normal.webp",
+    "image": "/images/pals/Kelpsea.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -10546,7 +10546,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "81B",
-    "key": "kelpsea_ignis",
+    "key": "Kelpsea_Ignis",
     "name": "Kelpsea Ignis",
     "types": [
       "Fire"
@@ -10573,7 +10573,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1270,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Kelpie_Fire_icon_normal.webp",
+    "image": "/images/pals/Kelpsea_Ignis.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -10638,7 +10638,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "82",
-    "key": "azurobe",
+    "key": "Azurobe",
     "name": "Azurobe",
     "types": [
       "Water",
@@ -10665,7 +10665,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 500,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_BlueDragon_icon_normal.webp",
+    "image": "/images/pals/Azurobe.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -10730,7 +10730,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "82B",
-    "key": "azurobe_cryst",
+    "key": "Azurobe_Cryst",
     "name": "Azurobe Cryst",
     "types": [
       "Ice",
@@ -10757,7 +10757,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 480,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_BlueDragon_Ice_icon_normal.webp",
+    "image": "/images/pals/Azurobe_Cryst.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -10822,7 +10822,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "83",
-    "key": "cryolinx",
+    "key": "Cryolinx",
     "name": "Cryolinx",
     "types": [
       "Ice"
@@ -10851,7 +10851,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 130,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_WhiteTiger_icon_normal.webp",
+    "image": "/images/pals/Cryolinx.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -10924,7 +10924,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "83B",
-    "key": "cryolinx_terra",
+    "key": "Cryolinx_Terra",
     "name": "Cryolinx Terra",
     "types": [
       "Ground"
@@ -10953,7 +10953,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 160,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_WhiteTiger_Ground_icon_normal.webp",
+    "image": "/images/pals/Cryolinx_Terra.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -11026,7 +11026,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "84",
-    "key": "blazehowl",
+    "key": "Blazehowl",
     "name": "Blazehowl",
     "types": [
       "Fire"
@@ -11053,7 +11053,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 710,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Manticore_icon_normal.webp",
+    "image": "/images/pals/Blazehowl.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -11126,7 +11126,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "84B",
-    "key": "blazehowl_noct",
+    "key": "Blazehowl_Noct",
     "name": "Blazehowl Noct",
     "types": [
       "Fire",
@@ -11154,7 +11154,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 670,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Manticore_Dark_icon_normal.webp",
+    "image": "/images/pals/Blazehowl_Noct.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -11227,7 +11227,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "85",
-    "key": "relaxaurus",
+    "key": "Relaxaurus",
     "name": "Relaxaurus",
     "types": [
       "Dragon",
@@ -11255,7 +11255,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 280,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_LazyDragon_icon_normal.webp",
+    "image": "/images/pals/Relaxaurus.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -11320,7 +11320,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "85B",
-    "key": "relaxaurus_lux",
+    "key": "Relaxaurus_Lux",
     "name": "Relaxaurus Lux",
     "types": [
       "Dragon",
@@ -11348,7 +11348,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 270,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_LazyDragon_Electric_icon_normal.webp",
+    "image": "/images/pals/Relaxaurus_Lux.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -11413,7 +11413,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "86",
-    "key": "broncherry",
+    "key": "Broncherry",
     "name": "Broncherry",
     "types": [
       "Grass"
@@ -11439,7 +11439,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 860,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_SakuraSaurus_icon_normal.webp",
+    "image": "/images/pals/Broncherry.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -11504,7 +11504,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "86B",
-    "key": "broncherry_aqua",
+    "key": "Broncherry_Aqua",
     "name": "Broncherry Aqua",
     "types": [
       "Grass",
@@ -11531,7 +11531,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 840,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_SakuraSaurus_Water_icon_normal.webp",
+    "image": "/images/pals/Broncherry_Aqua.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -11596,7 +11596,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "87",
-    "key": "petallia",
+    "key": "Petallia",
     "name": "Petallia",
     "types": [
       "Grass"
@@ -11626,7 +11626,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 780,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_FlowerDoll_icon_normal.webp",
+    "image": "/images/pals/Petallia.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -11691,7 +11691,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "88",
-    "key": "reptyro",
+    "key": "Reptyro",
     "name": "Reptyro",
     "types": [
       "Fire",
@@ -11719,7 +11719,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 320,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_VolcanicMonster_icon_normal.webp",
+    "image": "/images/pals/Reptyro.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -11784,7 +11784,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "88B",
-    "key": "reptyro_cryst",
+    "key": "Reptyro_Cryst",
     "name": "Reptyro Cryst",
     "types": [
       "Ice",
@@ -11812,7 +11812,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 230,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_VolcanicMonster_Ice_icon_normal.webp",
+    "image": "/images/pals/Reptyro_Cryst.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -11877,7 +11877,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "89",
-    "key": "kingpaca",
+    "key": "Kingpaca",
     "name": "Kingpaca",
     "types": [
       "Neutral"
@@ -11903,7 +11903,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 470,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_KingAlpaca_icon_normal.webp",
+    "image": "/images/pals/Kingpaca.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -11968,7 +11968,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "89B",
-    "key": "kingpaca_cryst",
+    "key": "Kingpaca_Cryst",
     "name": "Kingpaca Cryst",
     "types": [
       "Ice"
@@ -11995,7 +11995,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 440,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_KingAlpaca_Ice_icon_normal.webp",
+    "image": "/images/pals/Kingpaca_Cryst.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -12060,7 +12060,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "90",
-    "key": "mammorest",
+    "key": "Mammorest",
     "name": "Mammorest",
     "types": [
       "Grass",
@@ -12089,7 +12089,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 300,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_GrassMammoth_icon_normal.webp",
+    "image": "/images/pals/Mammorest.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -12154,7 +12154,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "90B",
-    "key": "mammorest_cryst",
+    "key": "Mammorest_Cryst",
     "name": "Mammorest Cryst",
     "types": [
       "Ice",
@@ -12183,7 +12183,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 290,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_GrassMammoth_Ice_icon_normal.webp",
+    "image": "/images/pals/Mammorest_Cryst.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -12248,7 +12248,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "91",
-    "key": "wumpo",
+    "key": "Wumpo",
     "name": "Wumpo",
     "types": [
       "Ice"
@@ -12277,7 +12277,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 460,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Yeti_icon_normal.webp",
+    "image": "/images/pals/Wumpo.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -12350,7 +12350,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "91B",
-    "key": "wumpo_botan",
+    "key": "Wumpo_Botan",
     "name": "Wumpo Botan",
     "types": [
       "Grass"
@@ -12379,7 +12379,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 480,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Yeti_Grass_icon_normal.webp",
+    "image": "/images/pals/Wumpo_Botan.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -12448,11 +12448,11 @@ export const pals: PalData[] = [
         "description": "Charges solar energy before blasting enemies with a powerful beam."
       }
     ],
-    "isVariant": true
+    "isVariant": false
   },
   {
     "id": "92",
-    "key": "warsect",
+    "key": "Warsect",
     "name": "Warsect",
     "types": [
       "Ground",
@@ -12482,7 +12482,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 340,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_HerculesBeetle_icon_normal.webp",
+    "image": "/images/pals/Warsect.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -12547,7 +12547,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "92B",
-    "key": "warsect_terra",
+    "key": "Warsect_Terra",
     "name": "Warsect Terra",
     "types": [
       "Ground"
@@ -12575,7 +12575,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 275,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_HerculesBeetle_Ground_icon_normal.webp",
+    "image": "/images/pals/Warsect_Terra.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -12640,7 +12640,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "93",
-    "key": "fenglope",
+    "key": "Fenglope",
     "name": "Fenglope",
     "types": [
       "Neutral"
@@ -12666,7 +12666,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 980,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_FengyunDeeper_icon_normal.webp",
+    "image": "/images/pals/Fenglope.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -12731,7 +12731,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "93B",
-    "key": "fenglope_lux",
+    "key": "Fenglope_Lux",
     "name": "Fenglope Lux",
     "types": [
       "Electric"
@@ -12758,7 +12758,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 835,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_FengyunDeeper_Electric_icon_norma.webp",
+    "image": "/images/pals/Fenglope_Lux.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -12823,7 +12823,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "94",
-    "key": "felbat",
+    "key": "Felbat",
     "name": "Felbat",
     "types": [
       "Dark"
@@ -12849,7 +12849,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1010,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_CatVampire_icon_normal.webp",
+    "image": "/images/pals/Felbat.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -12914,7 +12914,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "95",
-    "key": "quivern",
+    "key": "Quivern",
     "name": "Quivern",
     "types": [
       "Dragon"
@@ -12943,7 +12943,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 350,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_SkyDragon_icon_normal.webp",
+    "image": "/images/pals/Quivern.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -13008,7 +13008,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "95B",
-    "key": "quivern_botan",
+    "key": "Quivern_Botan",
     "name": "Quivern Botan",
     "types": [
       "Dragon",
@@ -13039,7 +13039,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 340,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_SkyDragon_Grass_icon_normal.webp",
+    "image": "/images/pals/Quivern_Botan.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -13100,11 +13100,11 @@ export const pals: PalData[] = [
         "description": "Sprouts sharp roots in and around the enemy's location."
       }
     ],
-    "isVariant": true
+    "isVariant": false
   },
   {
     "id": "96",
-    "key": "blazamut",
+    "key": "Blazamut",
     "name": "Blazamut",
     "types": [
       "Fire"
@@ -13131,7 +13131,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 10,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_KingBahamut_icon_normal.webp",
+    "image": "/images/pals/Blazamut.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -13204,7 +13204,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "96B",
-    "key": "blazamut_ryu",
+    "key": "Blazamut_Ryu",
     "name": "Blazamut Ryu",
     "types": [
       "Dragon",
@@ -13232,7 +13232,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 9,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_KingBahamut_Dragon_icon_normal.webp",
+    "image": "/images/pals/Blazamut_Ryu.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -13293,11 +13293,11 @@ export const pals: PalData[] = [
         "description": "Blazamut Ryu's exclusive skill. After a big jump, moves at high speed in the air, gathering strength to unleash a powerful punch."
       }
     ],
-    "isVariant": true
+    "isVariant": false
   },
   {
     "id": "97",
-    "key": "helzephyr",
+    "key": "Helzephyr",
     "name": "Helzephyr",
     "types": [
       "Dark"
@@ -13323,7 +13323,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 190,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_HadesBird_icon_normal.webp",
+    "image": "/images/pals/Helzephyr.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -13388,7 +13388,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "97B",
-    "key": "helzephyr_lux",
+    "key": "Helzephyr_Lux",
     "name": "Helzephyr Lux",
     "types": [
       "Dark",
@@ -13416,7 +13416,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 180,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_HadesBird_Electric_icon_normal.webp",
+    "image": "/images/pals/Helzephyr_Lux.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -13481,7 +13481,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "98",
-    "key": "astegon",
+    "key": "Astegon",
     "name": "Astegon",
     "types": [
       "Dragon",
@@ -13509,7 +13509,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 150,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_BlackMetalDragon_icon_normal.webp",
+    "image": "/images/pals/Astegon.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -13582,7 +13582,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "99",
-    "key": "menasting",
+    "key": "Menasting",
     "name": "Menasting",
     "types": [
       "Dark",
@@ -13610,7 +13610,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 260,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_DarkScorpion_icon_normal.webp",
+    "image": "/images/pals/Menasting.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -13683,7 +13683,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "99B",
-    "key": "menasting_terra",
+    "key": "Menasting_Terra",
     "name": "Menasting Terra",
     "types": [
       "Ground"
@@ -13710,7 +13710,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 250,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_DarkScorpion_Ground_icon_normal.webp",
+    "image": "/images/pals/Menasting_Terra.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -13775,7 +13775,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "100",
-    "key": "anubis",
+    "key": "Anubis",
     "name": "Anubis",
     "types": [
       "Ground"
@@ -13803,7 +13803,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 570,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Anubis_icon_normal.webp",
+    "image": "/images/pals/Anubis.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -13868,7 +13868,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "101",
-    "key": "jormuntide",
+    "key": "Jormuntide",
     "name": "Jormuntide",
     "types": [
       "Dragon",
@@ -13895,7 +13895,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 310,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Umihebi_icon_normal.webp",
+    "image": "/images/pals/Jormuntide.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -13968,7 +13968,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "101B",
-    "key": "jormuntide_ignis",
+    "key": "Jormuntide_Ignis",
     "name": "Jormuntide Ignis",
     "types": [
       "Dragon",
@@ -13995,7 +13995,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 315,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Umihebi_Fire_icon_normal.webp",
+    "image": "/images/pals/Jormuntide_Ignis.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -14068,7 +14068,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "102",
-    "key": "suzaku",
+    "key": "Suzaku",
     "name": "Suzaku",
     "types": [
       "Fire"
@@ -14094,7 +14094,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 50,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Suzaku_icon_normal.webp",
+    "image": "/images/pals/Suzaku.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -14159,7 +14159,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "102B",
-    "key": "suzaku_aqua",
+    "key": "Suzaku_Aqua",
     "name": "Suzaku Aqua",
     "types": [
       "Water"
@@ -14185,7 +14185,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 30,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Suzaku_Water_icon_normal.webp",
+    "image": "/images/pals/Suzaku_Aqua.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -14250,7 +14250,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "103",
-    "key": "grizzbolt",
+    "key": "Grizzbolt",
     "name": "Grizzbolt",
     "types": [
       "Electric"
@@ -14279,7 +14279,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 200,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_ElecPanda_icon_normal.webp",
+    "image": "/images/pals/Grizzbolt.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -14352,7 +14352,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "104",
-    "key": "lyleen",
+    "key": "Lyleen",
     "name": "Lyleen",
     "types": [
       "Grass"
@@ -14381,7 +14381,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 250,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_LilyQueen_icon_normal.webp",
+    "image": "/images/pals/Lyleen.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -14454,7 +14454,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "104B",
-    "key": "lyleen_noct",
+    "key": "Lyleen_Noct",
     "name": "Lyleen Noct",
     "types": [
       "Dark"
@@ -14482,7 +14482,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 210,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_LilyQueen_Dark_icon_normal.webp",
+    "image": "/images/pals/Lyleen_Noct.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -14547,7 +14547,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "105",
-    "key": "faleris",
+    "key": "Faleris",
     "name": "Faleris",
     "types": [
       "Fire"
@@ -14574,7 +14574,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 370,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Horus_icon_normal.webp",
+    "image": "/images/pals/Faleris.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -14647,7 +14647,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "105B",
-    "key": "faleris_aqua",
+    "key": "Faleris_Aqua",
     "name": "Faleris Aqua",
     "types": [
       "Water"
@@ -14674,7 +14674,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 245,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Horus_Water_icon_normal.webp",
+    "image": "/images/pals/Faleris_Aqua.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -14739,7 +14739,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "106",
-    "key": "orserk",
+    "key": "Orserk",
     "name": "Orserk",
     "types": [
       "Dragon",
@@ -14768,7 +14768,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 140,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_ThunderDragonMan_icon_normal.webp",
+    "image": "/images/pals/Orserk.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -14841,7 +14841,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "107",
-    "key": "shadowbeak",
+    "key": "Shadowbeak",
     "name": "Shadowbeak",
     "types": [
       "Dark"
@@ -14867,7 +14867,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 60,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_BlackGriffon_icon_normal.webp",
+    "image": "/images/pals/Shadowbeak.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -14940,7 +14940,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "108",
-    "key": "paladius",
+    "key": "Paladius",
     "name": "Paladius",
     "types": [
       "Neutral"
@@ -14967,7 +14967,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 80,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_SaintCentaur_icon_normal.webp",
+    "image": "/images/pals/Paladius.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -15048,7 +15048,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "109",
-    "key": "necromus",
+    "key": "Necromus",
     "name": "Necromus",
     "types": [
       "Dark"
@@ -15075,7 +15075,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 70,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_BlackCentaur_icon_normal.webp",
+    "image": "/images/pals/Necromus.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -15156,7 +15156,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "110",
-    "key": "frostallion",
+    "key": "Frostallion",
     "name": "Frostallion",
     "types": [
       "Ice"
@@ -15182,7 +15182,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 120,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_IceHorse_icon_normal.webp",
+    "image": "/images/pals/Frostallion.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -15263,7 +15263,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "110B",
-    "key": "frostallion_noct",
+    "key": "Frostallion_Noct",
     "name": "Frostallion Noct",
     "types": [
       "Dark"
@@ -15289,7 +15289,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 100,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_IceHorse_Dark_icon_normal.webp",
+    "image": "/images/pals/Frostallion_Noct.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -15370,7 +15370,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "111",
-    "key": "jetragon",
+    "key": "Jetragon",
     "name": "Jetragon",
     "types": [
       "Dragon"
@@ -15396,7 +15396,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 90,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_JetDragon_icon_normal.webp",
+    "image": "/images/pals/Jetragon.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -15477,7 +15477,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "112",
-    "key": "bellanoir",
+    "key": "Bellanoir",
     "name": "Bellanoir",
     "types": [
       "Dark"
@@ -15505,7 +15505,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_NightLady_icon_normal.webp",
+    "image": "/images/pals/Bellanoir.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -15570,7 +15570,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "112B",
-    "key": "bellanoir_libero",
+    "key": "Bellanoir_Libero",
     "name": "Bellanoir Libero",
     "types": [
       "Dark"
@@ -15598,7 +15598,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_NightLady_Dark_icon_normal.webp",
+    "image": "/images/pals/Bellanoir_Libero.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -15659,11 +15659,11 @@ export const pals: PalData[] = [
         "description": "Bellanoir Libero's exclusive skill. Disappears suddenly, then reappears while firing a barrage of beams. The beams spread like a beautiful flower in bloom."
       }
     ],
-    "isVariant": true
+    "isVariant": false
   },
   {
     "id": "113",
-    "key": "selyne",
+    "key": "Selyne",
     "name": "Selyne",
     "types": [
       "Dark",
@@ -15692,7 +15692,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 345,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_MoonQueen_icon_normal.webp",
+    "image": "/images/pals/Selyne.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -15757,7 +15757,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "114",
-    "key": "croajiro",
+    "key": "Croajiro",
     "name": "Croajiro",
     "types": [
       "Water"
@@ -15786,7 +15786,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 795,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_KendoFrog_icon_normal.webp",
+    "image": "/images/pals/Croajiro.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -15851,7 +15851,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "114B",
-    "key": "croajiro_noct",
+    "key": "Croajiro_Noct",
     "name": "Croajiro Noct",
     "types": [
       "Water",
@@ -15881,7 +15881,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 765,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_KendoFrog_Dark_icon_normal.webp",
+    "image": "/images/pals/Croajiro_Noct.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -15946,7 +15946,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "115",
-    "key": "lullu",
+    "key": "Lullu",
     "name": "Lullu",
     "types": [
       "Grass"
@@ -15975,7 +15975,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 905,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_LeafPrincess_icon_normal.webp",
+    "image": "/images/pals/Lullu.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -16040,7 +16040,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "116",
-    "key": "shroomer",
+    "key": "Shroomer",
     "name": "Shroomer",
     "types": [
       "Grass"
@@ -16069,7 +16069,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 720,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_MushroomDragon_icon_normal.webp",
+    "image": "/images/pals/Shroomer.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -16134,7 +16134,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "116B",
-    "key": "shroomer_noct",
+    "key": "Shroomer_Noct",
     "name": "Shroomer Noct",
     "types": [
       "Grass",
@@ -16164,7 +16164,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 730,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_MushroomDragon_Dark_icon_normal.webp",
+    "image": "/images/pals/Shroomer_Noct.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -16229,7 +16229,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "117",
-    "key": "kikit",
+    "key": "Kikit",
     "name": "Kikit",
     "types": [
       "Ground"
@@ -16255,7 +16255,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1125,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_SmallArmadillo_icon_normal.webp",
+    "image": "/images/pals/Kikit.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -16320,7 +16320,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "118",
-    "key": "sootseer",
+    "key": "Sootseer",
     "name": "Sootseer",
     "types": [
       "Dark",
@@ -16351,7 +16351,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 545,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_CandleGhost_icon_normal.webp",
+    "image": "/images/pals/Sootseer.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -16416,7 +16416,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "119",
-    "key": "prixter",
+    "key": "Prixter",
     "name": "Prixter",
     "types": [
       "Dark",
@@ -16445,7 +16445,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 355,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_ScorpionMan_icon_normal.webp",
+    "image": "/images/pals/Prixter.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -16510,7 +16510,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "120",
-    "key": "knocklem",
+    "key": "Knocklem",
     "name": "Knocklem",
     "types": [
       "Ground"
@@ -16538,7 +16538,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 265,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_WingGolem_icon_normal.webp",
+    "image": "/images/pals/Knocklem.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -16603,7 +16603,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "121",
-    "key": "yakumo",
+    "key": "Yakumo",
     "name": "Yakumo",
     "types": [
       "Neutral"
@@ -16629,7 +16629,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 945,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_GuardianDog_icon_normal.webp",
+    "image": "/images/pals/Yakumo.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -16694,7 +16694,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "122",
-    "key": "dogen",
+    "key": "Dogen",
     "name": "Dogen",
     "types": [
       "Neutral"
@@ -16724,7 +16724,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 665,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_SifuDog_icon_normal.webp",
+    "image": "/images/pals/Dogen.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -16789,7 +16789,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "123",
-    "key": "dazemu",
+    "key": "Dazemu",
     "name": "Dazemu",
     "types": [
       "Ground"
@@ -16815,7 +16815,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 675,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_FeatherOstrich_icon_normal.webp",
+    "image": "/images/pals/Dazemu.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -16880,7 +16880,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "124",
-    "key": "mimog",
+    "key": "Mimog",
     "name": "Mimog",
     "types": [
       "Neutral"
@@ -16907,7 +16907,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1200,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_MimicDog_icon_normal.webp",
+    "image": "/images/pals/Mimog.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -16972,7 +16972,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "125",
-    "key": "xenovader",
+    "key": "Xenovader",
     "name": "Xenovader",
     "types": [
       "Dark"
@@ -16999,7 +16999,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 465,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_DarkAlien_icon_normal.webp",
+    "image": "/images/pals/Xenovader.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -17064,7 +17064,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "126",
-    "key": "xenogard",
+    "key": "Xenogard",
     "name": "Xenogard",
     "types": [
       "Dragon"
@@ -17090,7 +17090,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 435,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_WhiteAlienDragon_icon_normal.webp",
+    "image": "/images/pals/Xenogard.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -17155,7 +17155,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "127",
-    "key": "xenolord",
+    "key": "Xenolord",
     "name": "Xenolord",
     "types": [
       "Dark",
@@ -17182,7 +17182,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 265,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_DarkMechaDragon_icon_normal.webp",
+    "image": "/images/pals/Xenolord.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -17247,7 +17247,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "128",
-    "key": "nitemary",
+    "key": "Nitemary",
     "name": "Nitemary",
     "types": [
       "Dark"
@@ -17274,7 +17274,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 705,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_GhostRabbit_icon_normal.webp",
+    "image": "/images/pals/Nitemary.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -17339,7 +17339,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "129",
-    "key": "starryon",
+    "key": "Starryon",
     "name": "Starryon",
     "types": [
       "Dark"
@@ -17365,7 +17365,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 365,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_NightBlueHorse_icon_normal.webp",
+    "image": "/images/pals/Starryon.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -17430,7 +17430,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "130",
-    "key": "silvegis",
+    "key": "Silvegis",
     "name": "Silvegis",
     "types": [
       "Dragon"
@@ -17456,7 +17456,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 215,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_WhiteShieldDragon_icon_normal.webp",
+    "image": "/images/pals/Silvegis.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -17521,7 +17521,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "131",
-    "key": "smokie",
+    "key": "Smokie",
     "name": "Smokie",
     "types": [
       "Dark"
@@ -17547,7 +17547,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1245,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_BlackPuppy_icon_normal.webp",
+    "image": "/images/pals/Smokie.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -17612,7 +17612,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "132",
-    "key": "celesdir",
+    "key": "Celesdir",
     "name": "Celesdir",
     "types": [
       "Neutral"
@@ -17639,7 +17639,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 815,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_WhiteDeer_icon_normal.webp",
+    "image": "/images/pals/Celesdir.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -17704,7 +17704,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "133",
-    "key": "omascul",
+    "key": "Omascul",
     "name": "Omascul",
     "types": [
       "Dark"
@@ -17730,7 +17730,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 630,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_MysteryMask_icon_normal.webp",
+    "image": "/images/pals/Omascul.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -17795,7 +17795,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "134",
-    "key": "splatterina",
+    "key": "Splatterina",
     "name": "Splatterina",
     "types": [
       "Dark"
@@ -17824,7 +17824,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 725,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_GrimGirl_icon_normal.webp",
+    "image": "/images/pals/Splatterina.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -17889,7 +17889,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "135",
-    "key": "tarantriss",
+    "key": "Tarantriss",
     "name": "Tarantriss",
     "types": [
       "Dark"
@@ -17918,7 +17918,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 825,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_PurpleSpider_icon_normal.webp",
+    "image": "/images/pals/Tarantriss.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -17983,7 +17983,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "136",
-    "key": "azurmane",
+    "key": "Azurmane",
     "name": "Azurmane",
     "types": [
       "Electric"
@@ -18010,7 +18010,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 400,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_BlueThunderHorse_icon_normal.webp",
+    "image": "/images/pals/Azurmane.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -18075,7 +18075,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "137",
-    "key": "bastigor",
+    "key": "Bastigor",
     "name": "Bastigor",
     "types": [
       "Ice"
@@ -18103,7 +18103,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 170,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_SnowTigerBeastman_icon_normal.webp",
+    "image": "/images/pals/Bastigor.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -18176,7 +18176,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "138",
-    "key": "prunelia",
+    "key": "Prunelia",
     "name": "Prunelia",
     "types": [
       "Grass",
@@ -18207,7 +18207,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 755,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_BlueberryFairy_icon_normal.webp",
+    "image": "/images/pals/Prunelia.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -18272,7 +18272,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "139",
-    "key": "nyafia",
+    "key": "Nyafia",
     "name": "Nyafia",
     "types": [
       "Dark"
@@ -18301,7 +18301,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 645,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_BadCatgirl_icon_normal.webp",
+    "image": "/images/pals/Nyafia.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -18366,7 +18366,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "140",
-    "key": "gildane",
+    "key": "Gildane",
     "name": "Gildane",
     "types": [
       "Ground"
@@ -18392,7 +18392,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 505,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_GoldenHorse_icon_normal.webp",
+    "image": "/images/pals/Gildane.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -18457,7 +18457,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "141",
-    "key": "herbil",
+    "key": "Herbil",
     "name": "Herbil",
     "types": [
       "Grass",
@@ -18486,7 +18486,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1445,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_LeafMomonga_icon_normal.webp",
+    "image": "/images/pals/Herbil.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -18551,7 +18551,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "142",
-    "key": "icelyn",
+    "key": "Icelyn",
     "name": "Icelyn",
     "types": [
       "Ice"
@@ -18580,7 +18580,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 605,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_IceWitch_icon_normal.webp",
+    "image": "/images/pals/Icelyn.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -18645,7 +18645,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "143",
-    "key": "frostplume",
+    "key": "Frostplume",
     "name": "Frostplume",
     "types": [
       "Ice"
@@ -18672,7 +18672,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 655,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_SnowPeafowl_icon_normal.webp",
+    "image": "/images/pals/Frostplume.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -18737,7 +18737,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "144",
-    "key": "palumba",
+    "key": "Palumba",
     "name": "Palumba",
     "types": [
       "Grass"
@@ -18765,7 +18765,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 455,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_TropicalOstrich_icon_normal.webp",
+    "image": "/images/pals/Palumba.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -18830,7 +18830,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "145",
-    "key": "braloha",
+    "key": "Braloha",
     "name": "Braloha",
     "types": [
       "Grass",
@@ -18859,7 +18859,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 335,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Plesiosaur_icon_normal.webp",
+    "image": "/images/pals/Braloha.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -18924,7 +18924,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "146",
-    "key": "munchill",
+    "key": "Munchill",
     "name": "Munchill",
     "types": [
       "Ice",
@@ -18953,7 +18953,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1335,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_IceCrocodile_icon_normal.webp",
+    "image": "/images/pals/Munchill.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -19018,7 +19018,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "147",
-    "key": "polapup",
+    "key": "Polapup",
     "name": "Polapup",
     "types": [
       "Ice",
@@ -19046,7 +19046,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 745,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_IceSeal_icon_normal.webp",
+    "image": "/images/pals/Polapup.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -19111,7 +19111,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "148",
-    "key": "turtacle",
+    "key": "Turtacle",
     "name": "Turtacle",
     "types": [
       "Water"
@@ -19139,7 +19139,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1105,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_TentacleTurtle_icon_normal.webp",
+    "image": "/images/pals/Turtacle.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -19204,7 +19204,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "148B",
-    "key": "turtacle_terra",
+    "key": "Turtacle_Terra",
     "name": "Turtacle Terra",
     "types": [
       "Water",
@@ -19233,7 +19233,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1065,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_TentacleTurtle_Ground_icon_normal.webp",
+    "image": "/images/pals/Turtacle_Terra.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -19298,7 +19298,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "149",
-    "key": "jellroy",
+    "key": "Jellroy",
     "name": "Jellroy",
     "types": [
       "Water",
@@ -19328,7 +19328,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1395,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_JellyfishGhost_icon_normal.webp",
+    "image": "/images/pals/Jellroy.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -19393,7 +19393,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "150",
-    "key": "jelliette",
+    "key": "Jelliette",
     "name": "Jelliette",
     "types": [
       "Water"
@@ -19421,7 +19421,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1385,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_JellyfishFairy_icon_normal.webp",
+    "image": "/images/pals/Jelliette.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -19486,7 +19486,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "151",
-    "key": "gloopie",
+    "key": "Gloopie",
     "name": "Gloopie",
     "types": [
       "Water",
@@ -19515,7 +19515,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1195,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_OctopusGirl_icon_normal.webp",
+    "image": "/images/pals/Gloopie.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -19580,7 +19580,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "152",
-    "key": "finsider",
+    "key": "Finsider",
     "name": "Finsider",
     "types": [
       "Water"
@@ -19607,7 +19607,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1295,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_StuffedShark_icon_normal.webp",
+    "image": "/images/pals/Finsider.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -19672,7 +19672,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "152B",
-    "key": "finsider_ignis",
+    "key": "Finsider_Ignis",
     "name": "Finsider Ignis",
     "types": [
       "Water",
@@ -19701,7 +19701,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1255,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_StuffedShark_Fire_icon_normal.webp",
+    "image": "/images/pals/Finsider_Ignis.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -19766,7 +19766,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "153",
-    "key": "ghangler",
+    "key": "Ghangler",
     "name": "Ghangler",
     "types": [
       "Dark",
@@ -19794,7 +19794,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 525,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_GhostAnglerfish_icon_normal.webp",
+    "image": "/images/pals/Ghangler.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -19859,7 +19859,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "153B",
-    "key": "ghangler_ignis",
+    "key": "Ghangler_Ignis",
     "name": "Ghangler Ignis",
     "types": [
       "Fire",
@@ -19888,7 +19888,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 505,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_GhostAnglerfish_Fire_icon_normal.webp",
+    "image": "/images/pals/Ghangler_Ignis.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -19953,7 +19953,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "154",
-    "key": "whalaska",
+    "key": "Whalaska",
     "name": "Whalaska",
     "types": [
       "Ice",
@@ -19981,7 +19981,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 445,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_IceNarwhal_icon_normal.webp",
+    "image": "/images/pals/Whalaska.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -20046,7 +20046,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "154B",
-    "key": "whalaska_ignis",
+    "key": "Whalaska_Ignis",
     "name": "Whalaska Ignis",
     "types": [
       "Ice",
@@ -20074,7 +20074,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 430,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_IceNarwhal_Fire_icon_normal.webp",
+    "image": "/images/pals/Whalaska_Ignis.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -20139,7 +20139,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "155",
-    "key": "neptilius",
+    "key": "Neptilius",
     "name": "Neptilius",
     "types": [
       "Water"
@@ -20165,7 +20165,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 90,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_PoseidonOrca_icon_normal.webp",
+    "image": "/images/pals/Neptilius.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -20238,7 +20238,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "156",
-    "key": "hartalis",
+    "key": "Hartalis",
     "name": "Hartalis",
     "types": [
       "Neutral"
@@ -20265,7 +20265,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 20,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_LegendDeer_icon_normal.webp",
+    "image": "/images/pals/Hartalis.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -20330,7 +20330,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "",
-    "key": "green_slime",
+    "key": "Green_Slime",
     "name": "Green Slime",
     "types": [
       "Grass"
@@ -20356,7 +20356,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1430,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/Yakushima/T_YakushimaMonster001_icon_normal.webp",
+    "image": "/images/pals/Green_Slime.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -20373,7 +20373,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "",
-    "key": "blue_slime",
+    "key": "Blue_Slime",
     "name": "Blue Slime",
     "types": [
       "Water"
@@ -20399,7 +20399,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1490,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/Yakushima/T_YakushimaMonster001_Blue_icon_normal.webp",
+    "image": "/images/pals/Blue_Slime.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -20416,7 +20416,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "",
-    "key": "red_slime",
+    "key": "Red_Slime",
     "name": "Red Slime",
     "types": [
       "Fire"
@@ -20442,7 +20442,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1405,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/Yakushima/T_YakushimaMonster001_Red_icon_normal.webp",
+    "image": "/images/pals/Red_Slime.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -20459,7 +20459,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "",
-    "key": "purple_slime",
+    "key": "Purple_Slime",
     "name": "Purple Slime",
     "types": [
       "Dark"
@@ -20485,7 +20485,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1390,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/Yakushima/T_YakushimaMonster001_Purple_icon_normal.webp",
+    "image": "/images/pals/Purple_Slime.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -20502,7 +20502,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "",
-    "key": "illuminant_slime",
+    "key": "Illuminant_Slime",
     "name": "Illuminant Slime",
     "types": [
       "Neutral"
@@ -20528,7 +20528,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1500,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/Yakushima/T_YakushimaMonster001_Pink_icon_normal.webp",
+    "image": "/images/pals/Illuminant_Slime.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -20545,7 +20545,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "",
-    "key": "rainbow_slime",
+    "key": "Rainbow_Slime",
     "name": "Rainbow Slime",
     "types": [
       "Neutral"
@@ -20571,7 +20571,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1320,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/Yakushima/T_YakushimaMonster001_Rainbow_icon_normal.webp",
+    "image": "/images/pals/Rainbow_Slime.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -20588,7 +20588,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "",
-    "key": "enchanted_sword",
+    "key": "Enchanted_Sword",
     "name": "Enchanted Sword",
     "types": [
       "Neutral"
@@ -20614,7 +20614,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1380,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/Yakushima/T_YakushimaMonster002_icon_normal.webp",
+    "image": "/images/pals/Enchanted_Sword.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -20631,7 +20631,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "",
-    "key": "cave_bat",
+    "key": "Cave_Bat",
     "name": "Cave Bat",
     "types": [
       "Neutral"
@@ -20657,7 +20657,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1340,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/Yakushima/T_YakushimaMonster003_icon_normal.webp",
+    "image": "/images/pals/Cave_Bat.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -20674,7 +20674,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "",
-    "key": "illuminant_bat",
+    "key": "Illuminant_Bat",
     "name": "Illuminant Bat",
     "types": [
       "Neutral"
@@ -20700,7 +20700,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1250,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/Yakushima/T_YakushimaMonster003_Purple_icon_normal.webp",
+    "image": "/images/pals/Illuminant_Bat.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -20717,7 +20717,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "",
-    "key": "eye_of_cthulhu",
+    "key": "Eye_of_Cthulhu",
     "name": "Eye of Cthulhu",
     "types": [
       "Dark"
@@ -20743,7 +20743,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1380,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/Yakushima/T_YakushimaBoss001_icon_normal.webp",
+    "image": "/images/pals/Eye_of_Cthulhu.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
@@ -20768,7 +20768,7 @@ export const pals: PalData[] = [
   },
   {
     "id": "",
-    "key": "demon_eye",
+    "key": "Demon_Eye",
     "name": "Demon Eye",
     "types": [
       "Dark"
@@ -20794,7 +20794,7 @@ export const pals: PalData[] = [
     },
     "breedingPower": 1390,
     "description": "No description available.",
-    "image": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/Yakushima/T_YakushimaBoss001_Small_icon_normal.webp",
+    "image": "/images/pals/Demon_Eye.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
     "skills": [
