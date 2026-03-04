@@ -14,9 +14,7 @@ import {
   CheckSquare,
   Search,
   LayoutTemplate,
-  Package,
-  Shield,
-  ListOrdered
+  Package
 } from "lucide-react";
 import React from "react";
 
@@ -60,12 +58,6 @@ export const sections: NavSection[] = [
     title: "Game Guides",
     links: [
       {
-        href: "/guides/tier-list",
-        label: "Tier List",
-        icon: ListOrdered,
-        description: "Top Pals for bases, combat, and travel."
-      },
-      {
         href: "/guides/building",
         label: "Build Guides & Architecture",
         icon: Hammer,
@@ -76,12 +68,6 @@ export const sections: NavSection[] = [
         label: "Raid Strategy",
         icon: Swords,
         description: "Tactics to defend your base against powerful raids."
-      },
-      {
-        href: "/guides/type-chart",
-        label: "Type Chart",
-        icon: Shield,
-        description: "Strengths and weaknesses for every element."
       },
     ],
   },
@@ -170,12 +156,6 @@ export const sections: NavSection[] = [
         description: "Find ore, sulfur, and other valuable resources."
       },
       {
-        href: "/items",
-        label: "Item Database",
-        icon: Package,
-        description: "Search items and materials."
-      },
-      {
         href: "/calculators/damage",
         label: "Damage Calc",
         icon: Swords,
@@ -216,12 +196,6 @@ export const sections: NavSection[] = [
         label: "Breeding Pathfinder",
         icon: Dna,
         description: "Find the shortest breeding path to your desired Pal."
-      },
-      {
-        href: "/calculators/breeding-simulator",
-        label: "Breeding Simulator",
-        icon: Calculator,
-        description: "Calculate outcomes and find parents."
       },
       {
         href: "/pals/passives",
