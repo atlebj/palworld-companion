@@ -85,7 +85,7 @@ export const pals: PalData[] = [
       "farming": 1
     },
     "breedingPower": 1470,
-    "description": "No description available.",
+    "description": "A walk up a hill tends to end with this Pal tumbling back down.\r\nThis causes it to become dizzy and unable to move, making it easy to capture and kill.\r\nAs a result, this Pal has tumbled down to the very bottom of the food chain itself.",
     "image": "/images/pals/Lamball.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -179,7 +179,7 @@ export const pals: PalData[] = [
       "transporting": 1
     },
     "breedingPower": 1460,
-    "description": "No description available.",
+    "description": "At a glance it appears full of confidence, but it is in fact weak and cowardly.\r\nBeing toyed with by a Cattiva is in many ways the greatest of disgraces.",
     "image": "/images/pals/Cattiva.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -271,7 +271,7 @@ export const pals: PalData[] = [
       "farming": 1
     },
     "breedingPower": 1500,
-    "description": "No description available.",
+    "description": "Extremely weak and far too delicious.\r\nIt is one of the weakest Pals alongside Lamball .\r\nNo matter how many are hunted, they just keep appearing.",
     "image": "/images/pals/Chikipi.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -366,7 +366,7 @@ export const pals: PalData[] = [
       "medicine_production": 1
     },
     "breedingPower": 1430,
-    "description": "No description available.",
+    "description": "Intelligent as a five to seven-year-old human child. \r\nIt makes a wonderful partner, but there have been more than a few cases \r\nwhere they've killed their master after learning to use weapons.",
     "image": "/images/pals/Lifmunk.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -457,7 +457,7 @@ export const pals: PalData[] = [
       "kindling": 1
     },
     "breedingPower": 1400,
-    "description": "No description available.",
+    "description": "It is unskilled at controlling fire from the moment it is born\r\nand tends to choke on the flames it breathes unintentionally. Foxparks sneezes are one of the leading causes of forest fires.",
     "image": "/images/pals/Foxparks.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -548,7 +548,7 @@ export const pals: PalData[] = [
       "cooling": 1
     },
     "breedingPower": 1305,
-    "description": "No description available.",
+    "description": "It is unskilled at controlling cold air from the moment it is born\r\nand tends to choke on the frost it breathes unintentionally. \r\nWhen Foxparks Cryst catches a cold, its nasal discharge freezes, \r\nmaking it difficult to breathe and causing it to panic.",
     "image": "/images/pals/Foxparks_Cryst.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -641,7 +641,7 @@ export const pals: PalData[] = [
       "transporting": 1
     },
     "breedingPower": 1330,
-    "description": "No description available.",
+    "description": "Using its own body water, this Pal can create waves anywhere. \r\nIt body surfs when in a hurry, but the resulting speed often ends in a fatal collision.",
     "image": "/images/pals/Fuack.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -736,7 +736,7 @@ export const pals: PalData[] = [
       "transporting": 1
     },
     "breedingPower": 1290,
-    "description": "No description available.",
+    "description": "With a belly built for friction, this Pal sparks flames as it body surfs.\r\nBut when it gets carried away, it often ends up a rolling fireball.",
     "image": "/images/pals/Fuack_Ignis.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -829,7 +829,7 @@ export const pals: PalData[] = [
       "transporting": 1
     },
     "breedingPower": 1410,
-    "description": "No description available.",
+    "description": "During the dry season,\r\nthis Pal is always on the verge of blowing a fuse.\r\nSparks can fly with even the slightest provocation,\r\neven amongst allies.",
     "image": "/images/pals/Sparkit.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -924,7 +924,7 @@ export const pals: PalData[] = [
       "transporting": 1
     },
     "breedingPower": 1250,
-    "description": "No description available.",
+    "description": "Long ago, this Pal used long objects like tree branches as weapons.\r\nAfter coming into contact with humans, however,\r\nit found something slightly more effective: guns.",
     "image": "/images/pals/Tanzee.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -1015,7 +1015,7 @@ export const pals: PalData[] = [
       "kindling": 1
     },
     "breedingPower": 1155,
-    "description": "No description available.",
+    "description": "Wild Rooby surprisingly never get sick.\r\nEating one piece of charcoal a day, made by burning a branch,\r\nis the secret to its eternal health.",
     "image": "/images/pals/Rooby.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -1110,7 +1110,7 @@ export const pals: PalData[] = [
       "transporting": 1
     },
     "breedingPower": 1350,
-    "description": "No description available.",
+    "description": "The feathers of this Pal have all but disappeared,\r\nbut sadly, its desire to fly has remained as strong as ever.\r\nEven now, it tries to fly again in any way it can.",
     "image": "/images/pals/Pengullet.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -1205,7 +1205,7 @@ export const pals: PalData[] = [
       "transporting": 1
     },
     "breedingPower": 1310,
-    "description": "No description available.",
+    "description": "The feathers of this Pal have all but disappeared, and it can no longer fly.\r\nYet its longing for the sky has turned to jealousy—\r\nso it harnessed electricity to strike down those who still soar.",
     "image": "/images/pals/Pengullet_Lux.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -1301,7 +1301,7 @@ export const pals: PalData[] = [
       "transporting": 2
     },
     "breedingPower": 520,
-    "description": "No description available.",
+    "description": "Surprisingly, it is unrelated to Pengullet .\r\nHowever, since this Pal gets pampered as it pleases, \r\nfor now, it's doing its best to strut arrogantly.",
     "image": "/images/pals/Penking.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -1397,7 +1397,7 @@ export const pals: PalData[] = [
       "transporting": 2
     },
     "breedingPower": 490,
-    "description": "No description available.",
+    "description": "Its body changed color after gaining electricity to improve underwater hunting.\r\nAs a result, it lost the affection of Pengullet —\r\nbut strangely enough, it now has a loyal follower: Pengullet Lux .",
     "image": "/images/pals/Penking_Lux.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -1488,7 +1488,7 @@ export const pals: PalData[] = [
       "generating_electricity": 1
     },
     "breedingPower": 1370,
-    "description": "No description available.",
+    "description": "It releases the electricity stored in its body when under attack.\r\nThe voltage it generates exceeds 10 million volts,\r\nmaking it more lethal than any conventional heavy firearms when thrown.",
     "image": "/images/pals/Jolthog.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -1579,7 +1579,7 @@ export const pals: PalData[] = [
       "cooling": 1
     },
     "breedingPower": 1360,
-    "description": "No description available.",
+    "description": "It releases the cold air stored in its body when under attack. \r\nThe frigid blast it radiates is cold enough to freeze the surrounding air \r\nand easily pierces through any attacker's body.",
     "image": "/images/pals/Jolthog_Cryst.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -1671,7 +1671,7 @@ export const pals: PalData[] = [
       "planting": 1
     },
     "breedingPower": 1240,
-    "description": "No description available.",
+    "description": "A strange Pal with a body resembling tree sap. \r\nIt gradually loses strength if it has nothing to cover \r\nits body with, eventually rotting away.",
     "image": "/images/pals/Gumoss.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -1763,7 +1763,7 @@ export const pals: PalData[] = [
       "farming": 1
     },
     "breedingPower": 1450,
-    "description": "No description available.",
+    "description": "The idol of Palpagos Island.\r\nIf you bully a Vixy ,\r\nyou best be prepared to become enemies with the whole world.",
     "image": "/images/pals/Vixy.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -1854,7 +1854,7 @@ export const pals: PalData[] = [
       "gathering": 1
     },
     "breedingPower": 1390,
-    "description": "No description available.",
+    "description": "Often lost in thought, it sometimes\r\nfinds it difficult to sleep.\r\n|I think, therefore I am.|",
     "image": "/images/pals/Hoocrates.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -1945,7 +1945,7 @@ export const pals: PalData[] = [
       "watering": 1
     },
     "breedingPower": 1490,
-    "description": "No description available.",
+    "description": "Large amounts of water pour from what is thought to be its nose,\r\nthough some say that it is, in fact, just snot.\r\nThis has sparked a fierce debate among Pal scholars.",
     "image": "/images/pals/Teafant.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -2038,7 +2038,7 @@ export const pals: PalData[] = [
       "transporting": 1
     },
     "breedingPower": 1380,
-    "description": "No description available.",
+    "description": "It has few friends because of the perpetually grouchy look on its face,\r\nbut it is in fact kindhearted.\r\nSome have seen it feeding Vixy who have strayed from their pack.",
     "image": "/images/pals/Depresso.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -2130,7 +2130,7 @@ export const pals: PalData[] = [
       "farming": 1
     },
     "breedingPower": 1455,
-    "description": "No description available.",
+    "description": "Compared to Lamball , it has finer wool\r\nand a temperament more suited for domestication.\r\nHowever, it has historically always been kept as a pet.\r\nCuteness is considered a virtue.",
     "image": "/images/pals/Cremis.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -2223,7 +2223,7 @@ export const pals: PalData[] = [
       "transporting": 1
     },
     "breedingPower": 1230,
-    "description": "No description available.",
+    "description": "It puts those it is interested in to sleep and shows them\r\nan endless stream of happy dreams.\r\nThose who fall under its spell are never to wake until death takes them.",
     "image": "/images/pals/Daedream.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -2314,7 +2314,7 @@ export const pals: PalData[] = [
       "mining": 1
     },
     "breedingPower": 1130,
-    "description": "No description available.",
+    "description": "Being an extremely aggressive Pal, it often picks fights before gauging its opponents' strength. \r\nThough small, its powerful charge can even send boulders flying.",
     "image": "/images/pals/Rushoar.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -2405,7 +2405,7 @@ export const pals: PalData[] = [
       "gathering": 1
     },
     "breedingPower": 1180,
-    "description": "No description available.",
+    "description": "If you find Nox hair in your bedding, you should \r\nleave it where it lays and leave immediately. \r\nPicking it up is a one-way-ticket to a never ending night.",
     "image": "/images/pals/Nox.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -2498,7 +2498,7 @@ export const pals: PalData[] = [
       "transporting": 1
     },
     "breedingPower": 1220,
-    "description": "No description available.",
+    "description": "Its large claws boast of diamond-like hardness. \r\nHowever, sharpening these claws consumes most of its energy, \r\nleading it to sometimes spending entire days doing nothing else.",
     "image": "/images/pals/Fuddler.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -2592,7 +2592,7 @@ export const pals: PalData[] = [
       "transporting": 2
     },
     "breedingPower": 1290,
-    "description": "No description available.",
+    "description": "It wraps itself around an enemy's head, sucking out their insides. \r\nPal mummies are occasionally found, but these are in fact Killamari victims.",
     "image": "/images/pals/Killamari.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -2686,7 +2686,7 @@ export const pals: PalData[] = [
       "transporting": 2
     },
     "breedingPower": 1250,
-    "description": "No description available.",
+    "description": "It sinks its fangs into the enemy’s neck, draining every last drop of blood. \r\nWhen two Killamari Primo s latch onto each other, \r\nthey become locked in a relentless struggle—each trying to suck the other dry until one withers away.",
     "image": "/images/pals/Killamari_Primo.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -2777,7 +2777,7 @@ export const pals: PalData[] = [
       "farming": 1
     },
     "breedingPower": 1480,
-    "description": "No description available.",
+    "description": "Its hard tail does not deteriorate even when cut off.\r\nSome believed these severed tails bring good luck,\r\nbut for the innumerable Mau who were\r\npoached as a result, they were anything but.",
     "image": "/images/pals/Mau.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -2869,7 +2869,7 @@ export const pals: PalData[] = [
       "farming": 1
     },
     "breedingPower": 1440,
-    "description": "No description available.",
+    "description": "Its crystalline tail is beautiful, but shatters when this Pal dies.\r\nSome believe it is good luck to raise them,\r\nso Mau Cryst in captivity are treated with great care.",
     "image": "/images/pals/Mau_Cryst.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -2961,7 +2961,7 @@ export const pals: PalData[] = [
       "transporting": 1
     },
     "breedingPower": 870,
-    "description": "No description available.",
+    "description": "Riding the wind, this Pal travels where it pleases. \r\nShould it find a partner along the way, \r\nthe encounter will mark its journey's end.",
     "image": "/images/pals/Celaray.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -3055,7 +3055,7 @@ export const pals: PalData[] = [
       "transporting": 1
     },
     "breedingPower": 830,
-    "description": "No description available.",
+    "description": "Its flashy patterns help it attract a partner.\r\nBut after a long history of electrocution incidents involving Celaray Lux ,\r\nyellow-and-black stripes are now seen across the island as a sign of danger.",
     "image": "/images/pals/Celaray_Lux.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -3146,7 +3146,7 @@ export const pals: PalData[] = [
       "gathering": 1
     },
     "breedingPower": 1060,
-    "description": "No description available.",
+    "description": "Long ago Direhowl would hunt alongside humans\r\nbut over the years this bond faded.",
     "image": "/images/pals/Direhowl.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -3237,7 +3237,7 @@ export const pals: PalData[] = [
       "gathering": 1
     },
     "breedingPower": 1340,
-    "description": "No description available.",
+    "description": "A frightening Pal that produces exploding eggs. \r\nIt often fires these eggs from its rear end as a form of defense, \r\nbut when spent, the Pal itself explodes.",
     "image": "/images/pals/Tocotoco.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -3332,7 +3332,7 @@ export const pals: PalData[] = [
       "transporting": 1
     },
     "breedingPower": 1280,
-    "description": "No description available.",
+    "description": "It prefers places that have an abundance of vegetation, \r\nbut hay fever has apparently become a problem for Flopie as of late.",
     "image": "/images/pals/Flopie.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -3423,7 +3423,7 @@ export const pals: PalData[] = [
       "farming": 1
     },
     "breedingPower": 910,
-    "description": "No description available.",
+    "description": "Milk pours from this Pal like water from an open faucet, regardless of its gender.\r\nIt's truly a mystery of life, although this mystery may be better left unsolved.",
     "image": "/images/pals/Mozzarina.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -3518,7 +3518,7 @@ export const pals: PalData[] = [
       "transporting": 1
     },
     "breedingPower": 1320,
-    "description": "No description available.",
+    "description": "This prickly Pal's thorns are highly poisonous.\r\nIt is friendly with Cinnamoth and only smiles\r\nwhile a Cinnamoth is drinking its nectar.",
     "image": "/images/pals/Bristla.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -3611,7 +3611,7 @@ export const pals: PalData[] = [
       "transporting": 1
     },
     "breedingPower": 1090,
-    "description": "No description available.",
+    "description": "Long ago, it was a giant and powerful aquatic Pal.\r\nHowever, as food became scarce, it evolved to live on land.\r\nSince walking requires much energy, it gradually became smaller\r\nand is now a small and puny Pal.",
     "image": "/images/pals/Gobfin.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -3704,7 +3704,7 @@ export const pals: PalData[] = [
       "transporting": 1
     },
     "breedingPower": 1100,
-    "description": "No description available.",
+    "description": "Long ago, it was a giant and powerful aquatic Pal.\r\nHowever, as food became scarce, it evolved to live on land.\r\nSince walking burns many calories, it astonishingly awakened its power to control fire!",
     "image": "/images/pals/Gobfin_Ignis.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -3797,7 +3797,7 @@ export const pals: PalData[] = [
       "transporting": 2
     },
     "breedingPower": 1420,
-    "description": "No description available.",
+    "description": "Its gigantic arms can rip apart even iron.\r\nAs a particularly cruel form of execution, serious criminals\r\nwould be strung up in a public square, and a Hangyu would tear the skin right from their bones.",
     "image": "/images/pals/Hangyu.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -3891,7 +3891,7 @@ export const pals: PalData[] = [
       "transporting": 2
     },
     "breedingPower": 1422,
-    "description": "No description available.",
+    "description": "Its gigantic arms can tear through blocks of ice.\r\nThere were times when great sinners were tied in the town square\r\nand had their hair torn out by Hangyu Cryst as a brutal form of public humiliation.",
     "image": "/images/pals/Hangyu_Cryst.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -3985,7 +3985,7 @@ export const pals: PalData[] = [
       "transporting": 3
     },
     "breedingPower": 430,
-    "description": "No description available.",
+    "description": "A Pal so powerful it's hard to believe.\r\nIn one experiment, this Pal tore through 3,000 sheets of paper at once!\r\nIt's only by some miracle that this Pal isn't a meat-eater.",
     "image": "/images/pals/Mossanda.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -4079,7 +4079,7 @@ export const pals: PalData[] = [
       "transporting": 3
     },
     "breedingPower": 390,
-    "description": "No description available.",
+    "description": "A Pal whose power is truly shocking.\r\nBy altering the electrical currents in its body, this Pal's been able to overload its own strength.\r\nWhen it comes to sheer power, this Pal may be top of the list.",
     "image": "/images/pals/Mossanda_Lux.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -4170,7 +4170,7 @@ export const pals: PalData[] = [
       "farming": 1
     },
     "breedingPower": 1190,
-    "description": "No description available.",
+    "description": "Its entire body is 18,000 times sweeter than sugar.\r\nCarnivorous Pals lured by its scent will find themselves overwhelmed by sweetness\r\nand even pass out should they take a bite of this Pal.",
     "image": "/images/pals/Woolipop.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -4262,7 +4262,7 @@ export const pals: PalData[] = [
       "farming": 1
     },
     "breedingPower": 930,
-    "description": "No description available.",
+    "description": "The shrub on this Pal's back produces berries as long as it is properly fed.\r\nIt offers these berries to potential mates, and if the flavor is to their liking, romance blossoms.",
     "image": "/images/pals/Caprity.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -4354,7 +4354,7 @@ export const pals: PalData[] = [
       "farming": 1
     },
     "breedingPower": 855,
-    "description": "No description available.",
+    "description": "The berries that grow on its back change flavor according to its emotions.\r\nThe harsher the environment it grows in, the sweeter the berries become.\r\nThis is why most Caprity Noct raised in captivity have never known love.",
     "image": "/images/pals/Caprity_Noct.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -4445,7 +4445,7 @@ export const pals: PalData[] = [
       "farming": 1
     },
     "breedingPower": 890,
-    "description": "No description available.",
+    "description": "Don't be fooled by this Pal's fluffy appearance. \r\nA hypersonic kick from one of its long legs may \r\nsend you flying to the other side of the world.",
     "image": "/images/pals/Melpaca.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -4536,7 +4536,7 @@ export const pals: PalData[] = [
       "lumbering": 2
     },
     "breedingPower": 920,
-    "description": "No description available.",
+    "description": "The one who possesses the most impressive antlers becomes the leader of the herd.\r\nIf their antlers are broken, they become depressed\r\nand leave the herd never to be seen again.",
     "image": "/images/pals/Eikthyrdeer.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -4627,7 +4627,7 @@ export const pals: PalData[] = [
       "lumbering": 2
     },
     "breedingPower": 900,
-    "description": "No description available.",
+    "description": "The individual with the hardest horns becomes the leader.\r\nOnce the horns are lost, so too is its leadership status.\r\nIt leaves the herd amidst farewell glances and quietly returns to the earth.",
     "image": "/images/pals/Eikthyrdeer_Terra.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -4718,7 +4718,7 @@ export const pals: PalData[] = [
       "gathering": 2
     },
     "breedingPower": 420,
-    "description": "No description available.",
+    "description": "It carries newborn Pals to its nest and raises them \r\nas a surrogate parent. \r\nOnce the baby Pal has fattened up, it hunts them.",
     "image": "/images/pals/Nitewing.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -4811,7 +4811,7 @@ export const pals: PalData[] = [
       "transporting": 1
     },
     "breedingPower": 1310,
-    "description": "No description available.",
+    "description": "A Pal that's never without a bright smile.\r\nOccasionally, its tentacles get tied up in knots by Cattiva 's pranks.\r\nDuring those moments, its expression turns demonic.",
     "image": "/images/pals/Ribbuny.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -4905,7 +4905,7 @@ export const pals: PalData[] = [
       "transporting": 1
     },
     "breedingPower": 1205,
-    "description": "No description available.",
+    "description": "Always wears a cheerful smile.\r\nSometimes, thanks to Cattiva 's pranks, \r\nthey end up tangled in tentacles and have to fight their way out!\r\nEven in tough situations, they keep smiling cheerfully.",
     "image": "/images/pals/Ribbuny_Botan.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -5000,7 +5000,7 @@ export const pals: PalData[] = [
       "transporting": 2
     },
     "breedingPower": 590,
-    "description": "No description available.",
+    "description": "In the dark of night, this Pal snatches prey to bring back to its territory.\r\nWhat happens to those poor souls afterwards isn't too hard to imagine.",
     "image": "/images/pals/Incineram.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -5093,7 +5093,7 @@ export const pals: PalData[] = [
       "transporting": 2
     },
     "breedingPower": 580,
-    "description": "No description available.",
+    "description": "It specifically targets baby Pals, taking them back to its domain.\r\nOne can only imagine the profound despair\r\nof a parent whose child has been taken away.",
     "image": "/images/pals/Incineram_Noct.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -5185,7 +5185,7 @@ export const pals: PalData[] = [
       "medicine_production": 1
     },
     "breedingPower": 490,
-    "description": "No description available.",
+    "description": "Sniffing its scales produces a feeling of unparalleled euphoria. \r\nThere was some effort to further regulate this byproduct, \r\nbut the Free Pal Alliance have vehemently opposed these measures, \r\nputting a stop to them.",
     "image": "/images/pals/Cinnamoth.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -5277,7 +5277,7 @@ export const pals: PalData[] = [
       "lumbering": 1
     },
     "breedingPower": 790,
-    "description": "No description available.",
+    "description": "In ancient times, carnivorous Pals pursued them relentlessly.\r\nThe absurd fury in the cries of Arsox transformed into a raging inferno,\r\nwhich has been passed on to this day.",
     "image": "/images/pals/Arsox.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -5372,7 +5372,7 @@ export const pals: PalData[] = [
       "farming": 1
     },
     "breedingPower": 895,
-    "description": "No description available.",
+    "description": "When too relaxed, its reaction time drastically declines.\r\nEven if it were sliced from head to tail,\r\nit probably wouldn't even realize that it should be dead until the next morning.",
     "image": "/images/pals/Dumud.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -5467,7 +5467,7 @@ export const pals: PalData[] = [
       "farming": 1
     },
     "breedingPower": 855,
-    "description": "No description available.",
+    "description": "Its body reflects light with astounding clarity.\r\nEven more shocking, its reflexes are somehow even slower than Dumud .",
     "image": "/images/pals/Dumud_Gild.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -5558,7 +5558,7 @@ export const pals: PalData[] = [
       "lumbering": 1
     },
     "breedingPower": 1080,
-    "description": "No description available.",
+    "description": "Long ago it freely soared the skies. \r\nAfter losing a contest with Galeclaw , it abandoned the skies, \r\nand now lives a secretive life in the dark of night.",
     "image": "/images/pals/Cawgnito.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -5651,7 +5651,7 @@ export const pals: PalData[] = [
       "transporting": 1
     },
     "breedingPower": 1120,
-    "description": "No description available.",
+    "description": "A Pal that always takes great care to maintain a stylish stance.\r\nAlways on the hunt for the coolest poses, if given a mirror\r\nit will spend all day posing in front of it.",
     "image": "/images/pals/Leezpunk.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -5745,7 +5745,7 @@ export const pals: PalData[] = [
       "transporting": 1
     },
     "breedingPower": 1140,
-    "description": "No description available.",
+    "description": "A Pal that has an unusual obsession with their standing posture.\r\nAlways in search of the hottest pose,\r\nthis Pal's owner is constantly presented with fervent stances.",
     "image": "/images/pals/Leezpunk_Ignis.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -5836,7 +5836,7 @@ export const pals: PalData[] = [
       "handiwork": 2
     },
     "breedingPower": 950,
-    "description": "No description available.",
+    "description": "The horns on its head grow under the moonlight.\r\nIt doesn't hate the sun, but its horns\r\nitch when sunlight hits them.",
     "image": "/images/pals/Loupmoon.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -5928,7 +5928,7 @@ export const pals: PalData[] = [
       "cooling": 3
     },
     "breedingPower": 805,
-    "description": "No description available.",
+    "description": "The horns on its head are made of a mysterious ice that never melts.\r\nShaved ice made by breaking off a horn is truly exquisite,\r\nbut both the one who tries it and Loupmoon Cryst end up with a headache.",
     "image": "/images/pals/Loupmoon_Cryst.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -6019,7 +6019,7 @@ export const pals: PalData[] = [
       "gathering": 2
     },
     "breedingPower": 1030,
-    "description": "No description available.",
+    "description": "A Pal that can easily take flight even while grasping a human. \r\nIt is, however, prone to letting go when tired, \r\nwhich has led to the sudden demise of more than a few souls.",
     "image": "/images/pals/Galeclaw.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -6115,7 +6115,7 @@ export const pals: PalData[] = [
       "transporting": 2
     },
     "breedingPower": 1020,
-    "description": "No description available.",
+    "description": "A Pal that is very similar to humans who hunt and live in the forests.\r\nIt may prove to be a key for understanding what Pals are\r\nand how they diverged from humans in the distant past.",
     "image": "/images/pals/Robinquill.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -6211,7 +6211,7 @@ export const pals: PalData[] = [
       "transporting": 2
     },
     "breedingPower": 1000,
-    "description": "No description available.",
+    "description": "A Pal that is very similar to humans who hunt and live in the rocky areas.\r\nWhen Robinquill Terra bones are found in ruins,\r\nthere are always human bones found nearby as well.",
     "image": "/images/pals/Robinquill_Terra.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -6304,7 +6304,7 @@ export const pals: PalData[] = [
       "transporting": 3
     },
     "breedingPower": 1040,
-    "description": "No description available.",
+    "description": "It beats the ground rhythmically to communicate with its comrades. \r\nThe meaning of each rhythm differs by troop, but the distinction \r\nbetween them is still largely unknown.",
     "image": "/images/pals/Gorirat.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -6397,7 +6397,7 @@ export const pals: PalData[] = [
       "transporting": 3
     },
     "breedingPower": 1030,
-    "description": "No description available.",
+    "description": "It beats the ground rhythmically to communicate with its comrades.\r\nStronger than Gorirat , if every Gorirat Terra hit the ground at the same time, the island would sink in 1 second.",
     "image": "/images/pals/Gorirat_Terra.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -6494,7 +6494,7 @@ export const pals: PalData[] = [
       "farming": 1
     },
     "breedingPower": 1070,
-    "description": "No description available.",
+    "description": "A servant that pledges loyalty to Elizabee . \r\nAny that cause harm to the queen are immediately expelled from the hive. \r\nIt will gladly give its life to protect its queen.",
     "image": "/images/pals/Beegarde.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -6597,7 +6597,7 @@ export const pals: PalData[] = [
       "medicine_production": 2
     },
     "breedingPower": 330,
-    "description": "No description available.",
+    "description": "A chosen queen to rule over Beegarde s. \r\nThere is a never ending stream of servants willing to work themselves to death \r\nfor the pleasure of serving their queen.",
     "image": "/images/pals/Elizabee.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -6688,7 +6688,7 @@ export const pals: PalData[] = [
       "gathering": 2
     },
     "breedingPower": 510,
-    "description": "No description available.",
+    "description": "Grintale 's eyes light up the moment\r\nanyone enters its territory.\r\nThis is no figure of speech—its eyes literally light up.",
     "image": "/images/pals/Grintale.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -6780,7 +6780,7 @@ export const pals: PalData[] = [
       "cooling": 1
     },
     "breedingPower": 1300,
-    "description": "No description available.",
+    "description": "Crawling along the ground, it eats microscopic organic matter.\r\nAfter a while, it discharges any substances that provide no nutrition.\r\nBy using it as a mop for cleaning, everyone wins!",
     "image": "/images/pals/Swee.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -6872,7 +6872,7 @@ export const pals: PalData[] = [
       "cooling": 2
     },
     "breedingPower": 410,
-    "description": "No description available.",
+    "description": "While hibernating, a large number of Swee hide within its voluminous body hair.\r\nThe most ever recorded is 101.",
     "image": "/images/pals/Sweepa.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -6965,7 +6965,7 @@ export const pals: PalData[] = [
       "cooling": 1
     },
     "breedingPower": 800,
-    "description": "No description available.",
+    "description": "It can curl up its body and roll around at extremely high speeds. \r\nLong ago, people would tie bags of milk to domesticated Chillet as they grazed to produce butter \r\nusing this spinning force.",
     "image": "/images/pals/Chillet.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -7066,7 +7066,7 @@ export const pals: PalData[] = [
       "gathering": 1
     },
     "breedingPower": 790,
-    "description": "No description available.",
+    "description": "It can curl up its body and roll around so fast that sparks fly. \r\nSparks also fly when it feels excited. \r\nIf you stroke it too much, this pal will get fired up, literally!",
     "image": "/images/pals/Chillet_Ignis.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -7158,7 +7158,7 @@ export const pals: PalData[] = [
       "lumbering": 1
     },
     "breedingPower": 680,
-    "description": "No description available.",
+    "description": "It used to be considered an emissary of the Thunder God, and thus was not hunted by people.\r\nHowever, after witnesses observed one die from a lightning strike,\r\nits reverence faded, and it quite literally fell into the role of a workhorse.",
     "image": "/images/pals/Univolt.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -7257,7 +7257,7 @@ export const pals: PalData[] = [
       "cooling": 2
     },
     "breedingPower": 760,
-    "description": "No description available.",
+    "description": "On nights when the aurora is visible,\r\nit looks up towards the sky and begins to howl a beautiful song.\r\nThis does, however, leave it vulnerable to attacks from enemies.",
     "image": "/images/pals/Foxcicle.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -7349,7 +7349,7 @@ export const pals: PalData[] = [
       "lumbering": 1
     },
     "breedingPower": 360,
-    "description": "No description available.",
+    "description": "Its entire body has evolved into a highly efficient radiator,\r\ngifting it with astounding stamina.\r\nIf someone rides it, this Pal takes caution not to burn them.",
     "image": "/images/pals/Pyrin.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -7442,7 +7442,7 @@ export const pals: PalData[] = [
       "lumbering": 1
     },
     "breedingPower": 240,
-    "description": "No description available.",
+    "description": "It burns mysterious dark matter as energy\r\nand expels the remaining particles from its body.\r\nIf someone rides it, they should take care so as not to gallop down the path of darkness.",
     "image": "/images/pals/Pyrin_Noct.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -7534,7 +7534,7 @@ export const pals: PalData[] = [
       "cooling": 2
     },
     "breedingPower": 880,
-    "description": "No description available.",
+    "description": "Its transparent cerulean antlers glow with the cold of absolute zero.\r\nAny who touch them with their bare hands are instantly frozen\r\nand smashed to pieces.",
     "image": "/images/pals/Reindrix.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -7625,7 +7625,7 @@ export const pals: PalData[] = [
       "generating_electricity": 2
     },
     "breedingPower": 740,
-    "description": "No description available.",
+    "description": "At full speed, it could be mistaken for a bolt of lightning.\r\nWhen two Rayhound s collide, a thunderous roar echoes through the air.",
     "image": "/images/pals/Rayhound.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -7724,7 +7724,7 @@ export const pals: PalData[] = [
       "kindling": 2
     },
     "breedingPower": 830,
-    "description": "No description available.",
+    "description": "Despite its appearance, Kitsun is extremely sensitive and will flee into a cave when spooked.\r\nLong ago, it was considered an ill omen if one ran away from you.",
     "image": "/images/pals/Kitsun.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -7815,7 +7815,7 @@ export const pals: PalData[] = [
       "kindling": 2
     },
     "breedingPower": 735,
-    "description": "No description available.",
+    "description": "Despite its appearance, Kitsun Noct is extremely sensitive and will flee into a cave when spooked.\r\nIt has become quite gloomy from being a shut-in for too long.",
     "image": "/images/pals/Kitsun_Noct.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -7908,7 +7908,7 @@ export const pals: PalData[] = [
       "transporting": 1
     },
     "breedingPower": 1210,
-    "description": "No description available.",
+    "description": "Often kind to lonely Pals.\r\nHowever, the moment a Pal mistakes this for actual friendship,\r\nit seizes the opportunity to blast them with a thunderbolt.",
     "image": "/images/pals/Dazzi.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -8003,7 +8003,7 @@ export const pals: PalData[] = [
       "transporting": 1
     },
     "breedingPower": 1115,
-    "description": "No description available.",
+    "description": "Often kind to lonely Pals, \r\nit plots to lure them into dropping their guard before striking them down.\r\nYet, unable to find the right moment, it ends up making friends with them instead.",
     "image": "/images/pals/Dazzi_Noct.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -8096,7 +8096,7 @@ export const pals: PalData[] = [
       "transporting": 1
     },
     "breedingPower": 1110,
-    "description": "No description available.",
+    "description": "It can control those who carelessly stare into its eyes.\r\nThose seen with a Lunaris are in its mind,\r\nsimply under its control.",
     "image": "/images/pals/Lunaris.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -8189,7 +8189,7 @@ export const pals: PalData[] = [
       "lumbering": 2
     },
     "breedingPower": 820,
-    "description": "No description available.",
+    "description": "A Pal who once angered cannot be pacified. It rages on and on like an inferno. \r\nThe phrase |step on a Dinossom 's tail| has come to mean enraging someone.",
     "image": "/images/pals/Dinossom.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -8282,7 +8282,7 @@ export const pals: PalData[] = [
       "lumbering": 2
     },
     "breedingPower": 810,
-    "description": "No description available.",
+    "description": "Though struck by lightning, it lives on.\r\nThe phrase |struck by a Dinossom Lux 's bolt| has come to mean\r\nnarrowly escaping death.",
     "image": "/images/pals/Dinossom_Lux.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -8373,7 +8373,7 @@ export const pals: PalData[] = [
       "watering": 2
     },
     "breedingPower": 560,
-    "description": "No description available.",
+    "description": "Its hydrodynamic form is well suited for activities on water.\r\nPoachers often catch them and use them in place of surfboards.",
     "image": "/images/pals/Surfent.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -8464,7 +8464,7 @@ export const pals: PalData[] = [
       "gathering": 1
     },
     "breedingPower": 550,
-    "description": "No description available.",
+    "description": "Its aerodynamic form is well suited for activities on sand.\r\nPoachers often catch them and use them in place of surfboards.",
     "image": "/images/pals/Surfent_Terra.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -8556,7 +8556,7 @@ export const pals: PalData[] = [
       "mining": 1
     },
     "breedingPower": 1150,
-    "description": "No description available.",
+    "description": "It relishes the peculiar scent living things give off when they are near death.\r\nIf a Maraith has taken a liking to you,\r\nit is safe to assume that is why.",
     "image": "/images/pals/Maraith.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -8655,7 +8655,7 @@ export const pals: PalData[] = [
       "mining": 3
     },
     "breedingPower": 850,
-    "description": "No description available.",
+    "description": "A Digtoise possessing the strongest shell and the only drill capable of piercing it,\r\nponders the contradictions of the world in the popular children's tale, | Digtoise 's Fable|.",
     "image": "/images/pals/Digtoise.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -8748,7 +8748,7 @@ export const pals: PalData[] = [
       "transporting": 2
     },
     "breedingPower": 750,
-    "description": "No description available.",
+    "description": "Often appears out of the blue to flaunt its prized wings in front of other Pals. \r\nAlthough this appears to be an intimidation tactic, \r\nthe Pal seems to derive some kind of pleasure from the display.",
     "image": "/images/pals/Tombat.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -8842,7 +8842,7 @@ export const pals: PalData[] = [
       "transporting": 2
     },
     "breedingPower": 940,
-    "description": "No description available.",
+    "description": "Seeking a night of love, it is always chasing someone around.\r\nAt first it only showed interest in other Pals, but in recent years\r\neven humans have become the target of its debauchery.",
     "image": "/images/pals/Lovander.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -8936,7 +8936,7 @@ export const pals: PalData[] = [
       "farming": 1
     },
     "breedingPower": 1405,
-    "description": "No description available.",
+    "description": "When it starts crying, this Pal produces magma in place of tears.\r\nThe magma that pours out is absorbed back into its body, causing it to get hotter and hotter.\r\nThe more it cries, the stronger it becomes.",
     "image": "/images/pals/Flambelle.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -9029,7 +9029,7 @@ export const pals: PalData[] = [
       "transporting": 3
     },
     "breedingPower": 660,
-    "description": "No description available.",
+    "description": "The melodies of a flute made from the exoskeleton of a Vanwyrm are said to cross whole mountain ranges.\r\nIn ages past, such flutes were used to signal an attack.",
     "image": "/images/pals/Vanwyrm.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -9130,7 +9130,7 @@ export const pals: PalData[] = [
       "transporting": 3
     },
     "breedingPower": 620,
-    "description": "No description available.",
+    "description": "The melodies of a flute made from the exoskeleton of a Vanwyrm Cryst are said tocross whole mountain ranges.\r\nIn ages past, such flutes were used to signal victory in battle.",
     "image": "/images/pals/Vanwyrm_Cryst.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -9233,7 +9233,7 @@ export const pals: PalData[] = [
       "transporting": 2
     },
     "breedingPower": 640,
-    "description": "No description available.",
+    "description": "Its body becomes a blade upon death, to be taken up by the next generation.\r\nIf someone other than a Bushi wields this blade, the soul within\r\ntorments them until they are driven mad.",
     "image": "/images/pals/Bushi.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -9329,7 +9329,7 @@ export const pals: PalData[] = [
       "transporting": 2
     },
     "breedingPower": 650,
-    "description": "No description available.",
+    "description": "Its body becomes a blade upon death, to be taken up by the next generation.\r\nIf the Bushi who inherits it has a weak heart, the voices of the dead will drive it mad.\r\nThe madness turns it into Bushi Noct that endlessly wanders.",
     "image": "/images/pals/Bushi_Noct.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -9430,7 +9430,7 @@ export const pals: PalData[] = [
       "transporting": 3
     },
     "breedingPower": 220,
-    "description": "No description available.",
+    "description": "Some think it is a related species to Ragnahawk , but there is in fact no connection.\r\nUsing its sharp beak, it descends on its prey in a quick motion\r\nthat resembles a bolt of lightning.",
     "image": "/images/pals/Beakon.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -9530,7 +9530,7 @@ export const pals: PalData[] = [
       "transporting": 3
     },
     "breedingPower": 380,
-    "description": "No description available.",
+    "description": "Some think it is a related species to Beakon , but there is in fact no connection.\r\nIt mainly eats rocks, and after many long years its\r\nbeak and head have hardened to accommodate this diet.",
     "image": "/images/pals/Ragnahawk.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -9631,7 +9631,7 @@ export const pals: PalData[] = [
       "transporting": 2
     },
     "breedingPower": 700,
-    "description": "No description available.",
+    "description": "With the power of shadows, it produces arcane phenomena.\r\nIt prefers to eat food raw and is particularly hostile towards Wixen .",
     "image": "/images/pals/Katress.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -9726,7 +9726,7 @@ export const pals: PalData[] = [
       "transporting": 2
     },
     "breedingPower": 690,
-    "description": "No description available.",
+    "description": "Due to its upbringing, it no longer cares about whether its food is raw enough. \r\nThis Pal stopped worrying about those details,\r\nand just prefers its food to be as spicy as possible. \r\nNot on good terms with Wixen Noct .",
     "image": "/images/pals/Katress_Ignis.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -9819,7 +9819,7 @@ export const pals: PalData[] = [
       "transporting": 2
     },
     "breedingPower": 1160,
-    "description": "No description available.",
+    "description": "With the power of light, it produces arcane phenomena.\r\nIt prefers to eat food well-done and is particularly hostile towards Katress .",
     "image": "/images/pals/Wixen.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -9913,7 +9913,7 @@ export const pals: PalData[] = [
       "transporting": 2
     },
     "breedingPower": 1150,
-    "description": "No description available.",
+    "description": "Due to its upbringing, it no longer cares about whether its food is cooked enough.\r\nThis Pal stopped worrying about those details,\r\nand just prefers its food to be as sweet as possible. \r\nNot on good terms with Katress Ignis .",
     "image": "/images/pals/Wixen_Noct.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -10008,7 +10008,7 @@ export const pals: PalData[] = [
       "transporting": 2
     },
     "breedingPower": 990,
-    "description": "No description available.",
+    "description": "Land that Verdash has run across becomes extremely fertile,\r\nwith thick vegetation growing soon after.\r\nIt will not run anywhere that herbicide has been used.",
     "image": "/images/pals/Verdash.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -10111,7 +10111,7 @@ export const pals: PalData[] = [
       "transporting": 1
     },
     "breedingPower": 1050,
-    "description": "No description available.",
+    "description": "The castle was filled with the king's favorite flowers.\r\nA great battle ensued, and flames approached the castle.\r\nAmidst the chaos, the spirit of a flower appeared.\r\n- From the fairy tale, |The King's Flower.|",
     "image": "/images/pals/Vaelet.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -10204,7 +10204,7 @@ export const pals: PalData[] = [
       "farming": 1
     },
     "breedingPower": 450,
-    "description": "No description available.",
+    "description": "A Pal that likes the rain, and will often bask in rain showers\r\nuntil the weather clears up.\r\nOn rainy days, Foxparks can often be found taking shelter beneath it.",
     "image": "/images/pals/Sibelyx.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -10295,7 +10295,7 @@ export const pals: PalData[] = [
       "lumbering": 2
     },
     "breedingPower": 540,
-    "description": "No description available.",
+    "description": "It possesses a demeanor as pure as its appearance suggests.\r\nPerhaps because of this, it is sometimes unable to discern good from evil,\r\noften allowing wrongdoers to take advantage of it.",
     "image": "/images/pals/Elphidran.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -10388,7 +10388,7 @@ export const pals: PalData[] = [
       "lumbering": 2
     },
     "breedingPower": 530,
-    "description": "No description available.",
+    "description": "It possesses a demeanor as pure as its appearance suggests.\r\nPerhaps because of this, it harbors no ill will in any of its actions\r\nand is indifferent even after killing someone.",
     "image": "/images/pals/Elphidran_Aqua.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -10480,7 +10480,7 @@ export const pals: PalData[] = [
       "farming": 1
     },
     "breedingPower": 1260,
-    "description": "No description available.",
+    "description": "Its personality changes depending on the quality of the water it was born into. Kelpsea born into polluted waters are generally ill-tempered\r\nand quickly become delinquents.",
     "image": "/images/pals/Kelpsea.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -10572,7 +10572,7 @@ export const pals: PalData[] = [
       "farming": 1
     },
     "breedingPower": 1270,
-    "description": "No description available.",
+    "description": "Its personality changes depending on the temperature of the water it was born into. Kelpsea born in warm waters\r\ngenerally have a passionate, motivated personality.",
     "image": "/images/pals/Kelpsea_Ignis.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -10664,7 +10664,7 @@ export const pals: PalData[] = [
       "watering": 3
     },
     "breedingPower": 500,
-    "description": "No description available.",
+    "description": "This Pal's white ribbon turns black if doused with impure water. \r\nGiven its usefulness in detecting poison, this Pal was once overhunted. \r\nThis past has left them bitter towards humanity.",
     "image": "/images/pals/Azurobe.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -10756,7 +10756,7 @@ export const pals: PalData[] = [
       "cooling": 3
     },
     "breedingPower": 480,
-    "description": "No description available.",
+    "description": "This Pal’s white ribbon continuously absorbs heat from its surroundings, \r\nyet its temperature remains curiously unchanged. \r\nThis strange ability once made it a target of relentless hunting, \r\nleaving it with a deep mistrust of humans to this day.",
     "image": "/images/pals/Azurobe_Cryst.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -10850,7 +10850,7 @@ export const pals: PalData[] = [
       "transporting": 3
     },
     "breedingPower": 130,
-    "description": "No description available.",
+    "description": "It can easily climb steep mountains with its hard claws.\r\nHowever, its short legs make it difficult to descend,\r\noften leaving it stranded in high places.",
     "image": "/images/pals/Cryolinx.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -10952,7 +10952,7 @@ export const pals: PalData[] = [
       "transporting": 3
     },
     "breedingPower": 160,
-    "description": "No description available.",
+    "description": "It can easily carry many items with its large hands. \r\nHowever, its short legs slow its pace, \r\noften leaving it overtaken by nightfall.",
     "image": "/images/pals/Cryolinx_Terra.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -11052,7 +11052,7 @@ export const pals: PalData[] = [
       "lumbering": 2
     },
     "breedingPower": 710,
-    "description": "No description available.",
+    "description": "While it prefers raw meat, it always ends up eating well-done meat.\r\nThis is due to its blistering claws,\r\nwhich it uses as its weapon—it simply doesn't realize its prey gets burned to a crisp.",
     "image": "/images/pals/Blazehowl.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -11153,7 +11153,7 @@ export const pals: PalData[] = [
       "lumbering": 2
     },
     "breedingPower": 670,
-    "description": "No description available.",
+    "description": "While it prefers raw meat, it always ends up eating tainted meat.\r\nThis is due to its dark claws,\r\nwhich it uses as its weapon—it simply doesn't realize its prey gets cursed.",
     "image": "/images/pals/Blazehowl_Noct.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -11254,7 +11254,7 @@ export const pals: PalData[] = [
       "transporting": 1
     },
     "breedingPower": 280,
-    "description": "No description available.",
+    "description": "Contrary to its blasé appearance, it's quite ferocious.\r\nIt perceives everything in its sight as prey\r\nand will stop at nothing to devour it.",
     "image": "/images/pals/Relaxaurus.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -11347,7 +11347,7 @@ export const pals: PalData[] = [
       "transporting": 1
     },
     "breedingPower": 270,
-    "description": "No description available.",
+    "description": "One day, Relaxaurus had an idea.\r\nMaybe it was about time for a change.\r\nJust then, an electric shock raced through its body!",
     "image": "/images/pals/Relaxaurus_Lux.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -11438,7 +11438,7 @@ export const pals: PalData[] = [
       "planting": 3
     },
     "breedingPower": 860,
-    "description": "No description available.",
+    "description": "Its scent drastically changes before and after pairing.\r\nIt exudes a pleasing aroma after finding a partner,\r\nwhich is called the |Fragrance of First Love.|",
     "image": "/images/pals/Broncherry.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -11530,7 +11530,7 @@ export const pals: PalData[] = [
       "watering": 3
     },
     "breedingPower": 840,
-    "description": "No description available.",
+    "description": "Its scent drastically changes before and after pairing.\r\nIt exudes a pleasing aroma before finding a partner,\r\nwhich is called the |Perfume of Purity.|",
     "image": "/images/pals/Broncherry_Aqua.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -11625,7 +11625,7 @@ export const pals: PalData[] = [
       "transporting": 1
     },
     "breedingPower": 780,
-    "description": "No description available.",
+    "description": "A Pal that transforms into a massive plant when at the end of its life. \r\nOnce every ten years, a beautiful flower blooms \r\nand a new Petallia is born.",
     "image": "/images/pals/Petallia.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -11718,7 +11718,7 @@ export const pals: PalData[] = [
       "mining": 3
     },
     "breedingPower": 320,
-    "description": "No description available.",
+    "description": "Magma-like blood runs throughout its body.\r\nIf a large amount of water is thrown on it, the water rapidly heats,\r\ncausing an immense vapor explosion.",
     "image": "/images/pals/Reptyro.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -11811,7 +11811,7 @@ export const pals: PalData[] = [
       "cooling": 3
     },
     "breedingPower": 230,
-    "description": "No description available.",
+    "description": "Ice cold blood runs throughout its body. \r\nIf heated rapidly, its blood evaporates, \r\ncausing an immense vapor explosion.",
     "image": "/images/pals/Reptyro_Cryst.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -11902,7 +11902,7 @@ export const pals: PalData[] = [
       "gathering": 1
     },
     "breedingPower": 470,
-    "description": "No description available.",
+    "description": "Melpaca serve this Pal.\r\nContests between Kingpaca offer up their vassals as a wager.\r\nThose seen alone are losers of such contests.",
     "image": "/images/pals/Kingpaca.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -11994,7 +11994,7 @@ export const pals: PalData[] = [
       "cooling": 3
     },
     "breedingPower": 440,
-    "description": "No description available.",
+    "description": "With a heart of ice, this Pal is terrible at expressing its emotions.\r\nA solitary individual is pitiable,\r\nseen as too clumsy in the eyes of a Melpaca .",
     "image": "/images/pals/Kingpaca_Cryst.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -12088,7 +12088,7 @@ export const pals: PalData[] = [
       "mining": 2
     },
     "breedingPower": 300,
-    "description": "No description available.",
+    "description": "The vegetation on its back varies between individuals.\r\nThere is a long history of appreciating this veritable garden of a Pal,\r\nand there are even Mammorest pruning specialists.",
     "image": "/images/pals/Mammorest.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -12182,7 +12182,7 @@ export const pals: PalData[] = [
       "cooling": 2
     },
     "breedingPower": 290,
-    "description": "No description available.",
+    "description": "The vegetation on its back varies between individuals.\r\nThere was a time when seeds of presumed extinct plants were found\r\nstill frozen on the back of a Mammorest Cryst .",
     "image": "/images/pals/Mammorest_Cryst.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -12276,7 +12276,7 @@ export const pals: PalData[] = [
       "transporting": 4
     },
     "breedingPower": 460,
-    "description": "No description available.",
+    "description": "Researchers once tried to shave off its hair to reveal its true form.\r\nIn the end, only hair was left, as if that was all there was to begin with.",
     "image": "/images/pals/Wumpo.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -12378,7 +12378,7 @@ export const pals: PalData[] = [
       "transporting": 4
     },
     "breedingPower": 480,
-    "description": "No description available.",
+    "description": "Researchers once tried to cut the grass off its body to reveal its true form. \r\nIn the end, only grass was left, as if that was all there was to begin with.",
     "image": "/images/pals/Wumpo_Botan.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -12481,7 +12481,7 @@ export const pals: PalData[] = [
       "transporting": 3
     },
     "breedingPower": 340,
-    "description": "No description available.",
+    "description": "The ultra-hard armor surrounding its body is\r\nextremely strong and heat resistant.\r\nEven a napalm blast would hardly leave a scratch.",
     "image": "/images/pals/Warsect.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -12574,7 +12574,7 @@ export const pals: PalData[] = [
       "transporting": 3
     },
     "breedingPower": 275,
-    "description": "No description available.",
+    "description": "The ultra-hard armor surrounding its body is\r\nextremely strong and heat resistant.\r\nIt doesn't flinch even if a Mammorest steps on it.",
     "image": "/images/pals/Warsect_Terra.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -12665,7 +12665,7 @@ export const pals: PalData[] = [
       "lumbering": 2
     },
     "breedingPower": 980,
-    "description": "No description available.",
+    "description": "In ages past, its beautiful visage was\r\na common sight in paintings.\r\nAs time passed, its beautiful pelt and antlers were\r\noften seen in works of art.",
     "image": "/images/pals/Fenglope.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -12757,7 +12757,7 @@ export const pals: PalData[] = [
       "lumbering": 2
     },
     "breedingPower": 835,
-    "description": "No description available.",
+    "description": "In ages past, it was believed that \r\ndrawing a picture of Fenglope Lux would result in being struck down by lightning. \r\nAs time passes, artworks depicting Fenglope Lux became revered as \r\ncharms to ward off lightning, making them a common presence.",
     "image": "/images/pals/Fenglope_Lux.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -12848,7 +12848,7 @@ export const pals: PalData[] = [
       "medicine_production": 3
     },
     "breedingPower": 1010,
-    "description": "No description available.",
+    "description": "Attacking from the shadows,\r\nthis Pal traps its prey within its cloak-like wings.\r\nIt's probably best not to know what happens within them,\r\nor why the inside of its wings are stained red.",
     "image": "/images/pals/Felbat.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -12942,7 +12942,7 @@ export const pals: PalData[] = [
       "transporting": 3
     },
     "breedingPower": 350,
-    "description": "No description available.",
+    "description": "Sleeping while cuddling a Quivern is said to be a heavenly experience,\r\nbut there are some who have been crushed and sent to heaven by ones\r\nthat toss and turn in their sleep.",
     "image": "/images/pals/Quivern.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -13038,7 +13038,7 @@ export const pals: PalData[] = [
       "transporting": 3
     },
     "breedingPower": 340,
-    "description": "No description available.",
+    "description": "When you hug Quivern Botan ,\r\nif it smells like sunshine and meadows, tomorrow will be sunny.\r\nIf it smells damp, tomorrow will be wet and miserable.",
     "image": "/images/pals/Quivern_Botan.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -13130,7 +13130,7 @@ export const pals: PalData[] = [
       "mining": 4
     },
     "breedingPower": 10,
-    "description": "No description available.",
+    "description": "Legends say it was born during a volcanic eruption.\r\nA strange group even claims that this continent is laid upon\r\nthe back of a giant Blazamut .",
     "image": "/images/pals/Blazamut.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -13231,7 +13231,7 @@ export const pals: PalData[] = [
       "mining": 4
     },
     "breedingPower": 9,
-    "description": "No description available.",
+    "description": "Long ago, it emerged from the depths of the earth.\r\nWith relentless, raging flames showing no mercy,\r\nit burned the entire island until nothing remained.\r\nIt was known as the Eternal Flame.",
     "image": "/images/pals/Blazamut_Ryu.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -13322,7 +13322,7 @@ export const pals: PalData[] = [
       "transporting": 3
     },
     "breedingPower": 190,
-    "description": "No description available.",
+    "description": "It calls forth lightning from the depths of hell.\r\nThose who dies from Helzephyr 's lightning\r\nare sure to have their soul sent to the underworld.",
     "image": "/images/pals/Helzephyr.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -13415,7 +13415,7 @@ export const pals: PalData[] = [
       "transporting": 3
     },
     "breedingPower": 180,
-    "description": "No description available.",
+    "description": "It calls forth lightning from the depths of hell.\r\nWhile considered a subspecies of Helzephyr ,\r\nthere's a theory that suggests Helzephyr Lux , struck by lightning from hell,\r\nwill transform into Helzephyr .",
     "image": "/images/pals/Helzephyr_Lux.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -13508,7 +13508,7 @@ export const pals: PalData[] = [
       "mining": 4
     },
     "breedingPower": 150,
-    "description": "No description available.",
+    "description": "A savage beast born of the abyss. \r\nThou shall not stand before the beast. \r\nThou shall not heed the beast.",
     "image": "/images/pals/Astegon.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -13609,7 +13609,7 @@ export const pals: PalData[] = [
       "mining": 3
     },
     "breedingPower": 260,
-    "description": "No description available.",
+    "description": "Being made of pure energy, its insides are completely hollow.\r\nThis Pal crams still-living prey into its hollow body, where it absorbs them.\r\nHellish screams of pain can often be heard coming from inside this Pal.",
     "image": "/images/pals/Menasting.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -13709,7 +13709,7 @@ export const pals: PalData[] = [
       "mining": 3
     },
     "breedingPower": 250,
-    "description": "No description available.",
+    "description": "Being made of pure energy, its insides are completely hollow.\r\nIt stuffs earth and minerals into its outer shell, achieving overwhelming mass.\r\nThose who are struck by it can only let out hellish groans.",
     "image": "/images/pals/Menasting_Terra.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -13802,7 +13802,7 @@ export const pals: PalData[] = [
       "transporting": 2
     },
     "breedingPower": 570,
-    "description": "No description available.",
+    "description": "Once seen as a symbol of nobility, \r\nand an idol for those who shunned wealth and power.\r\nYet over time, this Pal became a token of death.",
     "image": "/images/pals/Anubis.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -13894,7 +13894,7 @@ export const pals: PalData[] = [
       "watering": 4
     },
     "breedingPower": 310,
-    "description": "No description available.",
+    "description": "Legend says the Jormuntide was once a wise man who,\r\nafter being wrongly convicted and cast into a whirlpool,\r\nreturned as this Pal to annihilate the kingdom.",
     "image": "/images/pals/Jormuntide.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -13994,7 +13994,7 @@ export const pals: PalData[] = [
       "kindling": 4
     },
     "breedingPower": 315,
-    "description": "No description available.",
+    "description": "Legend says the Jormuntide Ignis was once a warrior who,\r\nafter being wrongly convicted and cast into a volcano,\r\nreturned as this Pal to annihilate the kingdom.",
     "image": "/images/pals/Jormuntide_Ignis.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -14093,7 +14093,7 @@ export const pals: PalData[] = [
       "kindling": 3
     },
     "breedingPower": 50,
-    "description": "No description available.",
+    "description": "It was once believed to usher in the dry season.\r\nWhenever there was a drought the previous year, people would relentlessly seek to cull its numbers,\r\nhoping to bring about a plentiful harvest in the next year.",
     "image": "/images/pals/Suzaku.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -14184,7 +14184,7 @@ export const pals: PalData[] = [
       "watering": 3
     },
     "breedingPower": 30,
-    "description": "No description available.",
+    "description": "It was once believed to usher in the rainy season.\r\nWhenever there was a flood the previous year, people would relentlessly seek to cull its numbers,\r\nhoping to avert disaster in the coming year.",
     "image": "/images/pals/Suzaku_Aqua.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -14278,7 +14278,7 @@ export const pals: PalData[] = [
       "transporting": 3
     },
     "breedingPower": 200,
-    "description": "No description available.",
+    "description": "With a friendly smile and a hardy physique, it is docile\r\ntowards one it recognizes as a partner.\r\nFor reasons unexplained, its personality undergoes a drastic change when wielding a minigun.",
     "image": "/images/pals/Grizzbolt.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -14380,7 +14380,7 @@ export const pals: PalData[] = [
       "medicine_production": 3
     },
     "breedingPower": 250,
-    "description": "No description available.",
+    "description": "A docile Pal full of love. \r\nIt watches over small Pals who have lost their parents. \r\nIt uses a full-power Solar Blast to discipline naughty Pals.",
     "image": "/images/pals/Lyleen.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -14481,7 +14481,7 @@ export const pals: PalData[] = [
       "medicine_production": 3
     },
     "breedingPower": 210,
-    "description": "No description available.",
+    "description": "An elegant Pal full of grace. \r\nIt admonishes any who are disrespectful with a painful slap. \r\nSome Pals actively seek out this punishment.",
     "image": "/images/pals/Lyleen_Noct.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -14573,7 +14573,7 @@ export const pals: PalData[] = [
       "transporting": 3
     },
     "breedingPower": 370,
-    "description": "No description available.",
+    "description": "When it finds its prey it unleashes a whirlwind of flames, burning the entire area to ash. Faleris breath is known for its pleasing scent.",
     "image": "/images/pals/Faleris.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -14673,7 +14673,7 @@ export const pals: PalData[] = [
       "transporting": 3
     },
     "breedingPower": 245,
-    "description": "No description available.",
+    "description": "When it finds its prey, it unleashes a mighty torrent, sweeping the entire area.\r\nMore often than not, the prey gets swept away in the chaos, \r\nleaving one to wonder whether this truly counts as hunting.",
     "image": "/images/pals/Faleris_Aqua.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -14767,7 +14767,7 @@ export const pals: PalData[] = [
       "transporting": 3
     },
     "breedingPower": 140,
-    "description": "No description available.",
+    "description": "It sends electricity into its foes' wounds, roasting them from the inside out. \r\nFights between Orserk end in the blink of an eye.",
     "image": "/images/pals/Orserk.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -14866,7 +14866,7 @@ export const pals: PalData[] = [
       "gathering": 1
     },
     "breedingPower": 60,
-    "description": "No description available.",
+    "description": "Born from the depths of insanity, its very existence defies reason.\r\nHaving lost all genetic ties to other Pals,\r\none wonders if it could still even be considered a Pal.",
     "image": "/images/pals/Shadowbeak.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -14966,7 +14966,7 @@ export const pals: PalData[] = [
       "mining": 2
     },
     "breedingPower": 80,
-    "description": "No description available.",
+    "description": "Once one with Necromus .\r\nIts gleaming form is free of all negative emotions.\r\nHowever, a glimmer of hatred can still be seen deep within its eyes.",
     "image": "/images/pals/Paladius.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -15074,7 +15074,7 @@ export const pals: PalData[] = [
       "mining": 2
     },
     "breedingPower": 70,
-    "description": "No description available.",
+    "description": "Once one with Paladius . \r\nIts darkened form is the embodiment of negative emotions. \r\nHowever, a glimmer of compassion can still be seen deep within its eyes.",
     "image": "/images/pals/Necromus.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -15181,7 +15181,7 @@ export const pals: PalData[] = [
       "cooling": 4
     },
     "breedingPower": 120,
-    "description": "No description available.",
+    "description": "Guardian deity of Palpagos Island, known as the Winter Caller.\r\nIn the past, when a calamity struck the land, it soared into the sky\r\nand sealed away the threat by casting the island into eternal winter.",
     "image": "/images/pals/Frostallion.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -15288,7 +15288,7 @@ export const pals: PalData[] = [
       "gathering": 4
     },
     "breedingPower": 100,
-    "description": "No description available.",
+    "description": "Guardian deity of Palpagos Island, known as the Night Caller.\r\nIn the past, when a calamity struck the land, it soared into the sky\r\nand sealed away the threat by casting the island into eternal darkness.",
     "image": "/images/pals/Frostallion_Noct.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -15395,7 +15395,7 @@ export const pals: PalData[] = [
       "gathering": 3
     },
     "breedingPower": 90,
-    "description": "No description available.",
+    "description": "Watches over Palpagos Island from high above.\r\nWhen calamity returns to the land, the earth will split open, and the skies will burn.\r\nIt is destined to strike down the calamity in a flash of total destruction.",
     "image": "/images/pals/Jetragon.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -15504,7 +15504,7 @@ export const pals: PalData[] = [
       "transporting": 2
     },
     "breedingPower": 1,
-    "description": "No description available.",
+    "description": "Without existing, she quietly gazed upon the world.\r\nOne day, she was seized with a longing to be seen.\r\nWith unbridled lust for vengeance against reality,\r\nthus was born the Eclipsed Siren.",
     "image": "/images/pals/Bellanoir.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -15597,7 +15597,7 @@ export const pals: PalData[] = [
       "transporting": 2
     },
     "breedingPower": 1,
-    "description": "No description available.",
+    "description": "With her desires set loose, she was soon overwhelmed.\r\nShe longed for a self to gaze upon herself. \r\nAnd the sisters who gazed, resenting reality, \r\nwere driven into the abyss and, at last, closed their eyes.",
     "image": "/images/pals/Bellanoir_Libero.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -15691,7 +15691,7 @@ export const pals: PalData[] = [
       "transporting": 3
     },
     "breedingPower": 345,
-    "description": "No description available.",
+    "description": "The object floating behind, resembling the moon,\r\nis said to gradually become more circular with each passing generation.\r\nNo one knows what will happen when the moon is full.",
     "image": "/images/pals/Selyne.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -15785,7 +15785,7 @@ export const pals: PalData[] = [
       "transporting": 1
     },
     "breedingPower": 795,
-    "description": "No description available.",
+    "description": "Those who disgrace the honor of the herd are forced to take their own life.\r\nBy piercing their inflated vocal sac with a tree branch,\r\nthey are blown away into the atmosphere and return to the afterlife.",
     "image": "/images/pals/Croajiro.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -15880,7 +15880,7 @@ export const pals: PalData[] = [
       "transporting": 1
     },
     "breedingPower": 765,
-    "description": "No description available.",
+    "description": "The Croajiro who have forsaken their honor gather and form splinter groups.\r\nThey will use any underhanded means to take down their chosen prey.\r\nIf you encounter a pack of Croajiro Noct in the dead of the night, it's your life that's on the line.",
     "image": "/images/pals/Croajiro_Noct.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -15974,7 +15974,7 @@ export const pals: PalData[] = [
       "medicine_production": 2
     },
     "breedingPower": 905,
-    "description": "No description available.",
+    "description": "In early spring, pollen floats on the wind throughout the island. Flopie 's hay fever is Lullu 's fault.",
     "image": "/images/pals/Lullu.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -16068,7 +16068,7 @@ export const pals: PalData[] = [
       "lumbering": 2
     },
     "breedingPower": 720,
-    "description": "No description available.",
+    "description": "Inhaling large amounts of its spores will put you into a trance.\r\nSometimes, if Shroomer appears motionless,\r\nit's not because it's mimicking a mushroom,\r\nbut rather because it's high off its own spores.",
     "image": "/images/pals/Shroomer.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -16163,7 +16163,7 @@ export const pals: PalData[] = [
       "lumbering": 2
     },
     "breedingPower": 730,
-    "description": "No description available.",
+    "description": "The abundance of spores released by this Pal blocks out sunlight.\r\nSometimes, if Shroomer Noct appears motionless,\r\nit's not because it's mimicking a mushroom,\r\nbut rather because its own spores don't let it see anything.",
     "image": "/images/pals/Shroomer_Noct.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -16254,7 +16254,7 @@ export const pals: PalData[] = [
       "mining": 1
     },
     "breedingPower": 1125,
-    "description": "No description available.",
+    "description": "A decade ago, Kikit soccer was popular. \r\nHowever, it quickly fell out of favor due to fierce opposition from the Free Pal Alliance. \r\nNevertheless, the Kikit 's themselves didn't mind because it helped shed their old carapace.",
     "image": "/images/pals/Kikit.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -16350,7 +16350,7 @@ export const pals: PalData[] = [
       "farming": 1
     },
     "breedingPower": 545,
-    "description": "No description available.",
+    "description": "It was once believed that as the world approached its end, the flame would weaken.\r\nDoomsayers would repeatedly rejoice when the flame began to weaken,\r\nbut in the end, it turned out to be a prank by Sootseer .\r\nAt least, for now.",
     "image": "/images/pals/Sootseer.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -16444,7 +16444,7 @@ export const pals: PalData[] = [
       "medicine_production": 1
     },
     "breedingPower": 355,
-    "description": "No description available.",
+    "description": "It has about 5,000 types of poison.\r\nSome of them are deadly enough to cause instant death,\r\nbut all of them are too weak to have any effect.",
     "image": "/images/pals/Prixter.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -16537,7 +16537,7 @@ export const pals: PalData[] = [
       "transporting": 4
     },
     "breedingPower": 265,
-    "description": "No description available.",
+    "description": "Can be disassembled into 215 parts, and even if the parts are scattered,\r\nit will reassemble itself and start moving again. \r\nIf parts from different individuals are mixed it will malfunction due to mistaken identity.",
     "image": "/images/pals/Knocklem.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -16628,7 +16628,7 @@ export const pals: PalData[] = [
       "gathering": 2
     },
     "breedingPower": 945,
-    "description": "No description available.",
+    "description": "It has a strong sense of justice and despises evil.\r\nIn the past they were faithful and loving companions to the islanders.\r\nNowadays, Yakumo s are hostile to humans wherever they spot them.",
     "image": "/images/pals/Yakumo.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -16723,7 +16723,7 @@ export const pals: PalData[] = [
       "transporting": 2
     },
     "breedingPower": 665,
-    "description": "No description available.",
+    "description": "Striving for a state of selflessness, it meditates endlessly. \r\nAfter confronting its worldly desires, it eats a meal and reflects.\r\nIt ate too much today.",
     "image": "/images/pals/Dogen.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -16814,7 +16814,7 @@ export const pals: PalData[] = [
       "gathering": 2
     },
     "breedingPower": 675,
-    "description": "No description available.",
+    "description": "Take one step forward and forget your doubts.\r\nTake two steps forward and forget your worries.\r\nTake three steps forward and forget your fears.\r\nFace any enemy.",
     "image": "/images/pals/Dazemu.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -16906,7 +16906,7 @@ export const pals: PalData[] = [
       "transporting": 1
     },
     "breedingPower": 1200,
-    "description": "No description available.",
+    "description": "There was once a tradition of handing out an award\r\nto the person who met their end in the most foolish way.\r\nThe first award was given for\r\n|being unaware of Mimog , opening the chest, and being bitten to death.|",
     "image": "/images/pals/Mimog.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -16998,7 +16998,7 @@ export const pals: PalData[] = [
       "transporting": 2
     },
     "breedingPower": 465,
-    "description": "No description available.",
+    "description": "Can send information and convert it into energy by forgetting it.\r\nRegularly seems to be sending information to someone.\r\n- Respond. Target located. Proceed to immediate destruction.",
     "image": "/images/pals/Xenovader.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -17089,7 +17089,7 @@ export const pals: PalData[] = [
       "mining": 3
     },
     "breedingPower": 435,
-    "description": "No description available.",
+    "description": "Consumes information and turns it into energy.\r\nRegularly seems to be sending information to someone.\r\n- Hello? What was the message you just sent? I devoured it before checking.",
     "image": "/images/pals/Xenogard.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -17181,7 +17181,7 @@ export const pals: PalData[] = [
       "gathering": 1
     },
     "breedingPower": 265,
-    "description": "No description available.",
+    "description": "-Destination reached. Priority: Locate entity |Supersonic Dragon|\r\n-Note: Conquest deadline exceeded by <://Error_Code:126DC> years.\r\n-Update: No conquest traces found. Naturalization confirmed. Commence elimination protocol.\r\n-Staff Memo: Refrain from forgetting or consuming critical data!",
     "image": "/images/pals/Xenolord.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -17273,7 +17273,7 @@ export const pals: PalData[] = [
       "transporting": 2
     },
     "breedingPower": 705,
-    "description": "No description available.",
+    "description": "What it carries is its own soul. \r\nWhen it falls for someone, \r\nit forcibly extracts their soul and merges it with its own, \r\nyearning to become one.",
     "image": "/images/pals/Nitemary.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -17364,7 +17364,7 @@ export const pals: PalData[] = [
       "gathering": 2
     },
     "breedingPower": 365,
-    "description": "No description available.",
+    "description": "It takes great pride in its flowing, gorgeous mane.\r\nIf it finds a split end, it becomes so mortified it can't focus on running properly. \r\nBecause static electricity makes its hair frizzy, it avoids Azurmane at all costs.",
     "image": "/images/pals/Starryon.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -17455,7 +17455,7 @@ export const pals: PalData[] = [
       "lumbering": 3
     },
     "breedingPower": 215,
-    "description": "No description available.",
+    "description": "The metallic components around its neck possess magnetic properties.\r\nIf the leg pieces get too close, they cling to it.\r\nWhen metal debris builds up on its neck, it grudgingly begins cleaning, \r\nand grows frustrated when they won't come off easily.",
     "image": "/images/pals/Silvegis.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -17546,7 +17546,7 @@ export const pals: PalData[] = [
       "gathering": 2
     },
     "breedingPower": 1245,
-    "description": "No description available.",
+    "description": "The black flames are only warm to the touch, \r\nbut anything that remains in contact with them slowly melts from the inside. \r\nHold some cheese above them, and it becomes a true delicacy.",
     "image": "/images/pals/Smokie.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -17638,7 +17638,7 @@ export const pals: PalData[] = [
       "lumbering": 4
     },
     "breedingPower": 815,
-    "description": "No description available.",
+    "description": "Ancient texts refer to it as the |Beast of Salvation.| \r\nThe light emitted by Celesdir purifies everything,\r\nliterally causing things to vanish from existence without leaving a trace.",
     "image": "/images/pals/Celesdir.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -17729,7 +17729,7 @@ export const pals: PalData[] = [
       "gathering": 1
     },
     "breedingPower": 630,
-    "description": "No description available.",
+    "description": "The mask it wears is not its face, they say.\r\nIt seems in front, but it's not there, no way.\r\nFrom shadows deep, it watches night and day.\r\nGlance away, and closer it will stray.",
     "image": "/images/pals/Omascul.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -17823,7 +17823,7 @@ export const pals: PalData[] = [
       "transporting": 2
     },
     "breedingPower": 725,
-    "description": "No description available.",
+    "description": "It has an uncontrollable urge to tear its prey apart.\r\nEach individual has their own meticulous order for dismemberment.\r\nIf caught by Splatterina , pray that your head is taken first.",
     "image": "/images/pals/Splatterina.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -17917,7 +17917,7 @@ export const pals: PalData[] = [
       "transporting": 2
     },
     "breedingPower": 825,
-    "description": "No description available.",
+    "description": "Extremely sticky and clingy.\r\nThe more it's resisted, the more tenacious it becomes.\r\nSuch is its |personality.|",
     "image": "/images/pals/Tarantriss.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -18009,7 +18009,7 @@ export const pals: PalData[] = [
       "gathering": 1
     },
     "breedingPower": 400,
-    "description": "No description available.",
+    "description": "Like Univolt , it was once believed to be connected to the Thunder God. \r\nAs faith in Univolt waned, Azurmane was deemed the God's true envoy.\r\nEven so, time reduced both to the same lowly status of ordinary workhorses.",
     "image": "/images/pals/Azurmane.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -18102,7 +18102,7 @@ export const pals: PalData[] = [
       "cooling": 4
     },
     "breedingPower": 170,
-    "description": "No description available.",
+    "description": "The sight of anything round gives it an uncontrollable urge to punch it.\r\nFor Bastigor the toughest challenge, after simply living,\r\nis making a snowman.",
     "image": "/images/pals/Bastigor.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -18206,7 +18206,7 @@ export const pals: PalData[] = [
       "transporting": 1
     },
     "breedingPower": 755,
-    "description": "No description available.",
+    "description": "Intelligent and graceful in its demeanor, \r\nit was frequently employed as an attendant by the island's nobles.\r\nHowever, when encountered at night, its face looked so eerie that it quickly fell out of favor.",
     "image": "/images/pals/Prunelia.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -18300,7 +18300,7 @@ export const pals: PalData[] = [
       "transporting": 2
     },
     "breedingPower": 645,
-    "description": "No description available.",
+    "description": "Strongly dislikes anyone catching a glimpse of its concealed eye. \r\nIf you insist on trying, it'll burst into tears\r\nand ignore you for two weeks.",
     "image": "/images/pals/Nyafia.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -18391,7 +18391,7 @@ export const pals: PalData[] = [
       "gathering": 2
     },
     "breedingPower": 505,
-    "description": "No description available.",
+    "description": "During the golden age of alchemy on the island, \r\nits ever-glowing golden fur was highly prized as a catalyst for transmuting gold.\r\nIn time, a remarkable revelation was made: \r\nthe same golden hue could be achieved simply by processing its mane.",
     "image": "/images/pals/Gildane.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -18485,7 +18485,7 @@ export const pals: PalData[] = [
       "transporting": 1
     },
     "breedingPower": 1445,
-    "description": "No description available.",
+    "description": "When in doubt, punch it till it works—that’s Herbil 's approach to fixing things.\r\nWith strength perfectly tuned for humans, sometimes just one punch is enough to restart a stopped heart.",
     "image": "/images/pals/Herbil.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -18579,7 +18579,7 @@ export const pals: PalData[] = [
       "transporting": 1
     },
     "breedingPower": 605,
-    "description": "No description available.",
+    "description": "Though its body melts in the heat, it just can’t resist sunbathing.\r\nThough its body melts in the warmth, it likes hot springs too much.\r\nIf it's going to melt anyway, it hopes it’ll be in a steaming outdoor bath \r\nunder a clear blue sky.",
     "image": "/images/pals/Icelyn.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -18671,7 +18671,7 @@ export const pals: PalData[] = [
       "cooling": 2
     },
     "breedingPower": 655,
-    "description": "No description available.",
+    "description": "So precise is its sense of time that \r\nit awakens at the exact same hour every morning.\r\nAccording to Palpagos lore, a day was divided into 24 parts because\r\nwhen Frostplume spreads its tail feathers wide,\r\nit reveals a pattern with 24 distinct spaces.",
     "image": "/images/pals/Frostplume.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -18764,7 +18764,7 @@ export const pals: PalData[] = [
       "mining": 3
     },
     "breedingPower": 455,
-    "description": "No description available.",
+    "description": "Disrupts enemies’ rhythm with a signature dance.\r\nIn turf battles, the first to fall in sync with the other’s rhythm loses.\r\nCourtship, boredom, battle—it all comes down to dance!\r\nNow then, what could a dance aimed at a human possibly mean?",
     "image": "/images/pals/Palumba.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -18858,7 +18858,7 @@ export const pals: PalData[] = [
       "mining": 2
     },
     "breedingPower": 335,
-    "description": "No description available.",
+    "description": "Its breath carries a miraculous, pollen-like substance \r\nthat pollinates any plant it touches. \r\nFor plant-based Pals, being near it can be a bit… complicated.",
     "image": "/images/pals/Braloha.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -18952,7 +18952,7 @@ export const pals: PalData[] = [
       "transporting": 1
     },
     "breedingPower": 1335,
-    "description": "No description available.",
+    "description": "The inside of its mouth stays pleasantly cold, \r\nmaking it a natural fridge when closed. \r\nIts saliva contains enzymes that prevent food from rotting. \r\nThus, it can serve as a food locker for humans—\r\nwhether it is sanitary or not is another matter entirely.",
     "image": "/images/pals/Munchill.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -19045,7 +19045,7 @@ export const pals: PalData[] = [
       "cooling": 3
     },
     "breedingPower": 745,
-    "description": "No description available.",
+    "description": "Among Polapup s, the fastest slider on the snow earns the highest respect.\r\nSometimes, a too-forceful leap sends one tumbling from the sky—\r\na common sight during territorial season.\r\nForecast: clear skies with a chance of flying Polapup s.",
     "image": "/images/pals/Polapup.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -19138,7 +19138,7 @@ export const pals: PalData[] = [
       "transporting": 1
     },
     "breedingPower": 1105,
-    "description": "No description available.",
+    "description": "To protect its fragile body, it developed an incredibly tough shell. \r\nUnfortunately, it's utterly defenseless underneath. \r\nEven a little tickle could knock it out cold.",
     "image": "/images/pals/Turtacle.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -19232,7 +19232,7 @@ export const pals: PalData[] = [
       "transporting": 1
     },
     "breedingPower": 1065,
-    "description": "No description available.",
+    "description": "To protect its fragile body, it developed an incredibly tough shell. \r\nWith most of its senses concentrated in its limbs and shell, \r\nit can’t even tell if someone quietly touches its core.",
     "image": "/images/pals/Turtacle_Terra.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -19327,7 +19327,7 @@ export const pals: PalData[] = [
       "transporting": 1
     },
     "breedingPower": 1395,
-    "description": "No description available.",
+    "description": "A Pal that closely resembles Jelliette .\r\nIt sometimes appears as a substitute when Jelliette is unavailable.\r\nIts acting is so flawless that no one ever notices the switch.",
     "image": "/images/pals/Jellroy.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -19420,7 +19420,7 @@ export const pals: PalData[] = [
       "transporting": 1
     },
     "breedingPower": 1385,
-    "description": "No description available.",
+    "description": "A Pal that closely resembles Jellroy .\r\nIt’s very social, so when plans overlap, \r\nit asks its good friend Jellroy to go in its place.\r\nAs thanks, one date.",
     "image": "/images/pals/Jelliette.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -19514,7 +19514,7 @@ export const pals: PalData[] = [
       "transporting": 2
     },
     "breedingPower": 1195,
-    "description": "No description available.",
+    "description": "Be sure to check your plans for the next day before falling asleep with this Pal.\r\nIts suction cups leave marks that look suspiciously like hickeys.\r\nOne sleepy cuddle session could lead to some \r\ntruly awkward misunderstandings.",
     "image": "/images/pals/Gloopie.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -19606,7 +19606,7 @@ export const pals: PalData[] = [
       "transporting": 1
     },
     "breedingPower": 1295,
-    "description": "No description available.",
+    "description": "It looks like something is peeking out from inside a costume, \r\nbut even if you reach inside, there’s nothing there. \r\nIn fact, you can keep reaching deeper and deeper. \r\nPerhaps the universe itself lies within.",
     "image": "/images/pals/Finsider.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -19700,7 +19700,7 @@ export const pals: PalData[] = [
       "transporting": 1
     },
     "breedingPower": 1255,
-    "description": "No description available.",
+    "description": "Even if you reach into its mouth, there’s nothing inside—it just keeps going.\r\nThinking it might be an interdimensional space, one researcher \r\ntried climbing in like a sleeping bag.\r\nBut when the gag reflex kicked in, they realized... \r\nit’s definitely part of the creature’s body.",
     "image": "/images/pals/Finsider_Ignis.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -19793,7 +19793,7 @@ export const pals: PalData[] = [
       "transporting": 2
     },
     "breedingPower": 525,
-    "description": "No description available.",
+    "description": "With its shining lure, it illuminates the darkness.\r\nThe wandering Pals drawn in by the light stand no chance of escape \r\nonce spotted by Ghangler .\r\nNo matter how far, it will keep guiding them until they get home \r\nsafe and sound.",
     "image": "/images/pals/Ghangler.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -19887,7 +19887,7 @@ export const pals: PalData[] = [
       "transporting": 2
     },
     "breedingPower": 505,
-    "description": "No description available.",
+    "description": "Its blazing lure doubles as a grill for roasting prey.\r\nDrawn in by the delicious aroma, Pals have no hope of escape once Ghangler Ignis sets its sights on them.\r\nIn the end, they’re treated to a hearty meal—until everyone’s full.",
     "image": "/images/pals/Ghangler_Ignis.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -19980,7 +19980,7 @@ export const pals: PalData[] = [
       "cooling": 4
     },
     "breedingPower": 445,
-    "description": "No description available.",
+    "description": "When it sleeps, Pals often mistake it for a drifting piece of ice and rest on it. \r\nAlthough gentle and unwilling to push them away when awake, \r\nit feels quietly stressed by the intrusion on its personal space.",
     "image": "/images/pals/Whalaska.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -20073,7 +20073,7 @@ export const pals: PalData[] = [
       "cooling": 4
     },
     "breedingPower": 430,
-    "description": "No description available.",
+    "description": "Determined never to be mistaken for drift ice again, \r\nit turned bright red through sheer will.\r\nUnfortunately, some Pals can’t see red.\r\nSo despite its efforts, its personal space continues to be invaded.",
     "image": "/images/pals/Whalaska_Ignis.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -20164,7 +20164,7 @@ export const pals: PalData[] = [
       "watering": 4
     },
     "breedingPower": 90,
-    "description": "No description available.",
+    "description": "After the sealing of the calamity, a champion from Feybreak emerged. \r\nIt stares out to sea, awaiting one it deems worthy. \r\nFor such encounters are no coincidence—they are fate.",
     "image": "/images/pals/Neptilius.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -20264,7 +20264,7 @@ export const pals: PalData[] = [
       "lumbering": 4
     },
     "breedingPower": 20,
-    "description": "No description available.",
+    "description": "The silence is unsettling, yet strangely soothing.\r\nNo one else remains. All have been delivered.\r\nO King of Salvation, carry me too into eternal stillness.\r\n-The ancient text cuts off here.",
     "image": "/images/pals/Hartalis.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -20355,7 +20355,7 @@ export const pals: PalData[] = [
       "transporting": 1
     },
     "breedingPower": 1430,
-    "description": "No description available.",
+    "description": "[Tides of Terraria] \r\nA monster from another world, now tameable in this realm.",
     "image": "/images/pals/Green_Slime.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -20398,7 +20398,7 @@ export const pals: PalData[] = [
       "transporting": 1
     },
     "breedingPower": 1490,
-    "description": "No description available.",
+    "description": "[Tides of Terraria] \r\nA monster from another world, now tameable in this realm.",
     "image": "/images/pals/Blue_Slime.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -20441,7 +20441,7 @@ export const pals: PalData[] = [
       "transporting": 1
     },
     "breedingPower": 1405,
-    "description": "No description available.",
+    "description": "[Tides of Terraria] \r\nA monster from another world, now tameable in this realm.",
     "image": "/images/pals/Red_Slime.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -20484,7 +20484,7 @@ export const pals: PalData[] = [
       "transporting": 1
     },
     "breedingPower": 1390,
-    "description": "No description available.",
+    "description": "[Tides of Terraria] \r\nA monster from another world, now tameable in this realm.",
     "image": "/images/pals/Purple_Slime.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -20527,7 +20527,7 @@ export const pals: PalData[] = [
       "transporting": 1
     },
     "breedingPower": 1500,
-    "description": "No description available.",
+    "description": "[Tides of Terraria] \r\nA monster from another world, now tameable in this realm.",
     "image": "/images/pals/Illuminant_Slime.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -20570,7 +20570,7 @@ export const pals: PalData[] = [
       "transporting": 1
     },
     "breedingPower": 1320,
-    "description": "No description available.",
+    "description": "[Tides of Terraria] \r\nA monster from another world, now tameable in this realm.",
     "image": "/images/pals/Rainbow_Slime.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -20613,7 +20613,7 @@ export const pals: PalData[] = [
       "lumbering": 1
     },
     "breedingPower": 1380,
-    "description": "No description available.",
+    "description": "[Tides of Terraria] \r\nA monster from another world, now tameable in this realm.",
     "image": "/images/pals/Enchanted_Sword.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -20656,7 +20656,7 @@ export const pals: PalData[] = [
       "gathering": 1
     },
     "breedingPower": 1340,
-    "description": "No description available.",
+    "description": "[Tides of Terraria] \r\nA monster from another world, now tameable in this realm.",
     "image": "/images/pals/Cave_Bat.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -20699,7 +20699,7 @@ export const pals: PalData[] = [
       "gathering": 1
     },
     "breedingPower": 1250,
-    "description": "No description available.",
+    "description": "[Tides of Terraria] \r\nA monster from another world, now tameable in this realm.",
     "image": "/images/pals/Illuminant_Bat.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -20742,7 +20742,7 @@ export const pals: PalData[] = [
       "transporting": 4
     },
     "breedingPower": 1380,
-    "description": "No description available.",
+    "description": "[Tides of Terraria] \r\nA monster from another world, now tameable in this realm.",
     "image": "/images/pals/Eye_of_Cthulhu.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
@@ -20793,7 +20793,7 @@ export const pals: PalData[] = [
       "transporting": 1
     },
     "breedingPower": 1390,
-    "description": "No description available.",
+    "description": "[Tides of Terraria] \r\nA monster from another world, now tameable in this realm.",
     "image": "/images/pals/Demon_Eye.webp",
     "drops": [],
     "partnerSkill": "Unknown Partner Skill",
