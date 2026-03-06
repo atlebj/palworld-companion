@@ -2,12 +2,11 @@ import React from 'react';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { pals } from '../../../data/pals';
-import { TypeBadge } from '../../../components/ui/TypeBadge';
 import {
-  Flame, Droplet, Sprout, Zap, Hammer, Package,
-  Axe, Pickaxe, Stethoscope, Snowflake, Truck, Wheat,
+  Hammer, Package, Snowflake,
   ArrowLeft, Dna
 } from 'lucide-react';
+import Image from 'next/image';
 
 export async function generateStaticParams() {
   return pals.map((pal) => ({
@@ -15,19 +14,22 @@ export async function generateStaticParams() {
   }));
 }
 
-const suitabilityIcons: Record<string, React.ElementType> = {
-  kindling: Flame,
-  watering: Droplet,
-  planting: Sprout,
-  generating_electricity: Zap,
-  handiwork: Hammer,
-  gathering: Package,
-  lumbering: Axe,
-  mining: Pickaxe,
-  medicine_production: Stethoscope,
-  cooling: Snowflake,
-  transporting: Truck,
-  farming: Wheat,
+type SuitabilityConfig = { type: 'image', src: string } | { type: 'icon', component: React.ElementType };
+
+const suitabilityConfig: Record<string, SuitabilityConfig> = {
+  kindling: { type: 'image', src: '/images/suitability/kindling.png' },
+  watering: { type: 'image', src: '/images/suitability/watering.png' },
+  planting: { type: 'image', src: '/images/suitability/planting.png' },
+  generating_electricity: { type: 'image', src: '/images/suitability/generating_electricity.png' },
+  handiwork: { type: 'image', src: '/images/suitability/handiwork.png' },
+  gathering: { type: 'image', src: '/images/suitability/gathering.png' },
+  lumbering: { type: 'image', src: '/images/suitability/lumbering.png' },
+  mining: { type: 'image', src: '/images/suitability/mining.png' },
+  medicine_production: { type: 'image', src: '/images/suitability/medicine_production.png' },
+  cooling: { type: 'icon', component: Snowflake },
+  transporting: { type: 'image', src: '/images/suitability/transporting.png' },
+  farming: { type: 'image', src: '/images/suitability/farming.png' },
+  oil_extraction: { type: 'image', src: '/images/suitability/oil_extraction.png' },
 };
 
 const StatBar = ({ label, value, max = 200, color }: { label: string, value: number, max?: number, color: string }) => (
@@ -42,6 +44,25 @@ const StatBar = ({ label, value, max = 200, color }: { label: string, value: num
     <span className="w-8 text-right font-mono text-slate-200 font-bold">{value}</span>
   </div>
 );
+
+const TypeBadge = ({ type }: { type: string }) => {
+    const colors: Record<string, string> = {
+        Neutral: 'bg-neutral-600',
+        Fire: 'bg-red-600',
+        Water: 'bg-blue-600',
+        Grass: 'bg-green-600',
+        Electric: 'bg-yellow-600',
+        Ice: 'bg-cyan-600',
+        Ground: 'bg-amber-700',
+        Dark: 'bg-purple-900',
+        Dragon: 'bg-indigo-600',
+    };
+    return (
+        <span className={`${colors[type] || 'bg-slate-600'} text-white text-xs uppercase font-bold px-3 py-1 rounded-full shadow-sm`}>
+            {type}
+        </span>
+    );
+};
 
 export default async function PalDetailPage({ params }: { params: Promise<{ key: string }> }) {
   const { key } = await params;
@@ -71,7 +92,17 @@ export default async function PalDetailPage({ params }: { params: Promise<{ key:
                 <div className="absolute top-6 left-6 font-mono text-4xl font-bold text-slate-800">#{pal.id.toString().padStart(3, '0')}</div>
 
                 <div className="relative z-10 flex justify-center">
-                    <img src={pal.image} alt={pal.name} className="w-64 h-64 object-contain drop-shadow-2xl" />
+                    {/* Using next/image requires width/height. The previous img had w-64 h-64 which is 256px.
+                        Ideally we use the actual image dimensions, but for now we can infer. */}
+                    {pal.image && (
+                        <Image
+                            src={pal.image}
+                            alt={pal.name}
+                            width={256}
+                            height={256}
+                            className="w-64 h-64 object-contain drop-shadow-2xl"
+                        />
+                    )}
                 </div>
             </div>
 
@@ -86,42 +117,59 @@ export default async function PalDetailPage({ params }: { params: Promise<{ key:
         {/* Right Column: Stats & Details */}
         <div className="space-y-8">
             <div>
-                <div className="flex items-center gap-4 mb-2">
-                    <h1 className="text-4xl font-extrabold text-slate-100">{pal.name}</h1>
+                <div className="flex flex-wrap items-center gap-4 mb-2">
+                    <h1 className="text-4xl font-extrabold text-[var(--color-brand-text-primary)]">{pal.name}</h1>
+                    {pal.isVariant && (
+                        <span className="bg-[var(--color-brand-border)] text-[var(--color-brand-text-muted)] text-[10px] px-2 py-0.5 rounded-full font-bold shadow-md uppercase tracking-widest whitespace-nowrap">
+                            Variant
+                        </span>
+                    )}
+                    {!pal.id && (
+                        <span className="bg-purple-600/80 text-white text-[10px] px-2 py-0.5 rounded-full font-bold shadow-md uppercase tracking-widest whitespace-nowrap">
+                            Collab
+                        </span>
+                    )}
                 </div>
                 <div className="flex gap-2 mb-6">
                     {pal.types.map(t => <TypeBadge key={t} type={t} />)}
                 </div>
 
-                <div className="space-y-4 bg-slate-900/50 p-6 rounded-2xl border border-slate-800">
-                    <h3 className="text-sm font-bold text-slate-400 uppercase tracking-wider mb-2">Base Stats</h3>
+                <div className="space-y-4 card p-6">
+                    <h3 className="text-sm font-bold text-[var(--color-brand-text-muted)] uppercase tracking-wider mb-2">Base Stats</h3>
                     <StatBar label="HP" value={pal.stats.hp} color="bg-green-500" />
-                    <StatBar label="ATK" value={pal.stats.attack} color="bg-red-500" />
+                    <StatBar label="ATK" value={pal.stats.attack.melee} color="bg-red-500" />
                     <StatBar label="DEF" value={pal.stats.defense} color="bg-blue-500" />
 
-                    <div className="pt-4 mt-4 border-t border-slate-800 flex justify-between items-center">
-                        <span className="text-slate-400 text-sm font-bold">Breeding Power</span>
-                        <span className="text-slate-200 font-mono text-lg">{pal.breedingPower}</span>
+                    <div className="pt-4 mt-4 border-t border-[var(--color-brand-border)] flex justify-between items-center">
+                        <span className="text-[var(--color-brand-text-muted)] text-sm font-bold">Breeding Power</span>
+                        <span className="text-[var(--color-brand-text-primary)] font-mono text-lg">{pal.breedingPower}</span>
                     </div>
                 </div>
             </div>
 
             <div>
-                <h3 className="text-lg font-bold text-slate-200 mb-4 flex items-center gap-2">
-                    <Hammer size={20} className="text-sky-400" /> Work Suitability
+                <h3 className="text-lg font-bold text-[var(--color-brand-text-primary)] mb-4 flex items-center gap-2">
+                    <Hammer size={20} className="text-[var(--color-brand-primary)]" /> Work Suitability
                 </h3>
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
                     {Object.entries(pal.suitability).map(([key, level]) => {
-                        const Icon = suitabilityIcons[key] || Package;
+                        const config = suitabilityConfig[key];
                         const label = key.replace(/_/g, ' ');
+                        if (!level || level === 0) return null;
                         return (
-                            <div key={key} className="flex items-center gap-3 bg-slate-800/50 p-3 rounded-xl border border-slate-800/50">
-                                <div className={`p-2 rounded-lg bg-slate-800 text-slate-400`}>
-                                    <Icon size={18} />
+                            <div key={key} className="flex items-center gap-3 card p-3 hover:border-[var(--color-brand-border)] transition-colors">
+                                <div className={`p-2 rounded-lg bg-[var(--color-brand-bg)] text-[var(--color-brand-text-muted)] shrink-0`}>
+                                    {config?.type === 'image' ? (
+                                        <Image src={config.src} alt={label} width={32} height={32} className="w-8 h-8" />
+                                    ) : config?.type === 'icon' ? (
+                                        <config.component size={24} className="p-0.5" />
+                                    ) : (
+                                        <Package size={24} className="p-0.5" />
+                                    )}
                                 </div>
                                 <div>
-                                    <div className="text-xs text-slate-500 uppercase font-bold truncate w-24">{label}</div>
-                                    <div className="text-lg font-bold text-slate-200">Lv. {level}</div>
+                                    <div className="text-xs text-[var(--color-brand-text-muted)] uppercase font-bold truncate w-24">{label}</div>
+                                    <div className="text-lg font-bold text-[var(--color-brand-text-primary)]">Lv. {level}</div>
                                 </div>
                             </div>
                         );
@@ -129,7 +177,45 @@ export default async function PalDetailPage({ params }: { params: Promise<{ key:
                 </div>
             </div>
 
-            <div className="pt-4">
+            {pal.skills && pal.skills.length > 0 && (
+                <div className="mt-8">
+                    <h3 className="text-lg font-bold text-[var(--color-brand-text-primary)] mb-4">Active Skills</h3>
+                    <div className="space-y-3">
+                        {pal.skills.map((skill, index) => (
+                            <div key={index} className="card p-4">
+                                <div className="flex justify-between items-start mb-2">
+                                    <div className="flex items-center gap-3">
+                                        <h4 className="font-bold text-[var(--color-brand-text-primary)]">{skill.name}</h4>
+                                        <TypeBadge type={skill.element} />
+                                    </div>
+                                    <div className="text-xs font-mono text-[var(--color-brand-text-muted)] bg-[var(--color-brand-bg)] px-2 py-1 rounded">Lv. {skill.level}</div>
+                                </div>
+                                <div className="flex gap-4 mb-3 text-xs text-[var(--color-brand-text-secondary)] font-mono">
+                                    <span className="flex items-center gap-1"><span className="text-[var(--color-brand-text-muted)]">PWR</span> {skill.power}</span>
+                                    <span className="flex items-center gap-1"><span className="text-[var(--color-brand-text-muted)]">CT</span> {skill.cooltime}s</span>
+                                </div>
+                                <p className="text-sm text-[var(--color-brand-text-secondary)]">{skill.description}</p>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            )}
+
+            {pal.drops && pal.drops.length > 0 && (
+                 <div className="mt-8">
+                    <h3 className="text-lg font-bold text-[var(--color-brand-text-primary)] mb-4">Drops</h3>
+                    <div className="grid grid-cols-2 gap-3">
+                        {pal.drops.map((drop, index) => (
+                            <div key={index} className="card p-3 flex justify-between items-center">
+                                <span className="text-sm font-medium text-[var(--color-brand-text-secondary)]">{drop.name}</span>
+                                <span className="text-xs font-mono text-[var(--color-brand-text-muted)]">{drop.min}-{drop.max}</span>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            )}
+
+            <div className="pt-8">
                 <Link
                     href="/calculators/breeding"
                     className="flex items-center justify-center gap-2 w-full py-4 bg-sky-600 hover:bg-sky-500 text-white font-bold rounded-xl transition-all shadow-lg shadow-sky-900/20 hover:shadow-sky-500/20 active:scale-95"

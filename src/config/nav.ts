@@ -16,7 +16,8 @@ import {
   LayoutTemplate,
   Package,
   Shield,
-  ListOrdered
+  ListOrdered,
+  BookOpen
 } from "lucide-react";
 import React from "react";
 
@@ -157,6 +158,12 @@ export const sections: NavSection[] = [
   {
     title: "Tools",
     links: [
+      {
+        href: "/pals",
+        label: "Paldeck",
+        icon: BookOpen,
+        description: "Complete list of Pals with stats and drops."
+      },
       {
         href: "/checklist",
         label: "Checklist",

@@ -4,7 +4,6 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { pals } from '../../data/pals';
 import { LayoutGrid, List as ListIcon, Search } from 'lucide-react';
-import { TypeBadge } from '../../components/ui/TypeBadge';
 
 const StatBar = ({ label, value, max = 200, color }: { label: string, value: number, max?: number, color: string }) => (
   <div className="flex items-center gap-2 text-xs">
@@ -19,14 +18,40 @@ const StatBar = ({ label, value, max = 200, color }: { label: string, value: num
   </div>
 );
 
+const TypeBadge = ({ type }: { type: string }) => {
+    const colors: Record<string, string> = {
+        Neutral: 'bg-neutral-600',
+        Fire: 'bg-red-600',
+        Water: 'bg-blue-600',
+        Grass: 'bg-green-600',
+        Electric: 'bg-yellow-600',
+        Ice: 'bg-cyan-600',
+        Ground: 'bg-amber-700',
+        Dark: 'bg-purple-900',
+        Dragon: 'bg-indigo-600',
+    };
+    return (
+        <span className={`${colors[type] || 'bg-slate-600'} text-white text-[10px] uppercase font-bold px-2 py-0.5 rounded-full shadow-sm`}>
+            {type}
+        </span>
+    );
+};
+
 export default function PaldeckPage() {
   const [viewMode, setViewMode] = useState<'grid' | 'compact'>('grid');
   const [search, setSearch] = useState('');
+  const [filterElement, setFilterElement] = useState<string | null>(null);
+  const [filterWork, setFilterWork] = useState<string | null>(null);
 
-  const filteredPals = pals.filter(p =>
-    p.name.toLowerCase().includes(search.toLowerCase()) ||
-    p.types.some(t => t.toLowerCase().includes(search.toLowerCase()))
-  );
+  const elements = ["Neutral", "Fire", "Water", "Grass", "Electric", "Ice", "Ground", "Dark", "Dragon"];
+  const works = ["kindling", "watering", "planting", "generating_electricity", "handiwork", "gathering", "lumbering", "mining", "medicine_production", "cooling", "transporting", "farming"];
+
+  const filteredPals = pals.filter(p => {
+    const matchesSearch = p.name.toLowerCase().includes(search.toLowerCase());
+    const matchesElement = filterElement ? p.types.includes(filterElement) : true;
+    const matchesWork = filterWork ? (p.suitability[filterWork as keyof typeof p.suitability] ?? 0) > 0 : true;
+    return matchesSearch && matchesElement && matchesWork;
+  });
 
   return (
     <div className="space-y-8 pb-20">
@@ -36,18 +61,18 @@ export default function PaldeckPage() {
           <p className="text-slate-400">Database of all known Pals and their stats.</p>
         </div>
 
-        <div className="flex items-center gap-4 bg-slate-900/50 p-2 rounded-xl border border-slate-800">
+        <div className="flex items-center gap-4 card p-2">
             <div className="relative">
-                <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-500" />
+                <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[var(--color-brand-text-muted)]" />
                 <input
                     type="text"
-                    placeholder="Filter Pals..."
-                    className="pl-9 pr-4 py-1.5 bg-slate-800 border border-slate-700 rounded-lg text-sm text-slate-200 focus:outline-none focus:ring-2 focus:ring-sky-500 w-40 md:w-64"
+                    placeholder="Search by name..."
+                    className="pl-9 pr-4 py-2 bg-[var(--color-brand-bg)] border border-[var(--color-brand-border)] rounded-lg text-sm text-[var(--color-brand-text-primary)] focus:outline-none focus:ring-2 focus:ring-[var(--color-brand-primary)] w-full md:w-64 transition-all"
                     value={search}
                     onChange={e => setSearch(e.target.value)}
                 />
             </div>
-            <div className="h-6 w-px bg-slate-700"></div>
+            <div className="hidden md:block h-6 w-px bg-[var(--color-brand-border)]"></div>
             <div className="flex bg-slate-800 rounded-lg p-1">
                 <button
                     onClick={() => setViewMode('grid')}
@@ -67,33 +92,87 @@ export default function PaldeckPage() {
         </div>
       </div>
 
+      <div className="flex flex-wrap gap-2 mb-4">
+        <button
+            onClick={() => setFilterElement(null)}
+            className={`px-3 py-1 text-xs font-bold rounded-full transition-colors ${filterElement === null ? 'bg-[var(--color-brand-primary)] text-white' : 'bg-[var(--color-brand-card)] text-[var(--color-brand-text-secondary)] hover:bg-[var(--color-brand-border)]'}`}
+        >
+            All Elements
+        </button>
+        {elements.map(el => (
+            <button
+                key={el}
+                onClick={() => setFilterElement(filterElement === el ? null : el)}
+                className={`px-3 py-1 text-xs font-bold rounded-full transition-colors ${filterElement === el ? 'bg-sky-600 text-white' : 'bg-[var(--color-brand-card)] text-[var(--color-brand-text-secondary)] hover:bg-[var(--color-brand-border)]'}`}
+            >
+                {el}
+            </button>
+        ))}
+      </div>
+
+      <div className="flex flex-wrap gap-2 mb-8">
+        <button
+            onClick={() => setFilterWork(null)}
+            className={`px-3 py-1 text-xs font-bold rounded-full transition-colors ${filterWork === null ? 'bg-[var(--color-brand-primary)] text-white' : 'bg-[var(--color-brand-card)] text-[var(--color-brand-text-secondary)] hover:bg-[var(--color-brand-border)]'}`}
+        >
+            All Work
+        </button>
+        {works.map(w => (
+            <button
+                key={w}
+                onClick={() => setFilterWork(filterWork === w ? null : w)}
+                className={`px-3 py-1 text-xs font-bold rounded-full transition-colors capitalize ${filterWork === w ? 'bg-amber-600 text-white' : 'bg-[var(--color-brand-card)] text-[var(--color-brand-text-secondary)] hover:bg-[var(--color-brand-border)]'}`}
+            >
+                {w.replace('_', ' ')}
+            </button>
+        ))}
+      </div>
+
       {viewMode === 'grid' ? (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
           {filteredPals.map(pal => (
             <Link
                 href={`/pals/${pal.key}`}
                 key={pal.key}
-                className="group bg-slate-900 border border-slate-800 rounded-xl overflow-hidden hover:border-sky-500/50 hover:shadow-lg hover:shadow-sky-900/10 transition-all duration-300 hover:-translate-y-1"
+                className="card group overflow-hidden hover:border-[var(--color-brand-primary)]/50 transition-all duration-300 hover:-translate-y-1 relative"
             >
-                <div className="relative h-40 bg-slate-800/50 flex items-center justify-center p-4 group-hover:bg-slate-800 transition-colors">
-                    <span className="absolute top-3 left-3 font-mono text-slate-500 text-xs font-bold">#{pal.id.toString().padStart(3, '0')}</span>
-                    <div className="absolute top-3 right-3 flex gap-1">
+                {pal.isVariant && (
+                    <span className="absolute top-2 left-1/2 -translate-x-1/2 z-10 bg-[var(--color-brand-border)] text-[var(--color-brand-text-muted)] text-[10px] px-2 py-0.5 rounded-full font-bold shadow-md uppercase tracking-widest whitespace-nowrap">
+                        Variant
+                    </span>
+                )}
+                {!pal.id && (
+                     <span className="absolute top-2 left-1/2 -translate-x-1/2 z-10 bg-purple-600/80 text-white text-[10px] px-2 py-0.5 rounded-full font-bold shadow-md uppercase tracking-widest whitespace-nowrap">
+                        Collab
+                    </span>
+                )}
+
+                <div className="relative h-32 bg-[var(--color-brand-bg)] flex items-center justify-center p-4">
+                    <span className="absolute top-2 left-2 font-mono text-[var(--color-brand-text-muted)] text-[10px] font-bold">
+                        {pal.id ? `#${pal.id.toString().padStart(3, '0')}` : ''}
+                    </span>
+                    <div className="absolute top-2 right-2 flex flex-col gap-1 items-end">
                         {pal.types.map(t => <TypeBadge key={t} type={t} />)}
                     </div>
-                    {/* Placeholder or Image */}
-                    <div className="w-24 h-24 relative drop-shadow-xl group-hover:scale-110 transition-transform duration-300">
-                         {/* Since we have generic paths, use a fallback or explicit image */}
+                    <div className="w-20 h-20 relative drop-shadow-xl group-hover:scale-110 transition-transform duration-300">
                          <img src={pal.image} alt={pal.name} className="w-full h-full object-contain" />
                     </div>
                 </div>
 
-                <div className="p-4 space-y-4">
-                    <h2 className="font-bold text-lg text-slate-200 group-hover:text-sky-400 transition-colors">{pal.name}</h2>
-
-                    <div className="space-y-1.5">
-                        <StatBar label="HP" value={pal.stats.hp} color="bg-green-500" />
-                        <StatBar label="ATK" value={pal.stats.attack} color="bg-red-500" />
-                        <StatBar label="DEF" value={pal.stats.defense} color="bg-blue-500" />
+                <div className="p-3 border-t border-[var(--color-brand-border)]">
+                    <h2 className="font-bold text-sm text-[var(--color-brand-text-primary)] group-hover:text-[var(--color-brand-primary)] transition-colors truncate">{pal.name}</h2>
+                    <div className="mt-2 flex flex-wrap gap-1">
+                        {Object.entries(pal.suitability)
+                            .filter(([_, level]) => (level ?? 0) > 0)
+                            .sort((a, b) => (b[1] ?? 0) - (a[1] ?? 0))
+                            .slice(0, 3)
+                            .map(([work, level]) => (
+                                <span key={work} className="text-[10px] bg-[var(--color-brand-bg)] border border-[var(--color-brand-border)] text-[var(--color-brand-text-secondary)] px-1.5 py-0.5 rounded-md flex items-center gap-1">
+                                    <span className="capitalize">{work.substring(0, 3)}</span>
+                                    <span className="text-[var(--color-brand-primary)] font-bold">{level}</span>
+                                </span>
+                            ))
+                        }
                     </div>
                 </div>
             </Link>
@@ -131,7 +210,7 @@ export default function PaldeckPage() {
                                     </div>
                                 </td>
                                 <td className="px-6 py-4 text-right font-mono text-slate-300">{pal.stats.hp}</td>
-                                <td className="px-6 py-4 text-right font-mono text-slate-300">{pal.stats.attack}</td>
+                                <td className="px-6 py-4 text-right font-mono text-slate-300">{pal.stats.attack.melee}</td>
                                 <td className="px-6 py-4 text-right font-mono text-slate-300">{pal.stats.defense}</td>
                             </tr>
                         ))}
