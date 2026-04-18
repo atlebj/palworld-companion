@@ -19,9 +19,15 @@ const StatBar = ({ label, value, max = 200, color }: { label: string, value: num
   </div>
 );
 
-export default function PaldeckPage() {
+import { useSearchParams } from 'next/navigation';
+import { Suspense } from 'react';
+
+function PaldeckContent() {
+  const searchParams = useSearchParams();
+  const initialSearch = searchParams.get('search') || '';
+
   const [viewMode, setViewMode] = useState<'grid' | 'compact'>('grid');
-  const [search, setSearch] = useState('');
+  const [search, setSearch] = useState(initialSearch);
 
   const filteredPals = pals.filter(p =>
     p.name.toLowerCase().includes(search.toLowerCase()) ||
@@ -141,5 +147,13 @@ export default function PaldeckPage() {
         </div>
       )}
     </div>
+  );
+}
+
+export default function PaldeckPage() {
+  return (
+    <Suspense fallback={<div className="p-8 text-center text-slate-400">Loading Paldeck...</div>}>
+      <PaldeckContent />
+    </Suspense>
   );
 }
