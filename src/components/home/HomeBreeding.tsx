@@ -3,8 +3,10 @@
 import { useState, useMemo } from 'react';
 import { useRouter } from 'next/navigation';
 import { SelectField } from '../ui/SelectField';
+import Link from 'next/link';
 import { pals } from '../../data/pals';
 import { calculateBreedingResult } from '../../data/breeding';
+import { ArrowRight, Calculator, CheckSquare, Target } from 'lucide-react';
 
 export function HomeBreeding() {
   const [parent1, setParent1] = useState<string>('');
@@ -75,10 +77,40 @@ export function HomeBreeding() {
 
       <button
         onClick={handleCalculate}
-        className="w-full py-3 bg-sky-600 hover:bg-sky-500 text-white rounded-lg font-bold transition-colors shadow-lg"
+        className="w-full py-3 bg-sky-600 hover:bg-sky-500 text-white rounded-lg font-bold transition-colors shadow-lg flex items-center justify-center gap-2"
       >
-        Calculate Full Result
+        Get Best Result <ArrowRight className="w-5 h-5" />
       </button>
+
+      {/* Next Step Chaining links (only if result exists) */}
+      {result && (
+        <div className="flex flex-col gap-2 pt-2 border-t border-slate-800">
+          <p className="text-sm font-bold text-slate-300">Next Steps:</p>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
+            <Link
+              href={`/pals/${result.key}`}
+              className="flex items-center gap-2 text-xs bg-slate-900/50 hover:bg-slate-800 p-2 rounded-lg border border-slate-800 text-slate-300 transition-colors group"
+            >
+              <Target className="w-4 h-4 text-emerald-400 group-hover:scale-110 transition-transform" />
+              View best passives
+            </Link>
+            <Link
+              href="/calculators/iv"
+              className="flex items-center gap-2 text-xs bg-slate-900/50 hover:bg-slate-800 p-2 rounded-lg border border-slate-800 text-slate-300 transition-colors group"
+            >
+              <Calculator className="w-4 h-4 text-purple-400 group-hover:scale-110 transition-transform" />
+              Optimize stats
+            </Link>
+            <Link
+              href="/my-pals"
+              className="flex items-center gap-2 text-xs bg-slate-900/50 hover:bg-slate-800 p-2 rounded-lg border border-slate-800 text-slate-300 transition-colors group"
+            >
+              <CheckSquare className="w-4 h-4 text-blue-400 group-hover:scale-110 transition-transform" />
+              Add to Pal Box
+            </Link>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
