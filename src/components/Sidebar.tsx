@@ -27,7 +27,7 @@ export default function Sidebar() {
   };
 
   return (
-    <aside className="hidden md:flex flex-col w-72 shrink-0 border-r border-neutral-200 dark:border-neutral-800 h-screen sticky top-0 bg-neutral-50/50 dark:bg-neutral-900/50 backdrop-blur-xl">
+    <aside className="hidden md:flex flex-col w-72 shrink-0 border-r border-neutral-200 dark:border-neutral-800 h-screen sticky top-0 bg-[#0f1115]">
       <div className="flex-1 overflow-y-auto py-6 px-4">
         <nav className="space-y-6">
           {sections.map((sec) => (
