@@ -1,7 +1,22 @@
 import React from 'react';
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { pals } from '../../../data/pals';
 import { TypeBadge } from '../../../components/ui/TypeBadge';
+
+export const metadata: Metadata = {
+  title: "Palworld Tier List",
+  description:
+    "Top Pals for base work, combat, and travel — ranked S/A/B for mining, handiwork, breeding, mounts, and raid teams.",
+  alternates: { canonical: "/guides/tier-list" },
+  openGraph: {
+    title: "Palworld Tier List | Palworld Companion",
+    description:
+      "S/A/B tiers across base, combat, and mount roles. Find the best Pal for every job.",
+    url: "/guides/tier-list",
+    type: "article",
+  },
+};
 
 // Mock Tier List Data - In a real app this might be dynamic or more extensive
 const tiers = [

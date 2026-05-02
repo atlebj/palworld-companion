@@ -1,4 +1,19 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Build Guides & Base Architecture",
+  description:
+    "Optimized Palworld base layouts — ore farms, food production, defense walls, and aesthetic designs that don't break pathing.",
+  alternates: { canonical: "/guides/building" },
+  openGraph: {
+    title: "Palworld Build Guides | Palworld Companion",
+    description:
+      "Efficient and beautiful base layouts that keep your Pals working.",
+    url: "/guides/building",
+    type: "article",
+  },
+};
 
 export default function BuildingGuides() {
   return (

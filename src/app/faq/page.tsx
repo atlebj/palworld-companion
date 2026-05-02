@@ -1,5 +1,20 @@
+import type { Metadata } from "next";
 import { HelpCircle, GitMerge, Database } from "lucide-react";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "FAQ & Help",
+  description:
+    "Common Palworld Companion questions: how the breeding pathfinder works, where game data comes from, calculator accuracy, and how to report issues.",
+  alternates: { canonical: "/faq" },
+  openGraph: {
+    title: "FAQ | Palworld Companion",
+    description:
+      "Answers to the most common questions about the calculators and tools.",
+    url: "/faq",
+    type: "article",
+  },
+};
 
 export default function FAQPage() {
   return (

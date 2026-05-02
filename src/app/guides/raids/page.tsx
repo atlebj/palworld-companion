@@ -1,5 +1,20 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { Sword, Skull } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Palworld Raid Strategies",
+  description:
+    "Tactics, team comps, and base defense layouts for Bellanoir Libero, Blazamut Ryu, and other Palworld raid bosses.",
+  alternates: { canonical: "/guides/raids" },
+  openGraph: {
+    title: "Palworld Raid Strategies | Palworld Companion",
+    description:
+      "Beat the toughest raid bosses with proven team comps and defense layouts.",
+    url: "/guides/raids",
+    type: "article",
+  },
+};
 
 export default function RaidGuides() {
   const raids = [

@@ -1,7 +1,9 @@
 import React from 'react';
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { pals } from '../../../data/pals';
+import { SITE_NAME, SITE_URL } from '../../../config/site';
 import {
   Hammer, Package, Snowflake,
   ArrowLeft, Dna
@@ -12,6 +14,77 @@ export async function generateStaticParams() {
   return pals.map((pal) => ({
     key: pal.key,
   }));
+}
+
+function buildPalDescription(pal: typeof pals[number]): string {
+  const types = pal.types.join("/");
+  const topWorks = Object.entries(pal.suitability)
+    .filter(([, level]) => typeof level === "number" && (level ?? 0) > 0)
+    .sort((a, b) => (b[1] ?? 0) - (a[1] ?? 0))
+    .slice(0, 3)
+    .map(([k, level]) => `${k.replace(/_/g, " ")} Lv. ${level}`)
+    .join(", ");
+
+  const variant = pal.isVariant ? " variant" : "";
+  const stats = `HP ${pal.stats.hp}, ATK ${pal.stats.attack.melee}, DEF ${pal.stats.defense}`;
+  const works = topWorks ? ` Top work suitabilities: ${topWorks}.` : "";
+
+  return `${pal.name} is a ${types}-type Palworld${variant} pal. ${stats}.${works} See full stats, drops, breeding power, and active skills.`;
+}
+
+export async function generateMetadata(
+  { params }: { params: Promise<{ key: string }> },
+): Promise<Metadata> {
+  const { key } = await params;
+  const pal = pals.find((p) => p.key === key);
+
+  if (!pal) {
+    return {
+      title: "Pal not found",
+      description: "The requested Pal could not be found in the Paldeck.",
+      robots: { index: false, follow: false },
+    };
+  }
+
+  const title = `${pal.name} — Stats, Drops & Breeding`;
+  const description = buildPalDescription(pal);
+  const path = `/pals/${pal.key}`;
+  const image = pal.image || "/og-default.png";
+
+  return {
+    title,
+    description,
+    alternates: { canonical: path },
+    keywords: [
+      pal.name,
+      `${pal.name} Palworld`,
+      `${pal.name} stats`,
+      `${pal.name} drops`,
+      `${pal.name} breeding`,
+      ...pal.types.map((t) => `${t} type Pal`),
+      "Paldeck",
+    ],
+    openGraph: {
+      type: "article",
+      title: `${pal.name} | ${SITE_NAME}`,
+      description,
+      url: `${SITE_URL}${path}`,
+      images: [
+        {
+          url: image,
+          width: 512,
+          height: 512,
+          alt: `${pal.name} — Palworld Pal artwork`,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${pal.name} | ${SITE_NAME}`,
+      description,
+      images: [image],
+    },
+  };
 }
 
 type SuitabilityConfig = { type: 'image', src: string } | { type: 'icon', component: React.ElementType };
@@ -72,8 +145,44 @@ export default async function PalDetailPage({ params }: { params: Promise<{ key:
     notFound();
   }
 
+  const palUrl = `${SITE_URL}/pals/${pal.key}`;
+  const palImageAbs = pal.image?.startsWith("http") ? pal.image : `${SITE_URL}${pal.image ?? ""}`;
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: `${pal.name} — Palworld Pal`,
+    description: buildPalDescription(pal),
+    url: palUrl,
+    image: palImageAbs ? [palImageAbs] : undefined,
+    inLanguage: "en",
+    isPartOf: {
+      "@type": "WebSite",
+      name: SITE_NAME,
+      url: SITE_URL,
+    },
+    about: {
+      "@type": "Thing",
+      name: pal.name,
+      additionalType: "https://schema.org/VideoGameCharacter",
+      description: pal.description,
+    },
+    breadcrumb: {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
+        { "@type": "ListItem", position: 2, name: "Paldeck", item: `${SITE_URL}/pals` },
+        { "@type": "ListItem", position: 3, name: pal.name, item: palUrl },
+      ],
+    },
+  };
+
   return (
     <div className="max-w-4xl mx-auto pb-20 space-y-8">
+      <script
+        type="application/ld+json"
+        // eslint-disable-next-line react/no-danger
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       {/* Header / Nav */}
       <div className="flex items-center justify-between">
         <Link href="/pals" className="flex items-center gap-2 text-slate-400 hover:text-sky-400 transition-colors font-medium">
