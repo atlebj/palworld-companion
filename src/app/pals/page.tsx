@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { pals } from '../../data/pals';
 import { LayoutGrid, List as ListIcon, Search } from 'lucide-react';
 
@@ -155,7 +156,15 @@ export default function PaldeckPage() {
                         {pal.types.map(t => <TypeBadge key={t} type={t} />)}
                     </div>
                     <div className="w-20 h-20 relative drop-shadow-xl group-hover:scale-110 transition-transform duration-300">
-                         <img src={pal.image} alt={pal.name} className="w-full h-full object-contain" />
+                         {pal.image && (
+                           <Image
+                             src={pal.image}
+                             alt={pal.name}
+                             fill
+                             sizes="80px"
+                             className="object-contain"
+                           />
+                         )}
                     </div>
                 </div>
 
@@ -199,7 +208,15 @@ export default function PaldeckPage() {
                                 <td className="px-6 py-4 font-medium text-slate-200 group-hover:text-sky-400">
                                     <Link href={`/pals/${pal.key}`} className="flex items-center gap-3">
                                         <div className="w-8 h-8 relative bg-slate-800 rounded p-1">
-                                            <img src={pal.image} alt="" className="w-full h-full object-contain" />
+                                            {pal.image && (
+                                              <Image
+                                                src={pal.image}
+                                                alt=""
+                                                fill
+                                                sizes="32px"
+                                                className="object-contain p-1"
+                                              />
+                                            )}
                                         </div>
                                         {pal.name}
                                     </Link>
