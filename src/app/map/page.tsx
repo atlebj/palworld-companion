@@ -1,14 +1,4 @@
-import dynamic from 'next/dynamic';
-
-// Leaflet touches `window` on import so it must run client-side only.
-const MapClient = dynamic(() => import('./MapClient').then((m) => m.MapClient), {
-  ssr: false,
-  loading: () => (
-    <div className="flex items-center justify-center h-[70vh] text-[var(--color-brand-text-muted)]">
-      Loading map…
-    </div>
-  ),
-});
+import MapClientLoader from './MapClientLoader';
 
 export default function MapPage() {
   return (
@@ -35,7 +25,7 @@ export default function MapPage() {
         (MIT). Names are still Japanese — translations welcome.
       </p>
 
-      <MapClient />
+      <MapClientLoader />
     </div>
   );
 }
