@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Palworld Resource Map",
+  title: "Palworld Resource Map (Beta)",
   description:
     "Find ore, sulfur, coal, lifmunk effigies, dungeons, and tower locations on the Palworld map.",
   alternates: { canonical: "/map" },

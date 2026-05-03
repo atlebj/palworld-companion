@@ -68,7 +68,12 @@ export default function Sidebar() {
                                 )}
                             />
                             )}
-                            <span className="truncate">{link.label}</span>
+                            <span className="truncate flex-1">{link.label}</span>
+                            {link.badge && (
+                              <span className="text-[9px] font-bold uppercase tracking-wider px-1.5 py-0.5 rounded bg-amber-500/15 text-amber-300 border border-amber-500/30 shrink-0">
+                                {link.badge}
+                              </span>
+                            )}
                         </Link>
                         </li>
                     );

@@ -26,6 +26,8 @@ export type NavLink = {
   label: string;
   icon?: React.ElementType;
   description?: string;
+  /** Optional small badge shown next to the label (e.g. "Beta", "New"). */
+  badge?: string;
 };
 
 export type NavSection = {
@@ -174,7 +176,8 @@ export const sections: NavSection[] = [
         href: "/map",
         label: "Resource Map",
         icon: MapIcon,
-        description: "Find ore, sulfur, and other valuable resources."
+        description: "Find ore, sulfur, and other valuable resources.",
+        badge: "Beta"
       },
       {
         href: "/items",
