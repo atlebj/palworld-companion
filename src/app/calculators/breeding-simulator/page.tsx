@@ -191,6 +191,19 @@ export default function BreedingSimulatorPage() {
           )}
         </div>
       )}
+
+      <p className="text-xs text-slate-500 text-center pt-4 border-t border-slate-800">
+        Breeding outcome data adapted from{' '}
+        <a
+          href="https://github.com/mlg404/palworld-paldex-api"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline hover:text-slate-400"
+        >
+          mlg404/palworld-paldex-api
+        </a>{' '}
+        (MIT).
+      </p>
     </div>
   );
 }

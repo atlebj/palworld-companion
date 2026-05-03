@@ -284,6 +284,19 @@ export default function BreedingPathfinder() {
           </div>
         </div>
       </div>
+
+      <p className="text-xs text-[var(--color-brand-text-muted)] text-center pt-4 border-t border-[var(--color-brand-border)]">
+        Breeding outcome data adapted from{' '}
+        <a
+          href="https://github.com/mlg404/palworld-paldex-api"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline hover:text-[var(--color-brand-text-secondary)]"
+        >
+          mlg404/palworld-paldex-api
+        </a>{' '}
+        (MIT).
+      </p>
     </div>
   );
 }
