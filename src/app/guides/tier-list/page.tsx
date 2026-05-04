@@ -1,7 +1,23 @@
 import React from 'react';
+import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { pals } from '../../../data/pals';
 import { TypeBadge } from '../../../components/ui/TypeBadge';
+
+export const metadata: Metadata = {
+  title: "Palworld Tier List",
+  description:
+    "Top Pals for base work, combat, and travel — ranked S/A/B for mining, handiwork, breeding, mounts, and raid teams.",
+  alternates: { canonical: "/guides/tier-list" },
+  openGraph: {
+    title: "Palworld Tier List | Palworld Companion",
+    description:
+      "S/A/B tiers across base, combat, and mount roles. Find the best Pal for every job.",
+    url: "/guides/tier-list",
+    type: "article",
+  },
+};
 
 // Mock Tier List Data - In a real app this might be dynamic or more extensive
 const tiers = [
@@ -67,8 +83,16 @@ export default function TierListPage() {
                       {item.rank}
                     </div>
 
-                    <div className="w-16 h-16 bg-slate-900 rounded-lg p-1 shrink-0">
-                      <img src={pal.image} alt={pal.name} className="w-full h-full object-contain" />
+                    <div className="w-16 h-16 bg-slate-900 rounded-lg p-1 shrink-0 relative">
+                      {pal.image && (
+                        <Image
+                          src={pal.image}
+                          alt={pal.name}
+                          fill
+                          sizes="64px"
+                          className="object-contain p-1"
+                        />
+                      )}
                     </div>
 
                     <div className="flex-1 min-w-0">

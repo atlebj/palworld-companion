@@ -16,7 +16,8 @@ import {
   LayoutTemplate,
   Package,
   Shield,
-  ListOrdered
+  ListOrdered,
+  BookOpen
 } from "lucide-react";
 import React from "react";
 
@@ -25,6 +26,8 @@ export type NavLink = {
   label: string;
   icon?: React.ElementType;
   description?: string;
+  /** Optional small badge shown next to the label (e.g. "Beta", "New"). */
+  badge?: string;
 };
 
 export type NavSection = {
@@ -158,6 +161,12 @@ export const sections: NavSection[] = [
     title: "Tools",
     links: [
       {
+        href: "/pals",
+        label: "Paldeck",
+        icon: BookOpen,
+        description: "Complete list of Pals with stats and drops."
+      },
+      {
         href: "/checklist",
         label: "Checklist",
         icon: CheckSquare,
@@ -167,7 +176,8 @@ export const sections: NavSection[] = [
         href: "/map",
         label: "Resource Map",
         icon: MapIcon,
-        description: "Find ore, sulfur, and other valuable resources."
+        description: "Find ore, sulfur, and other valuable resources.",
+        badge: "Beta"
       },
       {
         href: "/items",

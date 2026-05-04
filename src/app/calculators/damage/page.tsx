@@ -1,8 +1,18 @@
+import type { Metadata } from "next";
 import DamageCalculator from "./DamageCalculator";
 
-export const metadata = {
-  title: "Damage Calculator | Palworld Companion",
-  description: "Estimate damage output based on attack, defense, level, and type effectiveness.",
+export const metadata: Metadata = {
+  title: "Damage Calculator",
+  description:
+    "Estimate Palworld damage output based on attack, defense, level difference, type effectiveness, and STAB bonuses.",
+  alternates: { canonical: "/calculators/damage" },
+  openGraph: {
+    title: "Damage Calculator | Palworld Companion",
+    description:
+      "Estimate damage output based on attack, defense, level, and type effectiveness.",
+    url: "/calculators/damage",
+    type: "website",
+  },
 };
 
 export default function DamageCalculatorPage() {

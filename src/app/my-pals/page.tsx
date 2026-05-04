@@ -1,4 +1,13 @@
+import type { Metadata } from 'next';
 import { UserBox } from '../../components/UserBox';
+
+export const metadata: Metadata = {
+  title: "My Pal Box",
+  description:
+    "Track the Pals you've caught and use them as inputs for the breeding pathfinder, IV calculator, and team planner.",
+  alternates: { canonical: "/my-pals" },
+  robots: { index: false, follow: true },
+};
 
 export default function MyPalsPage() {
   return (

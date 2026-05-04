@@ -1,4 +1,19 @@
+import type { Metadata } from "next";
 import { ArrowUpRight } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Patch Notes & Meta Analysis",
+  description:
+    "Track Palworld game updates and how they shift the meta — buffs, nerfs, new Pals, and balance changes.",
+  alternates: { canonical: "/patch-notes" },
+  openGraph: {
+    title: "Patch Notes & Meta Analysis | Palworld Companion",
+    description:
+      "How the latest Palworld updates shift the competitive and base-building meta.",
+    url: "/patch-notes",
+    type: "article",
+  },
+};
 
 export default function PatchNotes() {
   return (
