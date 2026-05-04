@@ -87,9 +87,20 @@ export default function StatPlanner() {
   }, [palData, level]);
 
   const palOptions: [string, string][] = pals.map((p) => [p.key, p.name]);
+
+  // Only show passives that move at least one of the four stats this planner
+  // models. The dataset has 60+ passives but most affect element damage,
+  // hunger, etc. — including those would mislead the user into picking
+  // passives that do nothing here.
+  const usablePassives = passives.filter(
+    (p) => p.stats.attack || p.stats.defense || p.stats.workSpeed || p.stats.moveSpeed,
+  );
   const passiveOptions: [string, string][] = [
     ['', 'None'],
-    ...passives.map<[string, string]>((p) => [p.name, `${p.name} — ${p.description}`]),
+    ...usablePassives
+      .slice()
+      .sort((a, b) => b.tier - a.tier || a.name.localeCompare(b.name))
+      .map<[string, string]>((p) => [p.name, `${p.name} — ${p.description}`]),
   ];
 
   const updatePassive = (idx: number, val: string) => {
