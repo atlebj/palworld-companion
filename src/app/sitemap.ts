@@ -3,6 +3,7 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { SITE_URL } from "../config/site";
 import { pals } from "../data/pals";
+import { items } from "../data/items";
 import { sections } from "../config/nav";
 
 type SitemapEntry = MetadataRoute.Sitemap[number];
@@ -34,10 +35,6 @@ const STATIC_ROUTES: Array<{
   { path: "/calculators/base-efficiency", changeFrequency: "monthly", priority: 0.7 },
 ];
 
-/**
- * Recursively walk the content/ directory and emit one entry per .mdx file.
- * Slug is the file path relative to content/, with the extension stripped.
- */
 async function getMdxRoutes(): Promise<SitemapEntry[]> {
   const contentDir = path.join(process.cwd(), "content");
   const entries: SitemapEntry[] = [];
@@ -61,9 +58,6 @@ async function getMdxRoutes(): Promise<SitemapEntry[]> {
       const rel = path.relative(contentDir, full).replace(/\\/g, "/");
       const slug = "/" + rel.replace(/\.mdx$/, "");
 
-      // Mirror the (docs) route's notFound for top-level files served outside slug-only routes.
-      // The catch-all at src/app/(docs)/[...slug]/page.tsx returns notFound() when slug.length === 0,
-      // so a content file at the root of content/ would 404. We still include nested files.
       const slugParts = slug.split("/").filter(Boolean);
       if (slugParts.length === 0) continue;
 
@@ -88,10 +82,6 @@ async function getMdxRoutes(): Promise<SitemapEntry[]> {
   return entries;
 }
 
-/**
- * Crawl the nav config so newly-added nav links automatically appear in the sitemap
- * even if we forget to update STATIC_ROUTES. We then de-duplicate against STATIC_ROUTES.
- */
 function getNavRoutes(): SitemapEntry[] {
   const seen = new Set(STATIC_ROUTES.map((r) => r.path));
   const result: SitemapEntry[] = [];
@@ -127,8 +117,15 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.7,
   }));
 
+  const itemEntries: SitemapEntry[] = items.map((item) => ({
+    url: `${SITE_URL}/items/${item.id}`,
+    lastModified: now,
+    changeFrequency: "monthly",
+    priority: 0.5,
+  }));
+
   const mdxEntries = await getMdxRoutes();
   const navEntries = getNavRoutes();
 
-  return [...staticEntries, ...navEntries, ...palEntries, ...mdxEntries];
+  return [...staticEntries, ...navEntries, ...palEntries, ...itemEntries, ...mdxEntries];
 }

@@ -72,6 +72,38 @@ function indexPals(palsArr) {
   });
 }
 
+async function loadItemsData(itemsTsPath) {
+  const raw = await fs.readFile(itemsTsPath, 'utf8');
+  const startMarker = 'export const items: ItemData[] =';
+  const startIdx = raw.indexOf(startMarker);
+  if (startIdx === -1) throw new Error('Could not locate items export');
+  const equalsIdx = raw.indexOf('=', startIdx + startMarker.length - 1);
+  const arrayStart = raw.indexOf('[', equalsIdx);
+  const arrayEnd = raw.lastIndexOf('];');
+  if (equalsIdx === -1 || arrayStart === -1 || arrayEnd === -1) {
+    throw new Error('Malformed items array');
+  }
+  // items.ts uses unquoted keys and single-quoted strings — not JSON.
+  // Evaluate the literal in a controlled context via Function.
+  const literal = raw.slice(arrayStart, arrayEnd + 1);
+  // eslint-disable-next-line no-new-func
+  return Function('return ' + literal)();
+}
+
+function indexItems(itemsArr) {
+  return itemsArr.map((item) => {
+    const parts = [item.category];
+    if (item.description) parts.push(item.description.slice(0, 80));
+    return {
+      type: 'item',
+      slug: '/items/' + item.id,
+      title: item.name,
+      description: parts.join(' • '),
+      tags: [item.category],
+    };
+  });
+}
+
 const STATIC_ROUTES = [
   { type: 'tool',  slug: '/pals',                              title: 'Paldeck',                       description: 'Browse every Pal with stats, types, and work suitabilities.' },
   { type: 'tool',  slug: '/pals/passives',                     title: 'Passive Skills Search',         description: 'Search and filter every Palworld passive skill.' },
@@ -98,11 +130,14 @@ async function buildSearchIndex() {
   const root = process.cwd();
   const contentDir = path.join(root, 'content');
   const palsTsPath = path.join(root, 'src', 'data', 'pals.ts');
+  const itemsTsPath = path.join(root, 'src', 'data', 'items.ts');
 
   const docs = await indexMdx(contentDir);
   const palsArr = await loadPalsData(palsTsPath);
   const palEntries = indexPals(palsArr);
-  const index = STATIC_ROUTES.concat(docs).concat(palEntries);
+  const itemsArr = await loadItemsData(itemsTsPath);
+  const itemEntries = indexItems(itemsArr);
+  const index = STATIC_ROUTES.concat(docs).concat(palEntries).concat(itemEntries);
 
   const outPath = path.join(root, 'public', 'search-index.json');
   await fs.writeFile(outPath, JSON.stringify(index));
