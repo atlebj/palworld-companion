@@ -83,8 +83,6 @@ async function loadItemsData(itemsTsPath) {
   if (equalsIdx === -1 || arrayStart === -1 || arrayEnd === -1) {
     throw new Error('Malformed items array');
   }
-  // items.ts uses unquoted keys and single-quoted strings — not JSON.
-  // Evaluate the literal in a controlled context via Function.
   const literal = raw.slice(arrayStart, arrayEnd + 1);
   // eslint-disable-next-line no-new-func
   return Function('return ' + literal)();
@@ -119,6 +117,7 @@ const STATIC_ROUTES = [
   { type: 'tool',  slug: '/calculators/breeding-simulator',    title: 'Breeding Simulator',            description: 'Simulate any breeding pair or reverse-search for parents.' },
   { type: 'tool',  slug: '/calculators/base-efficiency',       title: 'Workforce Composition Planner', description: 'Plan a base crew and see where its work suitability is concentrated.' },
   { type: 'guide', slug: '/guides/tier-list',                  title: 'Palworld Tier List',            description: 'S/A/B rankings for base, combat, and mount roles.' },
+  { type: 'guide', slug: '/guides/progression',                title: 'Progression Guides',            description: 'Level-by-level playbook from early game to endgame.' },
   { type: 'guide', slug: '/guides/building',                   title: 'Build Guides',                  description: 'Optimized base layouts that do not break pathing.' },
   { type: 'guide', slug: '/guides/raids',                      title: 'Raid Strategies',               description: 'Team comps and base defense for Bellanoir, Blazamut, and others.' },
   { type: 'guide', slug: '/guides/type-chart',                 title: 'Type Chart',                    description: 'Strengths and weaknesses for every element.' },
