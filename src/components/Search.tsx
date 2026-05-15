@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef, useMemo, useCallback } from 'react';
 import { useRouter } from 'next/navigation';
 
-type SearchEntryType = 'pal' | 'tool' | 'guide' | 'doc';
+type SearchEntryType = 'pal' | 'tool' | 'guide' | 'doc' | 'item';
 
 type SearchEntry = {
   type: SearchEntryType;
@@ -14,6 +14,8 @@ type SearchEntry = {
   types?: string[];
   /** Pal-only: work suitability names e.g. ["mining", "handiwork"] */
   works?: string[];
+  /** Item-only: category tags e.g. ["Sphere"] */
+  tags?: string[];
 };
 
 const TYPE_LABEL: Record<SearchEntryType, string> = {
@@ -21,6 +23,7 @@ const TYPE_LABEL: Record<SearchEntryType, string> = {
   tool: 'Tool',
   guide: 'Guide',
   doc: 'Doc',
+  item: 'Item',
 };
 
 const TYPE_BADGE_CLASS: Record<SearchEntryType, string> = {
@@ -28,6 +31,7 @@ const TYPE_BADGE_CLASS: Record<SearchEntryType, string> = {
   tool: 'bg-sky-500/15 text-sky-300 border-sky-500/30',
   guide: 'bg-amber-500/15 text-amber-300 border-amber-500/30',
   doc: 'bg-slate-500/20 text-slate-300 border-slate-500/30',
+  item: 'bg-purple-500/15 text-purple-300 border-purple-500/30',
 };
 
 const MAX_RESULTS = 30;
@@ -40,10 +44,13 @@ const MAX_RESULTS = 30;
 function score(entry: SearchEntry, q: string): number {
   const title = entry.title.toLowerCase();
 
-  // Pal-specific haystacks (types, works) get folded into a separate signal
+  // Tag-style haystacks fold in entry-specific signals:
+  //   - Pal: types ("Fire", "Dark") and works ("mining", "handiwork")
+  //   - Item: category tags ("Sphere", "Weapon", "Material")
   const tags: string[] = [];
   if (entry.types) tags.push(...entry.types.map((t) => t.toLowerCase()));
   if (entry.works) tags.push(...entry.works.map((w) => w.toLowerCase()));
+  if (entry.tags) tags.push(...entry.tags.map((t) => t.toLowerCase()));
   const tagBlob = tags.join(' ');
 
   const desc = entry.description.toLowerCase();
@@ -215,7 +222,7 @@ export default function Search() {
                 ref={inputRef}
                 type="text"
                 className="flex-1 bg-transparent outline-none text-lg text-[var(--color-brand-text-primary)] placeholder-[var(--color-brand-text-muted)]"
-                placeholder="Search pals, calculators, guides..."
+                placeholder="Search pals, items, calculators, guides..."
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 onKeyDown={onInputKeyDown}
@@ -238,7 +245,7 @@ export default function Search() {
 
               {results.length === 0 && !query && (
                 <p className="px-4 py-8 text-center text-sm text-[var(--color-brand-text-muted)]">
-                  Try &quot;Anubis&quot;, &quot;mining&quot;, or &quot;breeding calculator&quot;.
+                  Try &quot;Anubis&quot;, &quot;pal sphere&quot;, or &quot;breeding calculator&quot;.
                 </p>
               )}
 
