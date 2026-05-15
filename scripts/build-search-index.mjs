@@ -61,7 +61,7 @@ function indexPals(palsArr) {
     const typeLabel = types.length ? types.join('/') + ' type' : '';
     const workLabel = works.slice(0, 2).map((w) => w.name + ' ' + w.level).join(', ');
     const description = [typeLabel, workLabel].filter(Boolean).join(' • ');
-    return {
+    const out = {
       type: 'pal',
       slug: '/pals/' + pal.key,
       title: pal.name,
@@ -69,6 +69,8 @@ function indexPals(palsArr) {
       types,
       works: works.map((w) => w.name),
     };
+    if (pal.image) out.image = pal.image;
+    return out;
   });
 }
 
@@ -92,13 +94,15 @@ function indexItems(itemsArr) {
   return itemsArr.map((item) => {
     const parts = [item.category];
     if (item.description) parts.push(item.description.slice(0, 80));
-    return {
+    const out = {
       type: 'item',
       slug: '/items/' + item.id,
       title: item.name,
       description: parts.join(' • '),
       tags: [item.category],
     };
+    if (item.image) out.image = item.image;
+    return out;
   });
 }
 

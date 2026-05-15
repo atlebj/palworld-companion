@@ -2,6 +2,8 @@
 
 import { useState, useEffect, useRef, useMemo, useCallback } from 'react';
 import { useRouter } from 'next/navigation';
+import Image from 'next/image';
+import { Wrench, BookOpen, FileText, Search as SearchIcon } from 'lucide-react';
 
 type SearchEntryType = 'pal' | 'tool' | 'guide' | 'doc' | 'item';
 
@@ -16,6 +18,8 @@ type SearchEntry = {
   works?: string[];
   /** Item-only: category tags e.g. ["Sphere"] */
   tags?: string[];
+  /** Pal/item: small icon path (24-48px renders fine) */
+  image?: string;
 };
 
 const TYPE_LABEL: Record<SearchEntryType, string> = {
@@ -32,6 +36,24 @@ const TYPE_BADGE_CLASS: Record<SearchEntryType, string> = {
   guide: 'bg-amber-500/15 text-amber-300 border-amber-500/30',
   doc: 'bg-slate-500/20 text-slate-300 border-slate-500/30',
   item: 'bg-purple-500/15 text-purple-300 border-purple-500/30',
+};
+
+// Fallback icon background + color for entries without an image.
+// Matches the badge color so the row reads coherent at a glance.
+const FALLBACK_ICON_CLASS: Record<SearchEntryType, string> = {
+  pal: 'bg-emerald-500/10 text-emerald-300',
+  tool: 'bg-sky-500/10 text-sky-300',
+  guide: 'bg-amber-500/10 text-amber-300',
+  doc: 'bg-slate-500/15 text-slate-300',
+  item: 'bg-purple-500/10 text-purple-300',
+};
+
+const FALLBACK_ICON: Record<SearchEntryType, React.ElementType> = {
+  pal: SearchIcon, // not used; pals have images
+  tool: Wrench,
+  guide: BookOpen,
+  doc: FileText,
+  item: SearchIcon, // not used; items have images
 };
 
 const MAX_RESULTS = 30;
@@ -64,6 +86,30 @@ function score(entry: SearchEntry, q: string): number {
   if (tagBlob.includes(q)) return 30;
   if (desc.includes(q)) return 40;
   return -1;
+}
+
+function ResultIcon({ entry }: { entry: SearchEntry }) {
+  if (entry.image) {
+    return (
+      <div className="w-8 h-8 shrink-0 bg-slate-900 rounded-md p-0.5 relative">
+        <Image
+          src={entry.image}
+          alt=""
+          fill
+          sizes="32px"
+          className="object-contain p-0.5"
+        />
+      </div>
+    );
+  }
+  const Icon = FALLBACK_ICON[entry.type];
+  return (
+    <div
+      className={`w-8 h-8 shrink-0 rounded-md flex items-center justify-center ${FALLBACK_ICON_CLASS[entry.type]}`}
+    >
+      <Icon className="w-4 h-4" />
+    </div>
+  );
 }
 
 export default function Search() {
@@ -265,6 +311,7 @@ export default function Search() {
                     role="option"
                     aria-selected={isActive}
                   >
+                    <ResultIcon entry={result} />
                     <span
                       className={`shrink-0 text-[10px] font-bold uppercase tracking-wider px-1.5 py-0.5 rounded border ${
                         TYPE_BADGE_CLASS[result.type]
