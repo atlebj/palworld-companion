@@ -1,152 +1,146 @@
 ---
 title: "Passive Skills Explained"
-description: "A practical guide to Palworld passive skills: what they are, how to evaluate them, and how to build clean breeding lines for workers, mounts, and combat Pals."
-updated: "2026-01-27"
+description: "Practical guide to Palworld passive skills — the 21 tier-3 legendaries, real template builds (Combat Trifecta, Workhorse, Tank), and how to pick passives that actually compound."
+updated: 2026-05-12
 ---
 
-## On this page
-- [What passive skills are](#what-passive-skills-are)
-- [The 3 build types you should use](#the-3-build-types-you-should-use)
-- [How to evaluate a passive quickly](#how-to-evaluate-a-passive-quickly-rule-of-thumb)
-- [Why clean lines matter](#clean-lines-matter-more-than-perfect-luck)
-- [Suggested passive sets](#suggested-passive-sets-practical-starter-templates)
-- [Common mistakes](#common-mistakes-and-what-to-do-instead)
-- [Quick breeding checklist](#quick-checklist-before-you-lock-a-breeding-parent)
+# Passive Skills Explained
 
----
+Passive skills are the single biggest lever for making a "best-in-slot" Pal — for base productivity, combat, or mounts. There are **64 verified passives** in the game: 21 Tier-3 legendaries, 3 Tier-2 mid-rares, 29 Tier-1 commons, plus a handful of neutrals and negatives. This page is the framework for picking them; the full searchable reference lives at **[/pals/passives](/pals/passives)**.
 
-Passive skills (often called *traits*) are the single biggest lever for creating “best-in-slot” Pals—whether you care about **base productivity**, **mount utility**, or **combat**.
+> Mechanics: see [Trait Inheritance](/breeding/trait-inheritance) for how passives actually pass from parent to child.
 
-This page explains how to think about passives in a way that helps you make good decisions fast, even if you don’t have every passive memorized yet.
+## The slot math
 
-> Foundation concepts:
-> - [Worker roles explained](/bases/worker-roles)
-> - [Work Speed explained](/mechanics/work-speed)
+Every Pal has **4 passive slots**. That's the hard ceiling. So every passive choice is a question of "is this one of the 4 best for this role?"
 
-## What passive skills are
-Passive skills are modifiers that apply to a Pal’s behavior or stats—things like:
-- working faster (base productivity)
-- moving faster (mount / traversal)
-- dealing more damage or taking less damage (combat)
-- quality-of-life boosts (stamina, hunger, sanity-style management depending on patches)
+## The 21 Tier-3 legendaries
 
-You’ll usually care less about the exact numbers and more about the *role* you’re building.
+These are the rarest and (usually) strongest passives in the game. Memorize this list — anything outside it is generally suboptimal as one of your 4 slots.
 
-## The 3 “build types” you should use
-Most players waste time because they breed “one Pal that does everything.” Instead, create purpose-built lines.
+| Passive | Effect | Best for |
+| :--- | :--- | :--- |
+| **Legend** | Attack +20%, Defense +20%, Move Speed +15% | Combat, mounts (the universal pick) |
+| **Lucky** | Attack +15%, Work Speed +15% | Everything — half-cost generalist |
+| **Ferocious** | Attack +20% | Combat |
+| **Burly Body** | Defense +20% | Tank |
+| **Artisan** | Work Speed +50% | Workers |
+| **Swift** | Move Speed +30% | Mounts, combat mobility |
+| **Vanguard** | +10% Player Attack (Gobfin stack meta) | Player-damage compositions |
+| **Stronghold Strategist** | +10% Player Defense (paired with Vanguard) | Player-damage compositions |
+| **Motivational Leader** | +25% Player Work Speed | Player-driven crafting |
+| **Logging Foreman** | +25% Player Logging Efficiency | Wood farming |
+| **Mine Foreman** | +25% Player Mining Efficiency | Ore farming |
+| **Workaholic** | SAN drops 15% slower | Long-running workers |
+| **Diet Lover** | Hunger drops 15% slower | Long-running anything |
+| **Celestial Emperor** | +20% Normal attack damage | Element specialist (Normal) |
+| **Divine Dragon** | +20% Dragon attack damage | Dragon DPS |
+| **Earth Emperor** | +20% Ground attack damage | Ground DPS |
+| **Flame Emperor** | +20% Fire attack damage | Fire DPS |
+| **Ice Emperor** | +20% Ice attack damage | Ice DPS |
+| **Spirit Emperor** | +20% Grass attack damage | Grass DPS |
+| **Lord of Lightning** | +20% Lightning attack damage | Electric DPS |
+| **Lord of the Underworld** | +20% Dark attack damage | Dark DPS |
 
-### 1) Worker build (base productivity)
-Goal: higher throughput, less downtime.
+## Template builds
 
-Look for passives that:
-- improve work speed / efficiency
-- reduce time wasted (less breaks, more consistency)
-- help with base reliability
+### Combat Trifecta (most popular)
 
-A worker Pal doesn’t need combat passives unless it’s also used as a defender.
+**Legend + Ferocious + Swift + Lucky**
 
-Related:
-- [Worker roles explained](/bases/worker-roles)
-- [Pathing & AI explained](/bases/pathing-ai)
+The community-named "trifecta" plus Lucky as the fourth. With all four:
+- Attack: +20% (Legend) + +20% (Ferocious) + +15% (Lucky) = +55%
+- Defense: +20% (Legend)
+- Move Speed: +15% (Legend) + +30% (Swift) = +45%
+- Work Speed: +15% (Lucky)
 
-### 2) Mount / utility build (movement)
-Goal: faster travel, better stamina/handling, smoother exploration.
+That's a universally strong set — combat, mount, fallback worker, everything.
 
-Look for passives that:
-- increase movement speed
-- improve stamina / sustain
-- reduce frustration (fewer interruptions)
+### Element Specialist (boss DPS)
 
-### 3) Combat build (damage + survivability)
-Goal: consistent damage and not getting deleted.
+**Legend + Ferocious + [Element] Emperor + Lucky**
 
-Look for passives that:
-- increase damage reliably (not only on rare conditions)
-- increase survivability (damage reduction, defensive boosts)
-- support your playstyle (ranged vs melee, burst vs sustained)
+If your Pal is on a single boss that has a known elemental weakness, swap Swift out for the matching element emperor. The +20% element multiplies cleanly with the +20% Ferocious and +15% Lucky.
 
-## How to evaluate a passive quickly (rule of thumb)
-When you see a passive, ask:
+For example, **[Jormuntide_Ignis](/pals/Jormuntide_Ignis)** for [Bellanoir Libero](/guides/raids/libero) (Dark → weak to Dragon — but you can also stack Dragon damage):
 
-1) **Does this help my Pal’s job?**  
-If not, it’s noise.
+**Legend + Ferocious + Divine Dragon + Lucky**
 
-2) **Is it always-on or conditional?**  
-Always-on passives are easier to build around.
+### Workhorse (base production)
 
-3) **Does it stack well with other passives?**  
-Some passives multiply your gains when combined with the right role.
+**Artisan + Lucky + Workaholic + Diet Lover**
 
-4) **Is it “clean” for breeding?**  
-If it’s not part of the target set, it can pollute the line.
+- Work Speed: +50% (Artisan) + +15% (Lucky) = +65%
+- SAN drops 15% slower (longer working sessions)
+- Hunger drops 10% slower (fewer feed trips)
 
-## “Clean lines” matter more than perfect luck
-The biggest breeding unlock is not “finding rare passives.”  
-It’s building parents with **only the passives you actually want**.
+This is the "infinite worker" build — pair with a Pal that has high suitability in the role you care about. See the [Workforce Composition Planner](/calculators/base-efficiency).
 
-Once you do that, the results stop feeling random.
+### Player-damage stack (Arena / raid support)
 
-If you’re still building your breeding pipeline, read:
-- [Trait inheritance explained](/breeding/trait-inheritance)
+**Vanguard + Stronghold Strategist** on multiple [Gobfins](/pals/Gobfin), all carried as backup Pals.
 
-## Suggested passive sets (practical starter templates)
-These are templates, not gospel. The goal is to avoid random mixed builds.
+Two Gobfins with this stack = +20% player attack, +20% player defense. Three Gobfins = +30/+30. This is the [Bellanoir Libero](/guides/raids/libero) meta and the same backbone of the Arena Stunlock comp (see [PvP Arena Guide](/mechanics/pvp-arena)).
 
-### Worker template
-Pick passives that reinforce productivity.  
-Avoid anything that only helps in combat.
+### Tank
 
-**Good worker line traits usually:**
-- boost work output
-- reduce downtime
-- keep the Pal “on-task”
+**Legend + Burly Body + Lucky + Diet Lover**
 
-### Mount template
-Pick passives that reinforce travel.
+Defense stacks: +20% (Legend) + +20% (Burly Body) = +40%. Lucky adds attack so you fight back; Diet Lover keeps the tank fed during long fights.
 
-**Good mount line traits usually:**
-- boost movement speed
-- improve stamina/sustain
-- keep traversal smooth
+## The Tier-2 wildcard: Musclehead
 
-### Combat template
-Pick passives that reinforce damage + survivability.
+**Musclehead** is the only Tier-2 passive worth special mention: **+30% attack, -50% work speed**. It's strictly a combat-only choice — putting it on anything that does base work cuts productivity in half. But on a pure raid Pal, the attack bonus is bigger than Ferocious's +20%.
 
-**Good combat line traits usually:**
-- improve damage consistently
-- improve survivability
-- avoid tradeoffs that get you killed unless you’re confident
+The trade-off is real. Don't slot Musclehead on a Pal you also use as a worker.
 
-## Common mistakes (and what to do instead)
-### Mistake 1: breeding everything into one Pal
-**Fix:** create separate lines: workers, mounts, combat.
+## Negatives to avoid
 
-### Mistake 2: keeping “junk passives” because they’re rare
-Rare doesn’t mean useful. If it doesn’t support the build, it’s pollution.
+If any of these show up on a breeding parent, **don't use that parent**. They pollute the gene pool:
 
-### Mistake 3: trying to jump straight to a 4-passive perfect Pal
-**Fix:** ladder approach:
-- make a clean 2-passive
-- turn it into a clean 3-passive
-- then go for 4
+- **Slacker** (-30% work speed)
+- **Pacifist** (-20% attack)
+- **Brittle** (-20% defense)
+- **Coward**, **Clumsy**, **Downtrodden** (-10% tier-1 negatives)
+- **Glutton**, **Bottomless Stomach** (faster hunger drain — workers starve)
+- **Destructive**, **Unstable** (faster SAN drain)
 
-### Mistake 4: forgetting the base fundamentals
-Even perfect worker passives won’t help if your base is badly set up:
-- station placement
-- storage placement
-- pathing and congestion
+Even one Tier-3 negative on a parent can ruin a breeding line for hours. See [Trait Inheritance](/breeding/trait-inheritance) for why this matters mathematically.
 
-Start here:
-- [Pathing & AI explained](/bases/pathing-ai)
+## The Tier-1 "filler" question
 
-## Quick checklist before you “lock” a breeding parent
-- Does it have only passives you want in this line?
-- Is it clearly a Worker / Mount / Combat parent (not mixed)?
-- Can I reproduce this parent again if I lose it?
-- Do I have a naming / storage system for this line?
+29 Tier-1 passives exist. Most are weaker versions of Tier-3 effects (**Hard Skin** = +10% def vs **Burly Body** = +20%, **Brave** = +10% atk vs **Ferocious** = +20%). They're not bad — they're just suboptimal in the 4-slot economy.
+
+When to keep a Tier-1:
+- Element resistances when you know the fight (**Suntan Lover** = -10% incoming Fire, etc.)
+- Hybrid-stat Tier-1s like **Aggressive** (+10% atk, -10% def) on a glass-cannon build where you don't care about defense
+- Anything during the gear-up phase before you can roll Tier-3s
+
+## Common mistakes
+
+### Building one Pal that does everything
+
+A worker with Burly Body and a combat Pal with Artisan are both failures. Separate lines:
+
+- Worker line (Artisan + Lucky + Workaholic + Diet Lover)
+- Combat line (Legend + Ferocious + Swift + Lucky)
+- Mount line (Legend + Swift + Lucky + something defensive)
+
+### Keeping "rare but useless"
+
+Workaholic on a combat Pal is rare and useless — same passive slot count, way worse outcome. Tier doesn't equal value.
+
+### Trying to jump straight to 4 perfect passives
+
+Mathematically expensive. Build 2 → 3 → 4. See the ladder method in [Trait Inheritance](/breeding/trait-inheritance#the-ladder-method).
+
+### Ignoring the negatives
+
+A single Tier-3 negative on a breeding parent (e.g., **Slacker**) reduces your inheritance pool quality and can carry forward into the offspring. Audit your parents.
 
 ## Related
-- [Trait inheritance explained](/breeding/trait-inheritance)
-- [Worker roles explained](/bases/worker-roles)
-- [Work Speed explained](/mechanics/work-speed)
-- [Capture Chance explained](/mechanics/capture-chance)
+
+- [Trait Inheritance](/breeding/trait-inheritance) — how passives actually pass from parent to child
+- [Passive Skills Search](/pals/passives) — searchable reference for all 64 passives
+- [Stat Planner](/calculators/iv) — compare loadouts before committing to a breeding line
+- [Breeding Pathfinder](/calculators/breeding) — find the species chain once your passive plan is set

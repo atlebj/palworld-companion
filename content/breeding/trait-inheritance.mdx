@@ -1,101 +1,131 @@
 ---
 title: "Breeding Trait Inheritance Explained"
-description: "How breeding trait inheritance works in Palworld, and the most reliable method to create clean 3–4 passive offspring."
-updated: "2026-01-27"
+description: "How Palworld breeding inheritance actually works — the 4-slot cap, the two-roll system, the male/female bias, and the ladder method that produces clean 4-passive offspring."
+updated: 2026-05-12
 ---
 
-## On this page
-- [Key idea: fewer random passives = better results](#key-idea-fewer-random-passives--better-results)
-- [What can be inherited](#what-can-be-inherited)
-- [The reliable method](#the-reliable-method-works-in-practice)
-- [Practical tips](#practical-tips)
-- [Now find the species path](#now-find-the-species-path)
-- [Common mistakes](#common-mistakes)
+# Breeding Trait Inheritance Explained
 
----
+Breeding determines which **passive skills** a baby Pal can receive. If you want a "perfect" combat or worker Pal, you're really trying to control the inheritance pool — the combined set of passives the parents bring in.
 
-![Breeding Trait Inheritance](/images/trait-inheritance.svg)
+> Before this page, read [Passive Skills Explained](/breeding/passive-skills) for which passives are worth chasing.
 
-Breeding inheritance determines which **passive skills (traits)** a baby Pal can receive from its parents.  
-If you want “perfect” workers or combat Pals, you’re really trying to build a **clean breeding line** where parents have only the passives you want.
+## The slot rule
 
-> Recommended background reading:
-> - [Passive skills explained](/breeding/passive-skills)
-> - [Worker roles explained](/bases/worker-roles)
+Every Pal has **4 passive slots**. The slot count is fixed; you can't grow past it. That's the whole game.
 
-## Key idea: fewer random passives = better results
-If parents have extra unwanted passives, those can take up trait slots and ruin otherwise good offspring.
+## The two-roll system
 
-Most frustration comes from breeding with **“dirty” parents**.
+Inheritance is a two-stage roll:
 
-Clean parents = predictable results.  
-Dirty parents = endless RNG.
+**Stage 1 — Inheritance roll.** The child rolls how many passives to inherit from parents (1 to 4), then selects that many at random from the combined parent pool.
 
-## What can be inherited
-- Passive skills from **either parent**
-- A baby can receive a combination of parent passives (depending on available slots and RNG)
+**Stage 2 — Mutation roll.** If the child has empty slots after Stage 1, the game rolls whether to fill them with random passives from the **full library of 64 passives** — including all the negatives.
 
-You are not trying to “force” traits — you are **removing bad options** so good ones appear more often.
+If Stage 1 fills all 4 slots, Stage 2 is skipped entirely.
 
-## The reliable method (works in practice)
+## What the probabilities actually look like
 
-### Step 1 — Start clean
-Use parents that have **only 1–2 desirable passives** each.
+When parents have **4 distinct passives between them** (e.g., parent A has Legend + Ferocious, parent B has Swift + Lucky):
 
-Avoid:
-- filler traits
-- mixed-role passives
-- “rare but useless” bonuses
+| Outcome | Approximate probability |
+| :--- | ---: |
+| All 4 parent passives inherited, no random | **~10%** |
+| 3 inherited + 0 random (3 clean slots, 1 empty) | ~5% |
+| Mutation roll adds 0 random passives | **~40%** |
+| Random passives fill remaining slots | ~60% |
 
-### Step 2 — Combine to 2 good passives
-Breed until you get an offspring with **both desired passives together**.
+The reason "clean parents" matter so much: **every passive in the parent pool that you don't want competes with one you do want** for the same slot.
 
-This offspring becomes a **new clean parent**.
+## The male/female bias
 
-### Step 3 — Build to 3 passives
-Introduce a second clean line that adds a third passive, and breed until you get **3 clean passives**.
+Each passive inherits independently. The bias:
 
-At this point, results become much more stable.
+- **Male parent: ~24% inheritance rate per passive**
+- **Female parent: ~20% inheritance rate per passive**
 
-### Step 4 — Build to 4 passives (optional)
-Repeat the same logic:
-- add one new desired passive
-- only from a clean parent
-- stop once you succeed
+Practical implication: **put your rarest passive on the male.** If you have one parent with Legend and one without, breed Legend on the male side.
 
-This “ladder” approach beats trying to jump straight to 4 passives.
+Duplicate passives on both parents don't help or harm — the game deduplicates the pool.
+
+## The ladder method
+
+Trying to roll a 4-passive perfect Pal in one breeding session is a recipe for hours of RNG misery. Build incrementally:
+
+### Step 1 — Clean 1-passive parents
+
+Find two Pals that each have **exactly 1 desired passive** and **nothing else**. This is your starting cleanroom. Wild captures with 0-1 passives are ideal sources.
+
+### Step 2 — Breed to a clean 2-passive child
+
+Pair the two clean 1-passive parents. The child has a strong chance of inheriting both passives (small parent pool → fewer ways to lose).
+
+When you get a clean 2-passive offspring, **save it** — this is your new breeding parent.
+
+### Step 3 — Add the third passive
+
+Bring in a new parent with the third desired passive (and nothing else). Pair with your clean 2-passive parent. Aim for a clean 3-passive child.
+
+### Step 4 — The fourth passive
+
+Same logic. Bring in a clean parent with the fourth desired passive. Aim for the 4-passive end goal.
+
+The whole ladder usually takes **6-10 breeding cycles** if your parents are clean. Trying to leap directly to 4 from messy parents can take 30+.
+
+## Worked example: Combat Trifecta + Lucky
+
+Target: **Legend + Ferocious + Swift + Lucky** on [Jetragon](/pals/Jetragon).
+
+1. **Capture or breed:**
+   - Parent A (male): Legend only
+   - Parent B (female): Ferocious only
+2. **Breed:** target a child with Legend + Ferocious (no other passives).
+3. **Bring in:**
+   - Parent C: Swift only
+4. **Breed:** Parent C × your Legend+Ferocious child → target Legend + Ferocious + Swift.
+5. **Bring in:**
+   - Parent D: Lucky only
+6. **Breed:** Parent D × your Legend+Ferocious+Swift child → target all four.
+7. **Breed up the species chain:** use the [Breeding Pathfinder](/calculators/breeding) to find the species path from your end-state parent to Jetragon, carrying the passive set through.
 
 ## Practical tips
-- Keep **clean-line parents** and don’t overwrite them
-- Label boxes clearly (e.g., *Worker Line A*, *Worker Line B*)
-- Decide your target set first:
-  - worker
-  - combat
-  - mount
 
-Breeding without a target is how lines get polluted.
+- **Save cleanroom parents.** Once you have a clean 2-passive parent, label and store it. Don't overwrite. Use [My Pal Box](/my-pals) to keep track.
+- **Don't mix worker and combat lines.** Pollution within a line is recoverable; pollution between lines (e.g., Artisan ending up on your combat Pal) is harder to undo.
+- **Captures are your seed material.** Wild Pals occasionally spawn with single passives — these are cleaner than anything that's been through breeding RNG.
+- **Cake is the bottleneck.** Every breeding cycle eats a [Cake](/items/cake). Build a [Cake & Egg Farm base](/guides/building/cake-egg-farm) before grinding passive lines.
 
 ## Now find the species path
 
-Trait inheritance tells you **which passives** transfer. It doesn't tell you **which pal species** you'll get from a given pair — that's a separate lookup.
+Trait inheritance controls **which passives** pass through. It doesn't control **which species** you get — that's a separate lookup based on each parent's breeding power. Once your trait plan is set:
 
-Once your trait plan is set, use these to figure out the species side:
+- **[Breeding Pathfinder](/calculators/breeding)** — given the Pals you own, find the shortest chain to the species you want.
+- **[Breeding Simulator](/calculators/breeding-simulator)** — pick any two parents to see the offspring species, or pick a target child to see every pair that produces it.
 
-- **[Breeding Pathfinder](/calculators/breeding)** — given the Pals you already own, find the shortest chain to the species you want.
-- **[Breeding Simulator](/calculators/breeding-simulator)** — pick any two parents to see the offspring, or pick a target child to see every pair that produces it.
-
-Both run against a documented dataset of 9,400+ parent pairs, so the species predictions match what the game actually rolls.
+Both run against a 9,453-pair lookup table imported from [the community paldex source](https://github.com/mlg404/palworld-paldex-api), so the species predictions match what the game actually rolls.
 
 ## Common mistakes
-- Using parents with too many random passives
-- Trying to get 4 passives immediately
-- Not isolating breeding lines (everything becomes mixed and messy)
-- Optimizing stats before fixing base fundamentals
 
-If your base is inefficient, fix this first:
-- [Pathing & AI explained](/bases/pathing-ai)
+### Using parents with too many random passives
+
+A parent with 3 passives where you only want 1 of them dilutes every inheritance roll. Either re-breed to clean that parent first, or use a different one.
+
+### Trying to get 4 passives in one breeding session
+
+The probability math doesn't favor you. ~10% to inherit all 4 from a clean 4-pool, multiplied by needing the right 4 in the pool to begin with. Ladder, don't leap.
+
+### Forgetting the mutation roll
+
+Even with a clean 2-passive parent pair, 60% of children get a random passive added. Those randoms can be negatives like **Slacker** or **Brittle**. Plan for re-breeding clean offspring out.
+
+### Optimizing passives before fixing base fundamentals
+
+If your base setup is bad, perfect worker passives won't save you. See [Worker Roles](/bases/worker-roles) and [Pathing & AI](/bases/pathing-ai) first.
 
 ## Related
-- [Passive skills explained](/breeding/passive-skills)
-- [Worker roles explained](/bases/worker-roles)
-- [Work Speed explained](/mechanics/work-speed)
+
+- [Passive Skills Explained](/breeding/passive-skills) — the 64-passive landscape and template builds
+- [Passive Skills Search](/pals/passives) — searchable reference
+- [Breeding Pathfinder](/calculators/breeding) — species side of breeding
+- [Cake & Egg Farm](/guides/building/cake-egg-farm) — feed your breeding pipeline
+- [My Pal Box](/my-pals) — keep clean parents organized
