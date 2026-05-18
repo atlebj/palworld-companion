@@ -1,45 +1,80 @@
 ---
 title: "Calculators"
-description: "Tools and calculators for Palworld mechanics and optimization."
-updated: "2026-01-27"
+description: "Tools and calculators for Palworld mechanics and optimization — breeding, IVs, damage, work speed, capture, and base composition."
+updated: 2026-05-12
 ---
 
 These calculators help you make **better decisions** without memorizing formulas or guessing how mechanics interact.
 
-They are designed as **decision helpers**, not exact probability simulators.
+They are designed as **decision helpers**, not exact probability simulators. The site's [FAQ](/faq) covers accuracy and limitations for each tool.
 
 ## Available calculators
 
 ### Capture Chance Helper
 Estimate whether a capture attempt is worth trying and what to improve before throwing.
 
-- Factors considered: HP %, status effects, sphere tier, target difficulty
-- Best used together with the explanation guide
+- Factors: HP %, status effects, sphere tier, target level
+- Best paired with the [capture chance explainer](/mechanics/capture-chance)
 
-→ [Open Capture Chance Helper](/calculators/capture-chance)  
-→ [Read Capture Chance explained](/mechanics/capture-chance)
+→ [Open Capture Chance Helper](/calculators/capture-chance)
+
+### Damage Calculator
+Estimate damage from a player or Pal attack against a specific target.
+
+- Factors: base attack, defense, level scaling, type matchups
+- Honest disclaimer: passive interactions and crit variance introduce error
+- Read the [damage formula deep-dive](/mechanics/damage-formula) for the math
+
+→ [Open Damage Calculator](/calculators/damage)
 
 ### Work Speed Estimator
-Compare uptime, task switching, and raw Work Speed bonuses to see what actually improves base productivity.
+Compare uptime, task switching, and Work Speed bonuses to see what actually improves base productivity.
 
-- Helps explain why layout and roles matter more than stats
+- Helps explain why layout and roles matter more than raw stats
 - Useful when optimizing mid- to late-game bases
 
-→ [Open Work Speed Estimator](/calculators/work-speed)  
-→ [Read Work Speed explained](/mechanics/work-speed)
+→ [Open Work Speed Estimator](/calculators/work-speed)
 
-## Planned calculators
-These are on the roadmap:
+### Stat Planner (IVs, Condense, Passives)
+Compare Pal stat loadouts forward. Pick IVs, condense rank, and passive skills; see projected HP/ATK/DEF.
 
-- Breeding planner (clean-line probability helper)
-- Damage comparison tool (safe vs burst builds)
-- Base throughput estimator (roles + pathing + transport)
+- Does **not** reverse-engineer hidden IVs (the game doesn't expose them)
+- The right tool for "should I condense this Pal now or wait for a better roll?"
+
+→ [Open Stat Planner](/calculators/iv)
+
+### Breeding Pathfinder
+Find the shortest breeding chain to a target Pal from your current collection.
+
+- Backed by a 9,453-pair lookup table (community datamined)
+- Tree View visualizes the entire lineage
+- Use the [My Pals](/my-pals) box to feed your saved roster in
+
+→ [Open Breeding Pathfinder](/calculators/breeding)
+
+### Breeding Simulator
+Simulate any pair to see what they produce, or reverse-search "what two parents make this child?"
+
+- Forward and reverse lookups
+- Combined with the Pathfinder, this covers every breeding question worth asking
+
+→ [Open Breeding Simulator](/calculators/breeding-simulator)
+
+### Workforce Composition Planner (Base Efficiency)
+Plan a base crew and see where work-skill coverage is concentrated — and where you have gaps.
+
+- Reports relative coverage rather than fake hourly numbers
+- Pair with the [worker roles guide](/bases/worker-roles) to understand what skills matter where
+
+→ [Open Workforce Composition Planner](/calculators/base-efficiency)
 
 ## How to use these tools effectively
+
 Calculators work best when combined with the guides:
 
-- Base optimization → [Worker roles explained](/bases/worker-roles)
-- Layout efficiency → [Pathing & AI explained](/bases/pathing-ai)
-- Breeding strategy → [Passive skills explained](/breeding/passive-skills)
+- **Base optimization** → [Worker roles](/bases/worker-roles) and [Pathing & AI](/bases/pathing-ai)
+- **Breeding strategy** → [Passive skills](/breeding/passive-skills), [Trait inheritance](/breeding/trait-inheritance)
+- **Combat planning** → [Damage formula](/mechanics/damage-formula), [Tier list](/guides/tier-list)
+- **Progression** → [Early game](/guides/progression/early-game) and [Endgame checklist](/guides/progression/endgame-checklist)
 
-The goal is not perfect numbers — it’s **predictable results**.
+The goal is not perfect numbers — it's **predictable results**.

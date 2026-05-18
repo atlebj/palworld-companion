@@ -1,33 +1,90 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+import { Hammer, Pickaxe, Cake, Shield, Droplets, Trees } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Build Guides & Base Architecture",
+  description:
+    "Optimized Palworld base layouts — ore farms, cake production, defense bases, hot springs, and food/wood hybrids.",
+  alternates: { canonical: "/guides/building" },
+  openGraph: {
+    title: "Palworld Build Guides | Palworld Companion",
+    description:
+      "Efficient and beautiful base layouts that keep your Pals working.",
+    url: "/guides/building",
+    type: "article",
+  },
+};
+
+const guides = [
+  {
+    title: "Automated Ore Farm",
+    href: "/guides/building/ore-farm",
+    desc: "Maximize ore production with a dedicated mining base — Digtoise, Anubis, and clean pathing.",
+    icon: Pickaxe,
+    accent: "text-amber-400",
+  },
+  {
+    title: "Cake & Egg Farm",
+    href: "/guides/building/cake-egg-farm",
+    desc: "Keep your breeding chains running. The crew, layout, and throughput math for 2 cakes/hour.",
+    icon: Cake,
+    accent: "text-pink-400",
+  },
+  {
+    title: "Defense Base Layout",
+    href: "/guides/building/defense-base",
+    desc: "Raid-resistant design with funnels, turret placement, and combat Pals on standby.",
+    icon: Shield,
+    accent: "text-rose-400",
+  },
+  {
+    title: "Hot Spring & SAN Recovery",
+    href: "/guides/building/hot-spring-base",
+    desc: "A dedicated rest base. Hot springs, Pal-fiber beds, and recovery rotation.",
+    icon: Droplets,
+    accent: "text-sky-400",
+  },
+  {
+    title: "Logging & Plantation Hybrid",
+    href: "/guides/building/logging-plantation",
+    desc: "Wood and berries on a single Pal crew — feeds your main base and stockpiles construction wood.",
+    icon: Trees,
+    accent: "text-emerald-400",
+  },
+];
 
 export default function BuildingGuides() {
   return (
-    <div className="max-w-4xl mx-auto py-12 px-4">
-      <h1 className="text-3xl font-bold mb-8">Build Guides & Architecture</h1>
-      <p className="text-slate-600 mb-8">Master base building with optimized layouts and aesthetic designs.</p>
+    <div className="max-w-5xl mx-auto py-12 px-4">
+      <div className="mb-10">
+        <h1 className="text-4xl font-bold mb-3 text-slate-100 flex items-center gap-3">
+          <Hammer className="text-sky-400" /> Build Guides
+        </h1>
+        <p className="text-slate-400 text-lg max-w-2xl">
+          Five base layouts covering production, food, defense, and Pal welfare. Each guide includes
+          crew picks, layout tips, throughput numbers, and common mistakes to avoid.
+        </p>
+      </div>
 
-      <div className="grid md:grid-cols-2 gap-6">
-        <Link href="/guides/building/ore-farm" className="block group">
-          <div className="bg-slate-800 border border-slate-700 rounded-xl overflow-hidden hover:border-sky-500 transition-colors">
-            <div className="h-48 bg-slate-700 flex items-center justify-center text-slate-500">
-               {/* Placeholder Image */}
-               <span className="text-4xl">🏭</span>
+      <div className="grid md:grid-cols-2 gap-5">
+        {guides.map(({ title, href, desc, icon: Icon, accent }) => (
+          <Link
+            key={href}
+            href={href}
+            className="group block p-6 rounded-xl bg-slate-800/50 border border-slate-700 hover:border-sky-500/50 hover:bg-slate-800 transition-colors"
+          >
+            <div className="flex items-start gap-4">
+              <Icon className={`w-8 h-8 shrink-0 ${accent}`} />
+              <div className="flex-1 min-w-0">
+                <h2 className="text-xl font-bold text-slate-100 group-hover:text-sky-400 transition-colors">
+                  {title}
+                </h2>
+                <p className="text-slate-400 mt-2 text-sm leading-relaxed">{desc}</p>
+              </div>
             </div>
-            <div className="p-6">
-              <h2 className="text-xl font-bold text-slate-100 group-hover:text-sky-400 transition-colors">
-                Automated Ore Farm
-              </h2>
-              <p className="text-slate-400 mt-2 text-sm">
-                Maximize your ore production with this efficient base layout using Digtoise and Anubis.
-              </p>
-            </div>
-          </div>
-        </Link>
-
-        {/* Placeholder for more guides */}
-        <div className="bg-slate-900/50 border border-slate-800 rounded-xl p-6 flex items-center justify-center text-slate-400 border-dashed">
-           <p>More guides coming soon...</p>
-        </div>
+          </Link>
+        ))}
       </div>
     </div>
   );

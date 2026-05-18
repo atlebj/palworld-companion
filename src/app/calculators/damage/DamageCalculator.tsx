@@ -100,8 +100,20 @@ export default function DamageCalculator() {
           sub="damage per hit"
         />
 
-        <div className="bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 p-4 rounded text-sm text-yellow-800 dark:text-yellow-200">
-          <strong>Note:</strong> This calculator provides an estimate based on standard mechanics. Actual in-game damage varies due to randomization (±5-10%) and hidden modifiers.
+        <div className="bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 p-4 rounded text-sm text-yellow-800 dark:text-yellow-200 space-y-2">
+          <p>
+            <strong>Estimate, not a readout.</strong> The level-difference
+            constants are community-estimated and the in-game formula has
+            randomization (±5–10%) plus a few hidden modifiers we
+            can’t observe. Expect roughly ±10–20% variance against
+            actual hits.
+          </p>
+          <p className="text-xs opacity-80">
+            Use it to compare loadouts, not to predict exact damage.
+            <a href="/mechanics/damage-formula" className="underline ml-1">
+              Read the full mechanics breakdown
+            </a>.
+          </p>
         </div>
       </div>
     </div>

@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useMemo } from 'react';
+import Image from 'next/image';
 import { pals } from '../../../data/pals';
 import { calculateBreedingResult, findPossibleParents } from '../../../data/breeding';
 import { SelectField } from '../../../components/ui/SelectField';
@@ -95,11 +96,15 @@ export default function BreedingSimulatorPage() {
                  <div className="animate-in zoom-in duration-300 flex flex-col items-center gap-4 relative z-10">
                    <div className="text-sm font-bold text-slate-400 uppercase tracking-wider">Resulting Child</div>
                    <div className="relative w-40 h-40">
-                      <img
-                        src={directResult.image || ''}
-                        alt={directResult.name}
-                        className="w-full h-full object-contain drop-shadow-2xl"
-                      />
+                      {directResult.image && (
+                        <Image
+                          src={directResult.image}
+                          alt={directResult.name}
+                          fill
+                          sizes="160px"
+                          className="object-contain drop-shadow-2xl"
+                        />
+                      )}
                    </div>
                    <h3 className="text-3xl font-extrabold text-white">{directResult.name}</h3>
                    <div className="flex gap-2">
@@ -146,15 +151,31 @@ export default function BreedingSimulatorPage() {
                   {reverseResults.map(([p1, p2], idx) => (
                     <div key={idx} className="flex items-center justify-between bg-slate-800 p-4 rounded-xl border border-slate-700">
                       <div className="flex items-center gap-3">
-                        <div className="w-10 h-10 bg-slate-900 rounded-lg p-1">
-                             <img src={p1.image} alt={p1.name} className="w-full h-full object-contain" />
+                        <div className="w-10 h-10 bg-slate-900 rounded-lg p-1 relative">
+                             {p1.image && (
+                               <Image
+                                 src={p1.image}
+                                 alt={p1.name}
+                                 fill
+                                 sizes="40px"
+                                 className="object-contain p-1"
+                               />
+                             )}
                         </div>
                         <span className="font-bold text-slate-200 text-sm">{p1.name}</span>
                       </div>
                       <span className="text-slate-500 font-bold">+</span>
                       <div className="flex items-center gap-3">
-                        <div className="w-10 h-10 bg-slate-900 rounded-lg p-1">
-                             <img src={p2.image} alt={p2.name} className="w-full h-full object-contain" />
+                        <div className="w-10 h-10 bg-slate-900 rounded-lg p-1 relative">
+                             {p2.image && (
+                               <Image
+                                 src={p2.image}
+                                 alt={p2.name}
+                                 fill
+                                 sizes="40px"
+                                 className="object-contain p-1"
+                               />
+                             )}
                         </div>
                         <span className="font-bold text-slate-200 text-sm">{p2.name}</span>
                       </div>
@@ -170,6 +191,19 @@ export default function BreedingSimulatorPage() {
           )}
         </div>
       )}
+
+      <p className="text-xs text-slate-500 text-center pt-4 border-t border-slate-800">
+        Breeding outcome data adapted from{' '}
+        <a
+          href="https://github.com/mlg404/palworld-paldex-api"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline hover:text-slate-400"
+        >
+          mlg404/palworld-paldex-api
+        </a>{' '}
+        (MIT).
+      </p>
     </div>
   );
 }

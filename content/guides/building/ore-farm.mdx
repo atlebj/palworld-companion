@@ -1,27 +1,72 @@
 ---
 title: Automated Ore Farm Blueprint
-description: Maximize your ore production with this efficient base layout.
-updated: 2024-02-15
+description: Maximize ore output with a dedicated mining base — node selection, Pal crew, layout, and throughput math.
+updated: 2026-05-12
 ---
 
 # Automated Ore Farm
 
-Building a dedicated Ore base is crucial for mid-to-late game progression. Here is a blueprint for a high-efficiency farm.
+A dedicated ore base is the unlock that lets you scale your mid-game crafting. Refined Metal Ingots, Plasteel, and almost every weapon schematic gate behind ore throughput. This is the build.
+
+## Why a separate base?
+
+Mining and handiwork conflict. If your miners and crafters share a base, miners idle waiting for transport Pals, and crafters can't keep up with raw ore intake. Splitting them lets each base specialize.
 
 ## Location
-Find a spot with at least **6-8 Ore Nodes**. Popular locations include:
-- **Desolate Church** (Early game)
-- **Mount Obsidian** (Late game, includes Coal)
+
+Find a spot with at least **6-8 Ore Nodes** clustered close enough for a single foundation to cover them. Popular picks:
+
+| Location | When | Notes |
+| :--- | :--- | :--- |
+| **Desolate Church** | Lv 10-25 | Easy access, no hostile NPCs nearby. Limited node density. |
+| **Mount Obsidian** | Lv 25-40 | Includes coal nodes. Hot biome — need [hot resistance gear](/items). |
+| **Verdant Brook** | Lv 30+ | High node density. Some pals in the area are aggressive. |
+| **Ice Wind Island** | Lv 40+ | Premium node count. Need cold resistance. Best for endgame. |
+
+Use the [Resource Map](/map) to scout candidates before committing.
 
 ## Pal Recommendations
-- **Digtoise**: High mining speed, especially when condensed.
-- **Anubis**: Excellent mining and transport.
-- **Astegon**: Best for pure mining power.
 
-## Layout Tips
-1. **Foundation**: Build a flat platform over uneven terrain to ensure Pals can navigate.
-2. **Beds & Feed Box**: Place them centrally to minimize travel time.
-3. **Chests**: Place a chest right next to the Palbox for quick fast-travel transfers.
+| Role | Pal | Why? |
+| :--- | :--- | :--- |
+| **Mining (primary)** | [Anubis](/pals/Anubis) | Lv3 mining + S-tier melee. Doubles as base defense. |
+| **Mining (specialist)** | [Astegon](/pals/Astegon) | Lv4 mining. Pure throughput. Slow to acquire — bred from late-game lineage. |
+| **Mining (mid-game)** | [Digtoise](/pals/Digtoise) | Spins on nodes, dropping ore. Less efficient than Anubis but available much earlier. |
+| **Transport** | [Wumpo](/pals/Wumpo) | Lv4 transport. Moves dropped ore to the chest before it despawns. |
+| **Transport (alt)** | [Killamari](/pals/Killamari) | Lv1 transport. Cheap, available early. Use until you breed something better. |
+| **Defense** | [Blazamut](/pals/Blazamut) | Lv4 mining AND 150 melee — does the job and fights raids alone. |
 
-## Automation
-Ensure you have enough **Transport** Pals (like Killamari or Helzephyr) to move the ore from the nodes to the chest. If using Digtoise, its mining spin attack drops ore on the ground, so transport is key.
+(See the [Tier List](/guides/tier-list) for the full ranking of mining Pals.)
+
+## Layout
+
+1. **Foundation over the node cluster.** Flat tiles let miners path to every node. Without foundation, uneven terrain blocks half your crew.
+2. **Logging Camp wood chest off to one side**, ore chest near the Palbox. Two chests prevents transport Pals from idling waiting for stack-merge.
+3. **Beds and feed box centered** so SAN and hunger top-ups don't pull workers across the map.
+4. **One repair bench** — high-tier mining Pals chew through their pickaxes. Repair-on-the-spot beats fast-travel for tool maintenance.
+5. **No kindling, no handiwork.** Resist mixing jobs. (See the [Logging & Plantation guide](/guides/building/logging-plantation) for why hybrid bases work for SOME job combos but not this one.)
+
+## Throughput
+
+A 6-Pal mining crew on an 8-node cluster produces roughly:
+
+| Crew composition | Ore/hour |
+| :--- | :--- |
+| 2× Anubis + 2× Digtoise + 2× Wumpo | ~600 |
+| 3× Astegon + 3× Wumpo (endgame) | ~900 |
+| 1× Blazamut + 2× Anubis + 3× Wumpo | ~750 (plus raid defense) |
+
+Compare that to a hand-mining session: even with the [Refined Metal Pickaxe](/items), a player chains roughly 80 ore/hour. The base is ~10× better.
+
+## Common mistakes
+
+- **Putting the ore farm in your main base.** Miners idle while transport Pals handle handiwork queues. Productivity collapses by ~40%.
+- **Forgetting SAN management.** A high-output mining crew bottoms out SAN in 6-8 hours. Pair this base with the [Hot Spring & SAN Recovery](/guides/building/hot-spring-base) base for rotation.
+- **No defense Pal.** Hostile NPCs and wildlife raids will destroy a defenseless ore base. Even one combat Pal makes the difference.
+- **Trying to do coal AND ore from one base.** Coal nodes appear on Mount Obsidian alongside ore. The crew can theoretically work both — but the transport queue gets overwhelmed. Build a separate coal base later.
+
+## Connect it to your other bases
+
+- **Ore chest** → fast-travel to your crafting base at the end of each in-game day.
+- **Sell excess refined metal** to merchants for gold to fund the [Endgame Checklist](/guides/progression/endgame-checklist).
+- **Use the [Workforce Composition Planner](/calculators/base-efficiency)** to verify your crew has zero skill gaps before committing to a layout.
